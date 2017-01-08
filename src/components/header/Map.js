@@ -6,19 +6,19 @@ export default class Map extends React.Component {
 		this.state = {
 			visible: false
 		};
-	};
+	}
 
 	show() {
 		this.setState({
 			visible: true
 		});
-	};
+	}
 
 	hide() {
 		this.setState({
 			visible: false
 		});
-	};
+	}
 
 	getMapUrl() {
 		let mapzoom = 12;
@@ -29,6 +29,7 @@ export default class Map extends React.Component {
 		let maptype = 'roadmap';
 		let address = (this.props.address.streetAddress + ',' +
 		this.props.address.locality + ',' +
+		this.props.address.postalCode + ',' +
 		this.props.address.region + ',' +
 		this.props.address.countryName)
 			.replace(/\s+/g, '+');
@@ -46,7 +47,7 @@ export default class Map extends React.Component {
 			'&style=feature:administrative|visibility:off' +
 			'&style=feature:landscape|element:labels|visibility:off' +
 			'&sensor=false';
-	};
+	}
 
 	render() {
 		let imgUrl = encodeURI(this.getMapUrl());
@@ -63,6 +64,16 @@ export default class Map extends React.Component {
 			<div className={'map fade-in-item-appear ' + animationClass}>
 				<img src={imgUrl} style={imgStyle} alt=""/>
 			</div>
-		)
-	};
+		);
+	}
 }
+
+Map.propTypes = {
+	address: React.PropTypes.shape({
+		streetAddress: React.PropTypes.string,
+		locality: React.PropTypes.string,
+		region: React.PropTypes.string,
+		postalCode: React.PropTypes.string,
+		countryName: React.PropTypes.string,
+	})
+};

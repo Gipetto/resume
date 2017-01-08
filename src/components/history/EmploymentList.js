@@ -41,6 +41,8 @@ class EmploymentListItem extends React.Component {
 
 EmploymentListItem.propTypes = {
 	item: React.PropTypes.shape({
+		to: React.PropTypes.string,
+		from: React.PropTypes.string,
 		position: React.PropTypes.string,
 		company: React.PropTypes.string,
 		location: React.PropTypes.string,

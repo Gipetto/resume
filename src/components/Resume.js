@@ -64,9 +64,9 @@ export default class Resume extends React.Component {
 				</div>
 				<div id="content" className="block-group">
 					<History objective={this.state.objective}
-							 currentWork={this.state.currentWork}
-							 workHistory={this.state.workHistory}
-							 education={this.state.education}/>
+							currentWork={this.state.currentWork}
+							workHistory={this.state.workHistory}
+							education={this.state.education}/>
 					<Sidebar buzzwords={this.state.buzzwords}/>
 				</div>
 			</div>

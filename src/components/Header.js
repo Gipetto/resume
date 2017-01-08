@@ -7,15 +7,15 @@ export default class Header extends React.Component {
 		super(props);
 		this.handleMouseOver = this.handleMouseOver.bind(this);
 		this.handleMouseOut = this.handleMouseOut.bind(this);
-	};
+	}
 
 	handleMouseOver() {
 		this.refs.theMap.show();
-	};
+	}
 
 	handleMouseOut() {
 		this.refs.theMap.hide();
-	};
+	}
 
 	render() {
 		return (
@@ -24,8 +24,8 @@ export default class Header extends React.Component {
 				<div className="vcard">
 					<h1 className="n" data-title={this.props.name}>{this.props.name}</h1>
 					<address className="adr"
-							 onMouseEnter={this.handleMouseOver}
-							 onMouseLeave={this.handleMouseOut}>
+							onMouseEnter={this.handleMouseOver}
+							onMouseLeave={this.handleMouseOut}>
 						<div>
 							<span className="street-address">{this.props.contact.address.streetAddress}</span>
 						</div>
