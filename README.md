@@ -1,14 +1,7 @@
 # Resume Project
 
-An excercise to represent my Resume as a complex example of HTML, CSS & JavaScript.
+For some inexplicable reason I'm drawn to the resume as a demo project
+to learn and practice new front end technologies.
 
-Applied technologies:
-
-- html5
-- css3
-	- fonts
-	- transitions
-	- less
-- javascript
-	- jquery
-	- google maps
+So, here lies a stupid React app. Overblown in every way so that I can
+say "I did that once".
