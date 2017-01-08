@@ -1,0 +1,117 @@
+{
+  "name": "Shawn “Wookiee” Parker",
+  "contact": {
+	"address": {
+	  "streetAddress": "1325 Oakes Boulevard",
+	  "locality": "San Leandro",
+	  "region": "California",
+	  "postalCode": "94577",
+	  "countryName": "USA"
+	},
+	"methods": {
+	  "email": "shawn@topfroggraphics.com",
+	  "tel": "+1 (720) 308-9773",
+	  "url": "https://about.me/shawnparker"
+	}
+  },
+  "buzzwords": [
+	{
+	  "name": "PHP, Python, Scala, whatever…",
+	  "text": "Loose or Statically Typed. OO or functional. It all works."
+	},
+	{
+	  "name": "Javascript, jQuery, React",
+	  "text": "Gotta keep that front snappy and easy to use."
+	},
+	{
+	  "name": "WordPress Contributor",
+	  "text": "Mostly bug fixes and small enhancements, but its all for the greater good, right?"
+	},
+	{
+	  "name": "OpenVBX Project Maintainer",
+	  "text": "Open Source cloud PBX. Handy stuff.<br/>It left us too soon."
+	},
+	{
+	  "name": "Amazon Web Services",
+	  "text": "EC2, S3, EBS, RDS, SimpleDB, SNS, SQS, and a partridge in a pear tree…"
+	},
+	{
+	  "name": "Internationalization",
+	  "text": "I’ve learned more than I ever thought I wanted to know about character sets, locales, and externalization."
+	},
+	{
+	  "name": "PDF Generation",
+	  "text": "Using PDFLib, FDPF & PyPDF with predefined templates and placing client supplied files and text."
+	},
+	{
+	  "name": "Version Control",
+	  "text": "All Git now. But who wants to work with subversion any more? Its so last decade."
+	},
+	{
+	  "name": "REST, API, Ajax",
+	  "text": "Y’know, all that Web 2.0 that the ladies croon over and all the other guys are jealous of."
+	},
+	{
+	  "name": "Web Services",
+	  "text": "How may different EC2 nodes can we split this functionality across?"
+	},
+	{
+	  "name": "SSO",
+	  "text": "Well, for the most part. Nobody really knows everything about SSO…"
+	},
+	{
+	  "name": "Command Line Scripting",
+	  "text": "Not very glamorous but well worth the time it takes to learn. Do you know where your .profile has been?"
+	},
+	{
+	  "name": "separator",
+	  "text": ""
+	},
+	{
+	  "name": "Mac OS X",
+	  "text": "For my text editor of choice to my photo editor of choice, its the place to be."
+	},
+	{
+	  "name": "Linux System Administration",
+	  "text": "I'm no gray beard, but I get around.<br/>Now who wants some tasty zsh..."
+	},
+	{
+	  "name": "Microsoft Windows",
+	  "text": "Two words: Virtual Machine.<br/>Am I right?"
+	}
+  ],
+  "objective": "To find a position that challenges my creative as well as my analytic capabilities in a cooperative and respectable environment in which professional growth is encouraged.",
+  "currentWork": {
+	"from": "2011",
+	"to": "present",
+	"position": "Senior Software Engineer",
+	"company": "Twilio, Inc.",
+	"location": "San Francisco, CA",
+	"description": "Full stack software engineer focused on the user experience. Contributed to projects from initial scoping and specifications down to final delivery and maintenance. Build systems that are scalable, fault tolerant, and easy to maintain. Generate internal tooling to aid in developer productivity and onboarding.\\nManage a team of remote contractors. Ensure their productivity is maintained by clearing roadblocks and wrangling product managers to clarify expectations and task definitions."
+  },
+  "workHistory": [
+	{
+	  "from": "2008",
+	  "to": "2011",
+	  "position": "Senior Developer",
+	  "company": "Crowd Favorite",
+	  "location": "Denver, CO",
+	  "description": "Developed custom solutions for building on and extending WordPress as a publishing platform. Developed project requirements and development plans for projects ranging from plugin development or API integrations to large scale deployments that require careful server resource management and integration plans for different services.\\nWhile the bulk of my work involved developing tools for client websites that build on and extend the functionality of WordPress I was also been responsible for developing systems built on top of CodeIgniter and that take advantage of Amazon’s cloud services to scale to meet the demands of high-volume, time sensitive data processing."
+	},
+	{
+	  "from": "2003",
+	  "to": "2008",
+	  "position": "Web Developer & Designer",
+	  "company": "Alternative Technology",
+	  "location": "Englewood, CO",
+	  "description": "Maintained the client facing website and client portal for a hardware, software and technical services distributor. Built a custom framework for managing product information, client portal access, and educational class schedules. Provided the marketing team with tools to help efficiently develop client communications."
+	}
+  ],
+  "education": [
+	{
+	  "description": "Bachelors Degree in Visual Arts",
+	  "date": "December 1996",
+	  "institution": "University of Northern Colorado, Greeley, Colorado"
+	}
+  ]
+}
