@@ -51,18 +51,10 @@ export default class Map extends React.Component {
 
 	render() {
 		let imgUrl = encodeURI(this.getMapUrl());
-		let imgStyle = {
-			position: 'absolute',
-			left: 317,
-			top: 0,
-			zIndex: 100,
-			border: '1px solid rgb(175, 175, 175)'
-		};
 		let animationClass = this.state.visible ? 'fade-in-item-appear-active' : 'fade-in-item-appear-inactive';
-
 		return (
 			<div className={'map fade-in-item-appear ' + animationClass}>
-				<img src={imgUrl} style={imgStyle} alt=""/>
+				<img src={imgUrl} alt=""/>
 			</div>
 		);
 	}

@@ -59,9 +59,7 @@ export default class Resume extends React.Component {
 	render() {
 		return (
 			<div id="resume">
-				<div className="block-group">
-					<FadeInHeader name={this.state.name} contact={this.state.contact}/>
-				</div>
+				<FadeInHeader name={this.state.name} contact={this.state.contact}/>
 				<div id="content" className="block-group">
 					<History objective={this.state.objective}
 							currentWork={this.state.currentWork}

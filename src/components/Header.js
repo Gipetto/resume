@@ -19,9 +19,8 @@ export default class Header extends React.Component {
 
 	render() {
 		return (
-			<header className="block bl">
-				<Map key="theMap" ref="theMap" address={this.props.contact.address}/>
-				<div className="vcard">
+			<header className="block-group">
+				<div className="vcard block bl">
 					<h1 className="n" data-title={this.props.name}>{this.props.name}</h1>
 					<address className="adr"
 							onMouseEnter={this.handleMouseOver}
@@ -47,6 +46,9 @@ export default class Header extends React.Component {
 					<address className="email">
 						<a href={'mailto:' + this.props.contact.methods.email}>{this.props.contact.methods.email}</a>
 					</address>
+				</div>
+				<div className="block br">
+					<Map key="theMap" ref="theMap" address={this.props.contact.address}/>
 				</div>
 			</header>
 		);

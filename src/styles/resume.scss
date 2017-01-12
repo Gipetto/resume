@@ -168,9 +168,10 @@ address {
 header {
 	margin-bottom: 50px;
 	.map {
-		img {
-			@include border-radius(6px);
-		}
+		border: 1px solid rgb(175, 175, 175);
+		@include border-radius(6px);
+		line-height: 0;
+		overflow: hidden;
 	}
 }
 
@@ -184,7 +185,9 @@ header {
 
 .br {
 	width: 67%;
+	margin-left: 5%;
 	&.swap-right {
+		margin-left: 0;
 		position: relative;
 		left: 33%;
 	}
@@ -200,6 +203,9 @@ header {
 		h1[data-title]:before,
 		h1[data-title]:after {
 			width: 100%;
+		}
+		.map {
+			display: none;
 		}
 	}
 
