@@ -45,6 +45,7 @@ h1[data-title]:before {
 	content: attr(data-title);
 	position: absolute;
 	right: 0;
+	top: 0;
 	z-index: -1;
 
 	$outlineColor: rgb(225, 225, 225);
@@ -56,6 +57,7 @@ h1[data-title]:after {
 	content: attr(data-title);
 	position: absolute;
 	right: 0;
+	top: 0;
 	z-index: -2;
 
 	$outlineColor: rgb(200, 200, 200);
@@ -195,6 +197,10 @@ header {
 @media screen and (max-width: 590px) {
 	header {
 		text-align: center;
+		h1[data-title]:before,
+		h1[data-title]:after {
+			width: 100%;
+		}
 	}
 
 	#buzzwords {
