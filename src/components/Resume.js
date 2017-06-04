@@ -45,7 +45,10 @@ export default class Resume extends React.Component {
 	componentWillMount() {
 		let _this = this;
 		this.serverRequest = axios.get('data/shawn-parker.json', {
-			headers: {'Content-Type': 'application/json'},
+			headers: {
+				'Access-Control-Allow-Origin': '*',
+				'Content-Type': 'application/json'
+			},
 			responseType: 'json'
 		}).then(function (result) {
 			_this.setState(result.data);

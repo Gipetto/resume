@@ -5,6 +5,10 @@ $hideDuration: 1s;
 
 $bubbleWidth: 250px;
 $bubbleRight: 0 - $bubbleWidth - 42;
+
+$bubbleWidthSmall: 50%;
+$bubbleRightSmall: -10px;
+
 $bubbleShadow: rgb(221, 221, 221);
 $bubbleBorderColor: rgb(225, 225, 225);
 $bubbleBackgroundColor: rgb(253, 253, 253);
@@ -83,3 +87,13 @@ $afterLeft: $afterBorderLeft - $afterBorderRight; /* value = - border-left-width
 	-moz-transition: opacity $exposeDuration ease-in;
 	transition: opacity $exposeDuration ease-in;
 }
+
+@media screen and (max-width: 590px) {
+	.bubble {
+		width: $bubbleWidthSmall;
+	}
+	.bubbles li:hover .bubble {
+		right: $bubbleRightSmall;
+	}
+}
+// right -10, width 125px

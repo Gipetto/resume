@@ -10,12 +10,16 @@ let SidebarItem = React.createClass({
 		})
 	},
 
+	toggleHover: function() {
+		// dummy function to trigger hover events
+	},
+
 	render: function () {
 		if (this.props.item.name == 'separator') {
 			return (<li className="separator"/>);
 		} else {
 			return (
-				<li>
+				<li onTouchEnd={this.toggleHover}>
 					{this.props.item.name}
 					<span className="bubble" dangerouslySetInnerHTML={{__html: this.props.item.text}}/>
 				</li>

@@ -21,7 +21,7 @@ let enabledPlugins = [
 
 if (PROD) {
 	enabledPlugins.push(new webpack.optimize.UglifyJsPlugin({
-		compress: PROD ? false : {warnings: false},
+		compress: PROD ? true : {warnings: false},
 		minimize: PROD
 	}))
 }
