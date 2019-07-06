@@ -24,14 +24,6 @@
 	  "text": "Gotta keep that front snappy and easy to use."
 	},
 	{
-	  "name": "WordPress Contributor",
-	  "text": "Mostly bug fixes and small enhancements, but its all for the greater good, right?"
-	},
-	{
-	  "name": "OpenVBX Project Maintainer",
-	  "text": "Open Source cloud PBX. Handy stuff.<br/>It left us too soon."
-	},
-	{
 	  "name": "Amazon Web Services",
 	  "text": "EC2, S3, EBS, RDS, SimpleDB, SNS, SQS, and a partridge in a pear tree…"
 	},
@@ -86,6 +78,14 @@
 	{
 	  "name": "Microsoft Windows",
 	  "text": "Two words: Virtual Machine.<br/>Am I right?"
+	},
+	{
+	  "name": "separator",
+	  "text": ""
+	},
+	{
+		"name": "github-link",
+		"text": "View source of this Resume."
 	}
   ],
 	"objective": "I am a software engineer specializing in distributed web systems with RESTful APIs. I have worked alone as well as been a part of and led small to medium sized groups of engineers.\\n I believe in open source software and contribute and maintain several open source projects.\\n Specialties: Full stack engineer. I have extensive experience building and deploying applications on AWS as well as more simple, straight forward hosting solutions. I am experienced in project scoping, break down and planning.",  "currentWork": {

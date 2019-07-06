@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './sidebar.scss';
 import withFadeIn from '../util';
+import './GitHubIcon';
+import GHIcon from './GitHubIcon';
 
 class SidebarItem extends React.Component {
 	toggleHover() {
@@ -11,6 +13,16 @@ class SidebarItem extends React.Component {
 	render() {
 		if (this.props.item.name == 'separator') {
 			return (<li className="separator"/>);
+		} else if (this.props.item.name == 'github-link') {
+			return (
+				<li className="icon">
+					<a className="icon" rel="noopener noreferrer" target="_blank" 
+						href="https://github.com/Gipetto/resume">
+						<GHIcon/>
+						{this.props.item.text}
+					</a>
+				</li>
+			);
 		} else {
 			return (
 				<li onTouchEnd={this.toggleHover}>
