@@ -11,7 +11,7 @@
 	"methods": {
 	  "email": "shawn@topfroggraphics.com",
 	  "tel": "+1 (720) 308-9773",
-	  "url": "https://about.me/shawnparker"
+	  "url": "https://top-frog.com"
 	}
   },
   "buzzwords": [
@@ -84,7 +84,7 @@
   "currentWork": {
 	"from": "2011",
 	"to": "present",
-	"position": "Senior Software Engineer",
+	"position": "Senior Software Engineer 2 / Tech Lead, Growth Engineering",
 	"company": "Twilio, Inc.",
 	"location": "San Francisco, CA",
 	"description": "Full stack software engineer focused on the user experience. Contributed to projects from initial scoping and specifications down to final delivery and maintenance. Build systems that are scalable, fault tolerant, and easy to maintain. Generate internal tooling to aid in developer productivity and onboarding.\\nManage a team of remote contractors. Ensure their productivity is maintained by clearing roadblocks and wrangling product managers to clarify expectations and task definitions."

@@ -3,7 +3,7 @@ import axios from 'axios';
 import Header from './Header';
 import History from './History';
 import Sidebar from './sidebar/Sidebar';
-let withFadeIn = require('./util').withFadeIn;
+import withFadeIn from './util';
 
 
 let FadeInHeader = withFadeIn(Header, <header/>);
@@ -65,9 +65,9 @@ export default class Resume extends React.Component {
 				<FadeInHeader name={this.state.name} contact={this.state.contact}/>
 				<div id="content" className="block-group">
 					<History objective={this.state.objective}
-							currentWork={this.state.currentWork}
-							workHistory={this.state.workHistory}
-							education={this.state.education}/>
+						currentWork={this.state.currentWork}
+						workHistory={this.state.workHistory}
+						education={this.state.education}/>
 					<Sidebar buzzwords={this.state.buzzwords}/>
 				</div>
 			</div>

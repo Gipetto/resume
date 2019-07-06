@@ -1,20 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './sidebar.scss';
-let withFadeIn = require('./../util').withFadeIn;
+import withFadeIn from '../util';
 
-let SidebarItem = React.createClass({
-	propTypes: {
-		item: React.PropTypes.shape({
-			name: React.PropTypes.string,
-			text: React.PropTypes.string
-		})
-	},
-
-	toggleHover: function() {
+class SidebarItem extends React.Component {
+	toggleHover() {
 		// dummy function to trigger hover events
-	},
+	}
 
-	render: function () {
+	render() {
 		if (this.props.item.name == 'separator') {
 			return (<li className="separator"/>);
 		} else {
@@ -26,7 +20,15 @@ let SidebarItem = React.createClass({
 			);
 		}
 	}
-});
+}
+
+SidebarItem.propTypes = {
+	item: PropTypes.shape({
+		name: PropTypes.string,
+		text: PropTypes.string
+	})
+};
+
 
 let FadeInSidebarItem = withFadeIn(SidebarItem, <li />);
 
@@ -48,5 +50,5 @@ export default class Sidebar extends React.Component {
 }
 
 Sidebar.propTypes = {
-	buzzwords: React.PropTypes.array
+	buzzwords: PropTypes.array
 };

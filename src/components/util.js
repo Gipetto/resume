@@ -2,20 +2,21 @@ import React from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 
-function withFadeIn(WrappedComponent, placeHolder) {
+export default function withFadeIn(WrappedComponent, placeHolder) {
 	function FirstChild(props) {
 		const childrenArray = React.Children.toArray(props.children);
 		return childrenArray[0] || null;
 	}
 
-	return React.createClass({
-		displayName: 'FadeInWrapper',
+	return class extends React.Component {
+		// this.displayName = 'FadeInWrapper';
 
-		getInitialState: function () {
-			return {loading: true};
-		},
+		constructor() {
+			super();
+			this.state = {loading: true};
+		}
 
-		componentDidMount: function () {
+		componentDidMount() {
 			let self = this;
 			let el = this.elem;
 			window.getComputedStyle(el).opacity;
@@ -23,9 +24,9 @@ function withFadeIn(WrappedComponent, placeHolder) {
 			setTimeout(() => {
 				self.setState({loading: false});
 			}, (500 + (self.props.i * 100)));
-		},
+		}
 
-		render: function () {
+		render() {
 			if (this.state.loading) {
 				let e = React.createElement(placeHolder.type, {
 					ref: (a) => {
@@ -48,7 +49,5 @@ function withFadeIn(WrappedComponent, placeHolder) {
 				);
 			}
 		}
-	});
+	};
 }
-
-exports.withFadeIn = withFadeIn;

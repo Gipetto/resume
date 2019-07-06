@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import EmploymentList from './history/EmploymentList';
 import Objective from './history/Objective';
-let withFadeIn = require('./util').withFadeIn;
+import withFadeIn from './util';
 
 
 let FadeInObjective = withFadeIn(Objective, <div />);
@@ -56,8 +57,8 @@ export default class History extends React.Component {
 }
 
 History.propTypes = {
-	objective: React.PropTypes.string,
-	currentWork: React.PropTypes.object,
-	workHistory: React.PropTypes.array,
-	education: React.PropTypes.array
+	objective: PropTypes.string,
+	currentWork: PropTypes.object,
+	workHistory: PropTypes.array,
+	education: PropTypes.array
 };

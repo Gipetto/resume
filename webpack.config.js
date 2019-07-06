@@ -1,11 +1,14 @@
 let path = require('path');
 let webpack = require('webpack');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let MiniCssExtractPlugin = require('mini-css-extract-plugin');
 let CopyWebpackPlugin = require('copy-webpack-plugin');
+let UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 let PROD = (process.env.NODE_ENV === 'production');
 
 let enabledPlugins = [
-	new ExtractTextPlugin('resume.css'),
+	new MiniCssExtractPlugin({
+		filename: 'resume.css'
+	}),
 	new CopyWebpackPlugin([
 		{
 			from: __dirname + '/index.html',
@@ -20,10 +23,12 @@ let enabledPlugins = [
 ];
 
 if (PROD) {
-	enabledPlugins.push(new webpack.optimize.UglifyJsPlugin({
-		compress: PROD ? true : {warnings: false},
-		minimize: PROD
-	}))
+	enabledPlugins.push(new UglifyJsPlugin({
+		uglifyOptions: {
+			compress: PROD ? true : {warnings: false},
+			minimize: PROD	
+		}
+	}));
 }
 
 module.exports = {
@@ -37,28 +42,31 @@ module.exports = {
 		publicPath: 'dist/',
 		filename: 'resume.js'
 	},
-	historyApiFallback: {
-		index: 'index.html',
-	},
 	devServer: {
-		outputPath: path.join(__dirname, 'dist')
+		contentBase: path.join(__dirname),
+		port: 8081
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.js?$/,
-				loader: 'babel-loader',
 				exclude: /node_modules/,
-				query: {
-					presets: [
-						'es2015',
-						'react'
-					]
-				}
+				use: [
+					{
+						loader: 'babel-loader',
+						options: {
+							sourceType: "unambiguous",
+							presets: [
+								'@babel/preset-env',
+								'@babel/preset-react'
+							]
+						}	
+					}
+				]
 			},
 			{
-				test: /\.scss/,
-				loaders: [
+				test: /\.scss$/,
+				use: [
 					'style-loader',
 					'css-loader',
 					'sass-loader'
@@ -66,18 +74,29 @@ module.exports = {
 			},
 			{
 				test: /\.json$/,
-				loader: 'json'
+				use: ['json']
 			},
 			{
 				test: /\.(jpe?g|png|gif|svg)$/i,
-				loaders: [
-					'file?hash=sha512&digest=hex&name=[hash].[ext]',
-					'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+				use: [
+					'file-loader',
+					{
+						loader: 'image-webpack-loader',
+						options: {
+							bypassOnDebug: true,
+							optipng: {
+								optimizationLevel: 7
+							},
+							gifsicle: {
+								interlaced: false
+							}
+						}
+					}
 				]
 			},
 			{
 				test: /\.(eot|woff|woff2|ttf)$/,
-				loader: 'file?name=app/generated/[name].[ext]'
+				use: ['file-loader']
 			}
 		]
 	},

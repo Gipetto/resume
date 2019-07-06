@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Objective extends React.Component {
 	render() {
@@ -11,5 +12,5 @@ export default class Objective extends React.Component {
 }
 
 Objective.propTypes = {
-	text: React.PropTypes.string
+	text: PropTypes.string
 };

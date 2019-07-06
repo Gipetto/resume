@@ -197,6 +197,10 @@ header {
 	margin-bottom: 0;
 }
 
+#main {
+	overflow: hidden;
+}
+
 @media screen and (max-width: 590px) {
 	header {
 		text-align: center;

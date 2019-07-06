@@ -1,5 +1,6 @@
 import React from 'react';
-let withFadeIn = require('../util').withFadeIn;
+import PropTypes from 'prop-types';
+import withFadeIn from '../util';
 
 
 export default class EmploymentList extends React.Component {
@@ -15,7 +16,7 @@ export default class EmploymentList extends React.Component {
 }
 
 EmploymentList.propTypes = {
-	workHistory: React.PropTypes.arrayOf(React.PropTypes.object)
+	workHistory: PropTypes.arrayOf(PropTypes.object)
 };
 
 class EmploymentListItem extends React.Component {
@@ -40,13 +41,13 @@ class EmploymentListItem extends React.Component {
 }
 
 EmploymentListItem.propTypes = {
-	item: React.PropTypes.shape({
-		to: React.PropTypes.string,
-		from: React.PropTypes.string,
-		position: React.PropTypes.string,
-		company: React.PropTypes.string,
-		location: React.PropTypes.string,
-		description: React.PropTypes.string,
+	item: PropTypes.shape({
+		to: PropTypes.string,
+		from: PropTypes.string,
+		position: PropTypes.string,
+		company: PropTypes.string,
+		location: PropTypes.string,
+		description: PropTypes.string,
 	})
 };
 

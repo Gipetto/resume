@@ -1,20 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Map from './header/Map';
 
 
 export default class Header extends React.Component {
 	constructor(props) {
 		super(props);
+		this.theMap = React.createRef();
 		this.handleMouseOver = this.handleMouseOver.bind(this);
 		this.handleMouseOut = this.handleMouseOut.bind(this);
 	}
 
 	handleMouseOver() {
-		this.refs.theMap.show();
+		this.theMap.current.show();
 	}
 
 	handleMouseOut() {
-		this.refs.theMap.hide();
+		this.theMap.current.hide();
 	}
 
 	render() {
@@ -23,8 +25,8 @@ export default class Header extends React.Component {
 				<div className="vcard block bl">
 					<h1 className="n" data-title={this.props.name}>{this.props.name}</h1>
 					<address className="adr"
-							onMouseEnter={this.handleMouseOver}
-							onMouseLeave={this.handleMouseOut}>
+						onMouseEnter={this.handleMouseOver}
+						onMouseLeave={this.handleMouseOut}>
 						<div>
 							<span className="street-address">{this.props.contact.address.streetAddress}</span>
 						</div>
@@ -47,28 +49,25 @@ export default class Header extends React.Component {
 						<a href={'mailto:' + this.props.contact.methods.email}>{this.props.contact.methods.email}</a>
 					</address>
 				</div>
-				<div className="block br">
-					<Map key="theMap" ref="theMap" address={this.props.contact.address}/>
-				</div>
 			</header>
 		);
 	}
 }
 
 Header.propTypes = {
-	name: React.PropTypes.string,
-	contact: React.PropTypes.shape({
-		address: React.PropTypes.shape({
-			streetAddress: React.PropTypes.string,
-			locality: React.PropTypes.string,
-			region: React.PropTypes.string,
-			postalCode: React.PropTypes.string,
-			countryName: React.PropTypes.string
+	name: PropTypes.string,
+	contact: PropTypes.shape({
+		address: PropTypes.shape({
+			streetAddress: PropTypes.string,
+			locality: PropTypes.string,
+			region: PropTypes.string,
+			postalCode: PropTypes.string,
+			countryName: PropTypes.string
 		}),
-		methods: React.PropTypes.shape({
-			tel: React.PropTypes.string,
-			url: React.PropTypes.string,
-			email: React.PropTypes.string,
+		methods: PropTypes.shape({
+			tel: PropTypes.string,
+			url: PropTypes.string,
+			email: PropTypes.string,
 		})
 	})
 };

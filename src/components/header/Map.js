@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Map extends React.Component {
 	constructor(props) {
@@ -61,11 +62,11 @@ export default class Map extends React.Component {
 }
 
 Map.propTypes = {
-	address: React.PropTypes.shape({
-		streetAddress: React.PropTypes.string,
-		locality: React.PropTypes.string,
-		region: React.PropTypes.string,
-		postalCode: React.PropTypes.string,
-		countryName: React.PropTypes.string,
+	address: PropTypes.shape({
+		streetAddress: PropTypes.string,
+		locality: PropTypes.string,
+		region: PropTypes.string,
+		postalCode: PropTypes.string,
+		countryName: PropTypes.string,
 	})
 };
