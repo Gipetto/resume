@@ -5,7 +5,9 @@ export default class Objective extends React.Component {
 	render() {
 		return (
 			<div className="h">
-				<p>{this.props.text}</p>
+				{this.props.text.split('\\n').map((text, i) => (
+					<p key={i}>{text.trim()}</p>
+				))}
 			</div>
 		);
 	}

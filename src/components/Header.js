@@ -1,22 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Map from './header/Map';
-
 
 export default class Header extends React.Component {
 	constructor(props) {
 		super(props);
-		this.theMap = React.createRef();
-		this.handleMouseOver = this.handleMouseOver.bind(this);
-		this.handleMouseOut = this.handleMouseOut.bind(this);
-	}
-
-	handleMouseOver() {
-		this.theMap.current.show();
-	}
-
-	handleMouseOut() {
-		this.theMap.current.hide();
 	}
 
 	render() {
@@ -24,9 +11,7 @@ export default class Header extends React.Component {
 			<header className="block-group">
 				<div className="vcard block bl">
 					<h1 className="n" data-title={this.props.name}>{this.props.name}</h1>
-					<address className="adr"
-						onMouseEnter={this.handleMouseOver}
-						onMouseLeave={this.handleMouseOut}>
+					<address className="adr">
 						<div>
 							<span className="street-address">{this.props.contact.address.streetAddress}</span>
 						</div>
@@ -43,7 +28,7 @@ export default class Header extends React.Component {
 						<a href={'tel:' + this.props.contact.methods.tel}>{this.props.contact.methods.tel}</a>
 					</address>
 					<address className="url">
-						<a rel="external" href={this.props.contact.methods.url}>{this.props.contact.methods.url}</a>
+						<a rel="noopener noreferrer" target="_blank" href={this.props.contact.methods.url}>{this.props.contact.methods.url}</a>
 					</address>
 					<address className="email">
 						<a href={'mailto:' + this.props.contact.methods.email}>{this.props.contact.methods.email}</a>

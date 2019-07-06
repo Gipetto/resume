@@ -32,7 +32,7 @@ class EmploymentListItem extends React.Component {
 				</dt>
 				<dd>
 					{this.props.item.description.split('\\n').map((text, i) => (
-						<p key={i}>{text}</p>
+						<p key={i}>{text.trim()}</p>
 					))}
 				</dd>
 			</div>

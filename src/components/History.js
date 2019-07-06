@@ -13,7 +13,7 @@ export default class History extends React.Component {
 			<div id="core" className="block br swap-right">
 				<section id="objective" className="block-group">
 					<div className="block cl">
-						<h2>Objective</h2>
+						<h2>Me</h2>
 					</div>
 					<div className="block cr">
 						<FadeInObjective key="objective" text={this.props.objective}/>
