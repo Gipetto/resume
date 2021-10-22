@@ -1,0 +1,69 @@
+@mixin md-screen {
+  @media only screen and (max-width: 1200px) {
+    @content
+  }
+}
+
+@mixin sm-screen {
+  @media only screen and (max-width: 1000px) {
+    @content
+  }
+}
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius; /* FF1+ */
+  -webkit-border-radius: $radius; /* Saf3+, Chrome */
+  border-radius: $radius; /* Standard. IE9 */
+}
+
+@mixin hoverable() {
+  $borderRadius: 10px;
+  $sectionInnerShadow: rgba(221, 221, 221, 0.5);
+  $transitionDuration: 0.5s;
+  $growMultiplier: 4;
+
+  $borderWidth: 1px;
+
+  position: relative;
+  display: block;
+  vertical-align: middle;
+
+  padding: 10px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    @include border-radius($borderRadius);
+
+    background-color: rgb(253, 253, 253);
+
+    border: 1px solid rgb(225, 225, 225);
+    -moz-box-shadow: inset 1px 1px 8px $sectionInnerShadow;
+    -webkit-box-shadow: inset 1px 1px 8px $sectionInnerShadow;
+    box-shadow: inset 1px 1px 8px $sectionInnerShadow;
+
+    -webkit-transition: top $transitionDuration ease-out,
+      right $transitionDuration ease-out, bottom $transitionDuration ease-out,
+      left $transitionDuration ease-out, opacity $transitionDuration ease-out;
+    -moz-transition: top $transitionDuration ease-out,
+      right $transitionDuration ease-out, bottom $transitionDuration ease-out,
+      left $transitionDuration ease-out, opacity $transitionDuration ease-out;
+    transition: top $transitionDuration ease-out,
+      right $transitionDuration ease-out, bottom $transitionDuration ease-out,
+      left $transitionDuration ease-out, opacity $transitionDuration ease-out;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    top: -($borderWidth * $growMultiplier);
+    right: -($borderWidth * $growMultiplier);
+    bottom: -($borderWidth * $growMultiplier);
+    left: -($borderWidth * $growMultiplier);
+    opacity: 1;
+  }
+}
