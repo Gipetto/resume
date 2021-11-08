@@ -8,7 +8,7 @@ const fetcher = async <T>(dataPath: string): Promise<T> => {
 }
 
 const getResumeData = (set: Subscriber<Loadable<ResumeData>>): void => {
-  fetcher<ResumeData>("/data/content-en_US.json").then((res) => {
+  fetcher<ResumeData>("data/content-en_US.json").then((res) => {
     set({
       isLoading: false,
       data: res,
