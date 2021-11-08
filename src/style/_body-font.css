@@ -1,13 +1,13 @@
 @font-face {
   font-family: "tex_gyre_termesregular";
-  src: url("../../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.eot");
-  src: url("../../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.eot?#iefix")
+  src: url("../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.eot");
+  src: url("../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.eot?#iefix")
       format("embedded-opentype"),
-    url("../../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.woff")
+    url("../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.woff")
       format("woff"),
-    url("../../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.ttf")
+    url("../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.ttf")
       format("truetype"),
-    url("../../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.svg#tex_gyre_termesregular")
+    url("../fonts/texgyretermes_regular_macroman/texgyretermes-regular-webfont.svg#tex_gyre_termesregular")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -15,14 +15,14 @@
 
 @font-face {
   font-family: "tex_gyre_termesitalic";
-  src: url("../../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.eot");
-  src: url("../../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.eot?#iefix")
+  src: url("../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.eot");
+  src: url("../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.eot?#iefix")
       format("embedded-opentype"),
-    url("../../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.woff")
+    url("../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.woff")
       format("woff"),
-    url("../../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.ttf")
+    url("../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.ttf")
       format("truetype"),
-    url("../../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.svg#tex_gyre_termesitalic")
+    url("../fonts/texgyretermes_italic_macroman/texgyretermes-italic-webfont.svg#tex_gyre_termesitalic")
       format("svg");
   font-weight: normal;
   font-style: normal;
