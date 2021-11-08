@@ -32,4 +32,5 @@ Open an PR. Once approved, the main branch will automatically build and deploy t
 
 ## TODO
 
-- [] Implement i18Next for translations
+- [ ] Tests
+- [ ] Implement i18Next for translations
