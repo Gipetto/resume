@@ -1,0 +1,109 @@
+@import "./mixins.scss";
+
+@media (hover: hover) {
+  $exposeDuration: 0.15s;
+  $hideDuration: 1s;
+
+  $bubbleWidth: 250px;
+  $bubbleRight: 0 - $bubbleWidth - 42;
+
+  $bubbleShadow: rgb(110, 110, 110);
+  $bubbleBorderColor: rgb(225, 225, 225);
+  $bubbleBackgroundColor: rgb(253, 253, 253);
+  $borderRadius: 10px;
+  $borderRadiusSmall: 7px;
+
+  $beforeBorderTop: 11.5px;
+  $beforeBorderRight: 11.5px;
+  $beforeBorderBottom: 11.5px;
+  $beforeBorderLeft: 0;
+  $beforeTop: 13.5px;
+  $beforeLeft: $beforeBorderLeft - $beforeBorderRight; /* value = - border-left-width - border-right-width */
+
+  $afterBorderTop: 10px;
+  $afterBorderRight: 10px;
+  $afterBorderBottom: 10px;
+  $afterBorderLeft: 0px;
+  $afterTop: $beforeTop + $beforeBorderTop - $afterBorderTop; /* value = (:before top) + (:before border-top) - (:after border-top) */
+  $afterLeft: $afterBorderLeft - $afterBorderRight; /* value = - border-left-width - border-right-width */
+
+  .bubble-before-after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    display: block;
+    width: 0;
+    bottom: auto;
+  }
+
+  .bubblewrap {
+    cursor: help;
+    border-bottom: 1px solid white;
+    &:hover {
+      border-bottom: 1px solid $bubbleBorderColor;
+    }
+  }
+
+  .bubble {
+    opacity: 0;
+    border: 1px solid $bubbleBorderColor;
+    padding: 10px 10px 10px 14px;
+    position: fixed;
+    right: -5000px;
+    top: -12px;
+    width: $bubbleWidth;
+    background: $bubbleBackgroundColor;
+    text-align: left;
+    line-height: 18px;
+    z-index: 10;
+
+    @include border-radius($borderRadiusSmall);
+
+    // -moz-box-shadow: 1px 1px 8px $bubbleShadow;
+    // -webkit-box-shadow: 1px 1px 8px $bubbleShadow;
+    box-shadow: 1px 1px 5px $bubbleShadow;
+
+    // -webkit-transition: opacity $hideDuration ease-in;
+    // -moz-transition: opacity $hideDuration ease-in;
+    transition: opacity $hideDuration ease-in;
+
+    &:before {
+      @extend .bubble-before-after;
+      top: $beforeTop;
+      left: $beforeLeft;
+      border-width: $beforeBorderTop $beforeBorderRight $beforeBorderBottom
+        $beforeBorderLeft;
+      border-color: transparent $bubbleBorderColor;
+      z-index: 9;
+    }
+
+    &:after {
+      @extend .bubble-before-after;
+      top: $afterTop;
+      left: $afterLeft;
+      border-width: $afterBorderTop $afterBorderRight $afterBorderBottom
+        $afterBorderLeft;
+      border-color: transparent $bubbleBackgroundColor;
+      z-index: 11;
+    }
+  }
+
+  .bubbles li:hover .bubble {
+    top: calc((var(--mouse-y) * 1px) - 30px);
+    left: calc((var(--mouse-x) * 1px) + 20px);
+    opacity: 1;
+    // -webkit-transition: opacity $exposeDuration ease-in;
+    // -moz-transition: opacity $exposeDuration ease-in;
+    transition: opacity $exposeDuration ease-in;
+  }
+}
+
+@media (hover: none), (hover: on-demand) {
+  .bubblewrap {
+    white-space: pre-line;
+  }
+  .bubble::before {
+    // em-dash & space
+    content: "\2013\0020";
+  }
+}

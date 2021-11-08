@@ -1,0 +1,22 @@
+{
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[svelte]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 2
+  },
+  "debug.javascript.codelens.npmScripts": "never",
+  "debug.javascript.autoAttachFilter": "onlyWithFlag"
+}

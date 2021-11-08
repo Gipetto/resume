@@ -1,0 +1,185 @@
+{
+  "name": {
+    "firstName": "Shawn",
+    "lastName": "Parker",
+    "nickName": "Wookiee",
+    "title": "Tech Lead / Staff Engineer"
+  },
+  "contact": {
+    "address": {
+      "streetAddress": "1325 Oakes Boulevard",
+      "locality": "San Leandro",
+      "region": "California",
+      "postalCode": "94577",
+      "countryName": "USA"
+    },
+    "methods": {
+      "email": "shawn@topfroggraphics.com",
+      "telFormatted": "+1 (720) 308-9773",
+      "telE164": "+17203089773",
+      "url": "https://top-frog.com"
+    }
+  },
+  "buzzwords": [
+    [
+      {
+        "name": "Scala, Python, PHP, whatever…",
+        "text": "Loose or Statically Typed. Functional or OO. It all works."
+      },
+      {
+        "name": "Javascript, Node, Svelte, React, sometimes jQuery",
+        "text": "Gotta keep that front-end snappy and easy to use."
+      },
+      {
+        "name": "Amazon Web Services",
+        "text": "EC2, S3, EBS, RDS, SimpleDB, Lambda, and a partridge in a pear tree…"
+      },
+      {
+        "name": "I18n / L10n",
+        "text": "I’ve learned more than I ever thought I wanted to know about character sets, locales, and externalization."
+      },
+      {
+        "name": "PDF Generation",
+        "text": "Wait, this all starts drawing from which corner now?"
+      },
+      {
+        "name": "Version Control",
+        "text": "All Git now. But who wants to work with subversion any more? Its so last century."
+      },
+      {
+        "name": "REST, API, Ajax",
+        "text": "Y’know, all that modern web jazz that’s making a buzz on the interwebs."
+      },
+      {
+        "name": "Web Services",
+        "text": "How may different EC2 nodes can we split this functionality across?"
+      },
+      {
+        "name": "SSO",
+        "text": "Well, at one time. Nobody really knows everything about SSO…"
+      },
+      {
+        "name": "Command Line Scripting",
+        "text": "Not very glamorous but well worth the time it takes to learn. Do you know where your .profile has been?"
+      },
+      {
+        "name": "WordPress Contributor",
+        "text": "Mostly bug fixes and small enhancements, but its all for the greater good, right?"
+      },
+      {
+        "name": "OpenVBX Project Maintainer",
+        "text": "Open Source cloud PBX. Handy stuff. It left us too soon."
+      }
+    ],
+    [
+      {
+        "name": "Mac OS X",
+        "text": "For my text editor of choice to my photo editor of choice, its the place to be."
+      },
+      {
+        "name": "Linux",
+        "text": "I'm no gray beard, but I get around.<br/>Now who wants some tasty zsh…"
+      },
+      {
+        "name": "Microsoft Windows",
+        "text": "Two words: Virtual Machine. Am I right?"
+      }
+    ]
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "href": "https://github.com/Gipetto/resume",
+      "text": "View source of this Resume."
+    }
+  ],
+  "objective": [
+    "I am a software engineer specializing in distributed web systems with RESTful APIs. I have worked alone as well as been a part of &mdash; and led &mdash; small to medium sized groups of engineers."
+  ],
+  "currentWork": {
+    "company": "Twilio",
+    "location": "San Francisco, CA",
+    "positions": [
+      {
+        "from": null,
+        "to": null,
+        "title": "Engineering Manager, Growth Engineering",
+        "description": [
+          "OMG we're doomed!"
+        ]
+      },
+      {
+        "from": 2019,
+        "to": null,
+        "title": "Staff Software Engineer / Tech Lead, Growth Engineering",
+        "description": [
+          "Support multiple small teams in the development of the signup and onboarding flow, as well as tools to enable customer growth and learning. Working with project managers, help define features, scope, and requirements for upcoming projects. Working with the team to build systems that are scalable, fault tolerant, tested, and easy to maintain.",
+          "Coach younger engineers on approaches to engineering, build skills in breaking down projects and tasks into consumable chunks, troubleshooting problems, and to commit as few sins against programming as possible along the way.",
+          "Oversee team of remote contractors. Ensure productivity is maintained by clearing roadblocks, wrangling product managers to clarify expectations, and setting clear task definitions."
+        ]
+      }
+    ]
+  },
+  "workHistory": [
+    {
+      "company": "Twilio",
+      "location": "San Francisco, CA",
+      "positions": [
+        {
+          "from": 2018,
+          "to": 2019,
+          "title": "Senior Software Engineer 2",
+          "description": []
+        },
+        {
+          "from": 2011,
+          "to": 2017,
+          "title": "Senior Software Engineer 1",
+          "description": [
+            "During these years at Twilio I've been a part of many different teams, including Growth Engineering / Onboarding, Experimentation Platform, Phone Numbers / Shortcodes, Console and OpenVBX.",
+            "Built a customer data platform  to support the experimentation platform as well as enable teams to make run time decisions about their customers based on live data and computed metrics.",
+            "Designed customer workflow for, and built systems to support, a regulatory process to provision phone numbers in compliance with world wide, country specific rules.",
+            "Deconstructed a monolithic console code base to enable individual teams to support their own development lifecycles, decrease contention over core sections of the codebase, and enable different teams to adopt the back-end languages that were right for them.",
+            "Drove a culture of testing as a normal part of the development lifecycle. Drove adoption of technologies and tooling to improve system observability."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Crowd Favorite",
+      "location": "Denver, CO",
+      "positions": [
+        {
+          "from": 2008,
+          "to": 2011,
+          "title": "Senior Developer",
+          "description": [
+            "Developed custom solutions for building on and extending WordPress as a publishing platform. Developed project requirements and development plans for projects ranging from plugin development or API integrations to large scale deployments that require careful server resource management and integration plans for different services.",
+            "While the bulk of my work involved developing tools for client websites that build on and extend the functionality of WordPress I was also responsible for developing systems built on top of CodeIgniter and that take advantage of Amazon’s cloud services to scale to meet the demands of high-volume, time sensitive data processing."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Alternative Technology",
+      "location": "Englewood, CO",
+      "positions": [
+        {
+          "from": 2003,
+          "to": 2008,
+          "title": "Web Developer & Designer",
+          "description": [
+            "Maintained the client facing website and client portal for a hardware, software and technical services distributor. Built a custom framework for managing product information, client portal access, and educational class schedules. Provided the marketing team with tools to help efficiently develop client communications."
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "description": "Bachelors Degree in Visual Arts",
+      "date": "December 1996",
+      "institution": "University of Northern Colorado, Greeley, Colorado"
+    }
+  ]
+}

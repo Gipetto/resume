@@ -1,0 +1,241 @@
+@import "./_headline-font";
+@import "./_body-font";
+@import "./layout";
+@import "./bubbles";
+@import "./mixins";
+
+:root {
+  --font-size: 18px;
+  --half-line-height: 12px;
+  --header-font: PTSansBold, sans-serif;
+  --header-font-italic: PTSansBoldItalic, sans-serif;
+  --header-font-black: EncodeSansBlack, sans-serif;
+  --header-line-height: 48px;
+  --line-height: 1.5em;
+  --body-font: tex_gyre_termesregular, serif;
+  --body-font-italic: tex_gyre_termesitalic, serif;
+}
+
+* {
+  font-variant-ligatures: common-ligatures;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--font-size);
+  font-weight: normal;
+  line-height: var(--line-height);
+}
+
+::selection {
+  background: #f19f06;
+  color: #fff;
+  text-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt {
+  font-family: var(--header-font);
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-variant-ligatures: normal;
+}
+
+mark {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1em;
+  font-family: var(--header-font-black);
+
+  .quote {
+    color: #f19f06;
+  }
+}
+
+h2 {
+  font-size: 1.6em;
+  line-height: 1.1em;
+
+  @include md-screen {
+    font-size: 1.8em;
+  }
+}
+
+dt {
+  font-family: var(--header-font);
+  font-size: 1.35em;
+  line-height: 1.1em;
+
+  @include md-screen {
+    font-size: 1.4em;
+  }
+}
+
+h3 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-family: var(--header-font-italic);
+  margin-top: 0.25em;
+  margin-bottom: 1em;
+
+  @include md-screen {
+    font-size: 1.2em;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+h1 * {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 0;
+}
+
+header {
+  text-align: left;
+
+  h1 + h2 {
+    font-size: 1.6em;
+    line-height: 1.1em;
+    margin-top: 0.25em;
+  }
+
+  .contact {
+    margin-left: 1.5em;
+  }
+
+  @include md-screen {
+    text-align: center;
+
+    .contact {
+      margin-left: 0;
+    }
+  }
+}
+
+.content {
+  .me {
+    h2 {
+      margin-bottom: 1em;
+
+      @include md-screen {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    p {
+      font-family: var(--body-font-italic);
+      font-size: 1.3em;
+      line-height: 1.5em;
+      margin-left: 1em;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      @include md-screen {
+        margin-left: 0;
+      }
+    }
+  }
+  .education {
+    li {
+      span {
+        font-family: var(--body-font-italic);
+      }
+    }
+  }
+
+  dt {
+    margin-top: 1em;
+  }
+
+  dd {
+    font-size: 1.05em;
+
+    h3 {
+      margin-bottom: 0.75em;
+
+      @include md-screen {
+        margin-bottom: 0.5em;
+      }
+    }
+
+    &.empty {
+      h3 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  ul {
+    padding-left: 1em;
+  }
+
+  section:not(:first-of-type) {
+    margin: 3em 0;
+  }
+
+  @include md-screen {
+    margin: 5em 0 0 0;
+  }
+}
+
+dd {
+  margin-left: 1.25em;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p:first-of-type {
+    margin-top: 5px;
+  }
+
+  @include sm-screen {
+    margin-left: 0;
+  }
+}
+
+aside {
+  ul {
+    list-style: none inside;
+    padding: 0;
+
+    li {
+      // position: relative;
+      padding: 0.25em 0;
+
+      svg {
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .bubble {
+    font-family: var(--body-font-italic);
+  }
+}
+
+.vcard {
+  .methods {
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
