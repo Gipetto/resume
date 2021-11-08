@@ -12,7 +12,7 @@ export let isLoading: boolean
     <h1 class="fn">
       <span class="given-name">{name.firstName}</span>
       {#if name.nickName}
-      “<span class="nickname">{name.nickName}</span>”
+      <span class="quote">“</span><span class="nickname">{name.nickName}</span><span class="quote">”</span>
       {/if}
       <span class="family-name">{name.lastName}</span>
     </h1>
