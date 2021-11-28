@@ -14,6 +14,7 @@
   --line-height: 1.5em;
   --body-font: tex_gyre_termesregular, serif;
   --body-font-italic: tex_gyre_termesitalic, serif;
+  --color-orange: #f19f06;
 }
 
 * {
@@ -21,30 +22,21 @@
 }
 
 body {
+  @include font-weight-normal;
   font-family: var(--body-font);
   font-size: var(--font-size);
-  font-weight: normal;
   line-height: var(--line-height);
 }
 
 ::selection {
-  background: #f19f06;
+  background: var(--color-orange);
   color: #fff;
   text-shadow: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-dt {
-  font-family: var(--header-font);
-  font-weight: normal;
+.header {
   margin: 0;
   padding: 0;
-  font-variant-ligatures: normal;
 }
 
 mark {
@@ -54,11 +46,6 @@ mark {
 h1 {
   font-size: 3em;
   line-height: 1.1em;
-  font-family: var(--header-font-black);
-
-  .quote {
-    color: #f19f06;
-  }
 }
 
 h2 {
@@ -70,20 +57,9 @@ h2 {
   }
 }
 
-dt {
-  font-family: var(--header-font);
-  font-size: 1.35em;
-  line-height: 1.1em;
-
-  @include md-screen {
-    font-size: 1.4em;
-  }
-}
-
 h3 {
   font-size: 1.2em;
   line-height: 1.2em;
-  font-family: var(--header-font-italic);
   margin-top: 0.25em;
   margin-bottom: 1em;
 
@@ -96,10 +72,15 @@ h3 {
   }
 }
 
-h1 * {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 0;
+dt {
+  margin-top: 1em;
+
+  font-size: 1.35em;
+  line-height: 1.1em;
+
+  @include md-screen {
+    font-size: 1.4em;
+  }
 }
 
 header {
@@ -135,7 +116,6 @@ header {
     }
 
     p {
-      font-family: var(--body-font-italic);
       font-size: 1.3em;
       line-height: 1.5em;
       margin-left: 1em;
@@ -148,17 +128,6 @@ header {
         margin-left: 0;
       }
     }
-  }
-  .education {
-    li {
-      span {
-        font-family: var(--body-font-italic);
-      }
-    }
-  }
-
-  dt {
-    margin-top: 1em;
   }
 
   dd {
@@ -214,7 +183,6 @@ aside {
     padding: 0;
 
     li {
-      // position: relative;
       padding: 0.25em 0;
 
       svg {
@@ -225,10 +193,31 @@ aside {
       }
     }
   }
+}
 
-  .bubble {
-    font-family: var(--body-font-italic);
-  }
+.highlight-color {
+  color: var(--color-orange);
+}
+
+.f-bi {
+  @include font-weight-normal;
+  font-family: var(--body-font-italic);
+}
+
+.f-h {
+  @include no-ligatures;
+  @include font-weight-normal;
+  font-family: var(--header-font);
+}
+.f-hi {
+  @include no-ligatures;
+  @include font-weight-normal;
+  font-family: var(--header-font-italic);
+}
+.f-hb {
+  @include no-ligatures;
+  @include font-weight-normal;
+  font-family: var(--header-font-black);
 }
 
 .vcard {

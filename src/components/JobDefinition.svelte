@@ -5,7 +5,7 @@ import Position from "../components/Position.svelte"
 export let job: Job
 </script>
 
-<dt>
+<dt class="f-h">
   {job.company}, {job.location}
 </dt>
 {#each job.positions as position}

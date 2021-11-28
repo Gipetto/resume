@@ -8,7 +8,7 @@ let empty = position.description.length < 1
 
 {#if position.from}
 <dd class="{empty ? "empty" : ""}">
-  <h3>
+  <h3 class="header f-hi">
     {position.title}&nbsp; 
     <span>({position.from}–{#if position.to}{position.to}{:else}present{/if})</span>
   </h3>

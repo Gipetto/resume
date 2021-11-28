@@ -11,17 +11,17 @@ export let education: BookSmarts[]
 </script>
 
 <section class="me">
-  <h2>{_("title.me", "About Me")}</h2>
-  <Text text={objective} />
+  <h2 class="header f-h">{_("title.me", "About Me")}</h2>
+  <Text text={objective} className="f-i" />
 </section>
 <section class="current">
-  <h2>{_("title.current-work", "Current Work")}</h2>
+  <h2 class="header f-h">{_("title.current-work", "Current Work")}</h2>
   <dl>
     <JobDefinition job={currentWork} />
   </dl>
 </section>
 <section class="history">
-  <h2>{_("title.work-history", "Work History")}</h2>
+  <h2 class="header f-h">{_("title.work-history", "Work History")}</h2>
   <dl>
     {#each workHistory as job}
     <JobDefinition {job} />
@@ -29,12 +29,12 @@ export let education: BookSmarts[]
   </dl>
 </section>
 <section class="education">
-  <h2>{_("title.education", "Education")}</h2>
+  <h2 class="header f-h">{_("title.education", "Education")}</h2>
   <ul>
     {#each education as stint}
     <li>
       {stint.description}, {stint.date}<br>
-      <span>{stint.institution}</span>
+      <span class="f-bi">{stint.institution}</span>
     </li>
     {/each}
   </ul>

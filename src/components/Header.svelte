@@ -9,15 +9,15 @@ export let isLoading: boolean
 {#if !isLoading}
 <header>
   <div class="vcard">
-    <h1 class="fn">
+    <h1 class="fn header f-hb">
       <span class="given-name">{name.firstName}</span>
       {#if name.nickName}
-      <span class="quote">“</span><span class="nickname">{name.nickName}</span><span class="quote">”</span>
+      <span class="quote highlight-color">“</span><span class="nickname">{name.nickName}</span><span class="quote highlight-color">”</span>
       {/if}
       <span class="family-name">{name.lastName}</span>
     </h1>
     {#if name.title}
-    <h2 class="title">{name.title}</h2>
+    <h2 class="title header f-hi">{name.title}</h2>
     {/if}
     <div class="contact">
       <p class="adr">

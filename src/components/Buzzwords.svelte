@@ -15,13 +15,13 @@ const handleMousemove = (e) => {
 
 <svelte:body on:mousemove={handleMousemove}/>
 
-<h2>{_("title.buzzwords", "Buzzwords")}</h2>
+<h2 class="header f-h">{_("title.buzzwords", "Buzzwords")}</h2>
 {#each buzzwordGroups as buzzwords}
 <ul class="bubbles">
   {#each buzzwords as item}
   <li class="bubblewrap">
     {item.name}
-    <span class="bubble">{@html item.text}</span>
+    <span class="bubble f-bi">{@html item.text}</span>
   </li>
   {/each}
 </ul>
