@@ -137,44 +137,33 @@ body {
   --header-line-height: 48px;
   --line-height: 1.5em;
   --body-font: tex_gyre_termesregular, serif;
-  --body-font-italic: tex_gyre_termesitalic, serif; }
+  --body-font-italic: tex_gyre_termesitalic, serif;
+  --color-orange: #f19f06; }
 
 * {
   font-variant-ligatures: common-ligatures; }
 
 body {
+  font-weight: normal;
   font-family: var(--body-font);
   font-size: var(--font-size);
-  font-weight: normal;
   line-height: var(--line-height); }
 
 ::selection {
-  background: #f19f06;
+  background: var(--color-orange);
   color: #fff;
   text-shadow: none; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-dt {
-  font-family: var(--header-font);
-  font-weight: normal;
+.header {
   margin: 0;
-  padding: 0;
-  font-variant-ligatures: normal; }
+  padding: 0; }
 
 mark {
   font-size: inherit; }
 
 h1 {
   font-size: 3em;
-  line-height: 1.1em;
-  font-family: var(--header-font-black); }
-  h1 .quote {
-    color: #f19f06; }
+  line-height: 1.1em; }
 
 h2 {
   font-size: 1.6em;
@@ -183,18 +172,9 @@ h2 {
     h2 {
       font-size: 1.8em; } }
 
-dt {
-  font-family: var(--header-font);
-  font-size: 1.35em;
-  line-height: 1.1em; }
-  @media only screen and (max-width: 1200px) {
-    dt {
-      font-size: 1.4em; } }
-
 h3 {
   font-size: 1.2em;
   line-height: 1.2em;
-  font-family: var(--header-font-italic);
   margin-top: 0.25em;
   margin-bottom: 1em; }
   @media only screen and (max-width: 1200px) {
@@ -203,10 +183,13 @@ h3 {
   h3 span {
     white-space: nowrap; }
 
-h1 * {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 0; }
+dt {
+  margin-top: 1em;
+  font-size: 1.35em;
+  line-height: 1.1em; }
+  @media only screen and (max-width: 1200px) {
+    dt {
+      font-size: 1.4em; } }
 
 header {
   text-align: left; }
@@ -229,7 +212,6 @@ header {
       margin-bottom: 0.5em; } }
 
 .content .me p {
-  font-family: var(--body-font-italic);
   font-size: 1.3em;
   line-height: 1.5em;
   margin-left: 1em; }
@@ -238,12 +220,6 @@ header {
   @media only screen and (max-width: 1200px) {
     .content .me p {
       margin-left: 0; } }
-
-.content .education li span {
-  font-family: var(--body-font-italic); }
-
-.content dt {
-  margin-top: 1em; }
 
 .content dd {
   font-size: 1.05em; }
@@ -286,8 +262,27 @@ aside ul {
       margin-right: 10px;
       vertical-align: middle; }
 
-aside .bubble {
+.highlight-color {
+  color: var(--color-orange); }
+
+.f-bi {
+  font-weight: normal;
   font-family: var(--body-font-italic); }
+
+.f-h {
+  font-variant-ligatures: normal;
+  font-weight: normal;
+  font-family: var(--header-font); }
+
+.f-hi {
+  font-variant-ligatures: normal;
+  font-weight: normal;
+  font-family: var(--header-font-italic); }
+
+.f-hb {
+  font-variant-ligatures: normal;
+  font-weight: normal;
+  font-family: var(--header-font-black); }
 
 .vcard .methods p {
   margin-top: 0;
