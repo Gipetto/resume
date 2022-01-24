@@ -141,7 +141,10 @@ body {
   --color-orange: #f19f06; }
 
 * {
-  font-variant-ligatures: common-ligatures; }
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: common-ligatures;
+  font-variant-numeric: oldstyle-nums stacked-fractions; }
 
 body {
   font-weight: normal;
