@@ -81,9 +81,9 @@ body {
     bottom: auto; }
   .bubblewrap {
     cursor: help;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px dotted #e1e1e1; }
     .bubblewrap:hover {
-      border-bottom: 1px solid #e1e1e1; }
+      border-bottom: 1px solid var(--color-orange); }
   .bubble {
     opacity: 0;
     border: 1px solid #e1e1e1;
@@ -227,6 +227,7 @@ header {
 .content dd {
   font-size: 1.05em; }
   .content dd h3 {
+    margin-top: 0.5em;
     margin-bottom: 0.75em; }
     @media only screen and (max-width: 1200px) {
       .content dd h3 {
