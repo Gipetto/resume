@@ -38,9 +38,9 @@
 
   .bubblewrap {
     cursor: help;
-    border-bottom: 1px solid white;
+    border-bottom: 1px dotted $bubbleBorderColor;
     &:hover {
-      border-bottom: 1px solid $bubbleBorderColor;
+      border-bottom: 1px solid var(--color-orange);
     }
   }
 

@@ -137,6 +137,7 @@ header {
     font-size: 1.05em;
 
     h3 {
+      margin-top: 0.5em;
       margin-bottom: 0.75em;
 
       @include md-screen {

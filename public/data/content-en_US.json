@@ -23,16 +23,24 @@
   "buzzwords": [
     [
       {
-        "name": "Scala, Python, PHP, whatever…",
-        "text": "Loose or Statically Typed. Functional or OO. It all works."
+        "name": "Scala, Python, Node, PHP, whatever…",
+        "text": "Doesn't matter – just write tests for it!"
       },
       {
-        "name": "Javascript, Node, Svelte, React, sometimes jQuery",
-        "text": "Gotta keep that front-end snappy and easy to use."
+        "name": "Javascript, CSS, Node, Svelte, React",
+        "text": "We still love you, jQuery!"
+      },
+      {
+        "name": "REST APIs, Web Services, Ajax, GraphQL",
+        "text": "Y’know, all that modern web jazz that’s making a buzz on the interwebs."
+      },
+      {
+        "name": "Greasing Wheels, Growing Engineers",
+        "text": "Project/Tech specs, mentoring, planning, watering the EICs."
       },
       {
         "name": "Amazon Web Services",
-        "text": "EC2, S3, EBS, RDS, SimpleDB, Lambda, and a partridge in a pear tree…"
+        "text": "Terraforming EC2, S3, EBS, RDS, Lambda, and a partridge in a pear tree…"
       },
       {
         "name": "I18n / L10n",
@@ -43,25 +51,15 @@
         "text": "Wait, this all starts drawing from which corner now?"
       },
       {
-        "name": "Version Control",
-        "text": "All Git now. But who wants to work with subversion any more? Its so last century."
-      },
-      {
-        "name": "REST, API, Ajax",
-        "text": "Y’know, all that modern web jazz that’s making a buzz on the interwebs."
-      },
-      {
-        "name": "Web Services",
-        "text": "How may different EC2 nodes can we split this functionality across?"
-      },
-      {
         "name": "SSO",
         "text": "Well, at one time. Nobody really knows everything about SSO…"
       },
       {
-        "name": "Command Line Scripting",
+        "name": "Version Control, CL Scripting, CI",
         "text": "Not very glamorous but well worth the time it takes to learn. Do you know where your .profile has been?"
-      },
+      }
+    ],
+    [
       {
         "name": "WordPress Contributor",
         "text": "Mostly bug fixes and small enhancements, but its all for the greater good, right?"
@@ -69,20 +67,6 @@
       {
         "name": "OpenVBX Project Maintainer",
         "text": "Open Source cloud PBX. Handy stuff. It left us too soon."
-      }
-    ],
-    [
-      {
-        "name": "Mac OS X",
-        "text": "For my text editor of choice to my photo editor of choice, its the place to be."
-      },
-      {
-        "name": "Linux",
-        "text": "I'm no gray beard, but I get around.<br/>Now who wants some tasty zsh…"
-      },
-      {
-        "name": "Microsoft Windows",
-        "text": "Two words: Virtual Machine. Am I right?"
       }
     ]
   ],
