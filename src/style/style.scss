@@ -109,6 +109,9 @@ header {
 
 .content {
   .me {
+    @include media(print) {
+      page-break-before: avoid;
+    }
     h2 {
       margin-bottom: 1em;
 
