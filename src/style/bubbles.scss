@@ -1,6 +1,6 @@
 @import "./mixins.scss";
 
-@media (hover: hover) {
+@media not print and (hover: hover) {
   $exposeDuration: 0.15s;
   $hideDuration: 1s;
 
@@ -91,7 +91,7 @@
   }
 }
 
-@media (hover: none), (hover: on-demand) {
+@media (hover: none), (hover: on-demand), print {
   .bubblewrap {
     white-space: pre-line;
   }

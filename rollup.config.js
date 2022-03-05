@@ -107,13 +107,19 @@ export default {
           comments: false,
         },
       }),
-    {
+    !production && {
       name: "stupid-watcher",
       async buildStart() {
         const scssDir = path.resolve(__dirname, "src", "style")
         fs.readdir(scssDir, (err, files) => {
           files.forEach((file) => {
             this.addWatchFile(path.resolve(scssDir, file))
+          })
+        })
+        const dataDir = path.resolve(__dirname, "public", "data")
+        fs.readdir(dataDir, (err, files) => {
+          files.forEach((file) => {
+            this.addWatchFile(path.resolve(dataDir, file))
           })
         })
       },

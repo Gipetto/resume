@@ -21,7 +21,7 @@
   font-display: swap;
   text-rendering: optimizeLegibility;
   font-variant-ligatures: common-ligatures;
-  font-variant-numeric: oldstyle-nums stacked-fractions; 
+  font-variant-numeric: oldstyle-nums stacked-fractions;
 }
 
 body {
@@ -55,7 +55,7 @@ h2 {
   font-size: 1.6em;
   line-height: 1.1em;
 
-  @include md-screen {
+  @include media(md-screen, print) {
     font-size: 1.8em;
   }
 }
@@ -66,7 +66,7 @@ h3 {
   margin-top: 0.25em;
   margin-bottom: 1em;
 
-  @include md-screen {
+  @include media(md-screen, print) {
     font-size: 1.2em;
   }
 
@@ -81,14 +81,13 @@ dt {
   font-size: 1.35em;
   line-height: 1.1em;
 
-  @include md-screen {
+  @include media(md-screen, print) {
     font-size: 1.4em;
   }
 }
 
 header {
   text-align: left;
-
   h1 + h2 {
     font-size: 1.6em;
     line-height: 1.1em;
@@ -99,7 +98,7 @@ header {
     margin-left: 1.5em;
   }
 
-  @include md-screen {
+  @include media(md-screen, print) {
     text-align: center;
 
     .contact {
@@ -113,7 +112,7 @@ header {
     h2 {
       margin-bottom: 1em;
 
-      @include md-screen {
+      @include media(md-screen, print) {
         margin-bottom: 0.5em;
       }
     }
@@ -127,7 +126,7 @@ header {
         margin-top: 0;
       }
 
-      @include md-screen {
+      @include media(md-screen, print) {
         margin-left: 0;
       }
     }
@@ -140,7 +139,7 @@ header {
       margin-top: 0.5em;
       margin-bottom: 0.75em;
 
-      @include md-screen {
+      @include media(md-screen, print) {
         margin-bottom: 0.5em;
       }
     }
@@ -160,7 +159,7 @@ header {
     margin: 3em 0;
   }
 
-  @include md-screen {
+  @include media(md-screen, print) {
     margin: 5em 0 0 0;
   }
 }

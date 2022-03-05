@@ -18,6 +18,32 @@
   }
 }
 
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == md-screen) {
+      @include md-screen {
+        @content;
+      }
+    }
+    @if ($key == sm-screen) {
+      @include sm-screen {
+        @content;
+      }
+    }
+    @if ($key == print) {
+      @include print {
+        @content;
+      }
+    }
+  }
+}
+
 @mixin border-radius($radius) {
   -moz-border-radius: $radius; /* FF1+ */
   -webkit-border-radius: $radius; /* Saf3+, Chrome */

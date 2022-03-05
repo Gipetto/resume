@@ -28,7 +28,7 @@ body {
     }
   }
 
-  @include md-screen {
+  @include media(md-screen, print) {
     padding: 2rem;
 
     #main {
