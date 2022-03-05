@@ -67,8 +67,18 @@ body {
         body #main > * {
           grid-column: 1 / -1 !important;
           grid-row: auto !important; } }
+  @media print {
+    body {
+      padding: 2rem; }
+      body #main {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        gap: 0; }
+        body #main > * {
+          grid-column: 1 / -1 !important;
+          grid-row: auto !important; } }
 
-@media (hover: hover) {
+@media not print and (hover: hover) {
   /* value = - border-left-width - border-right-width */
   /* value = (:before top) + (:before border-top) - (:after border-top) */
   /* value = - border-left-width - border-right-width */
@@ -122,7 +132,7 @@ body {
     opacity: 1;
     transition: opacity 0.15s ease-in; } }
 
-@media (hover: none), (hover: on-demand) {
+@media (hover: none), (hover: on-demand), print {
   .bubblewrap {
     white-space: pre-line; }
   .bubble::before {
@@ -174,6 +184,9 @@ h2 {
   @media only screen and (max-width: 1200px) {
     h2 {
       font-size: 1.8em; } }
+  @media print {
+    h2 {
+      font-size: 1.8em; } }
 
 h3 {
   font-size: 1.2em;
@@ -181,6 +194,9 @@ h3 {
   margin-top: 0.25em;
   margin-bottom: 1em; }
   @media only screen and (max-width: 1200px) {
+    h3 {
+      font-size: 1.2em; } }
+  @media print {
     h3 {
       font-size: 1.2em; } }
   h3 span {
@@ -191,6 +207,9 @@ dt {
   font-size: 1.35em;
   line-height: 1.1em; }
   @media only screen and (max-width: 1200px) {
+    dt {
+      font-size: 1.4em; } }
+  @media print {
     dt {
       font-size: 1.4em; } }
 
@@ -207,10 +226,18 @@ header {
       text-align: center; }
       header .contact {
         margin-left: 0; } }
+  @media print {
+    header {
+      text-align: center; }
+      header .contact {
+        margin-left: 0; } }
 
 .content .me h2 {
   margin-bottom: 1em; }
   @media only screen and (max-width: 1200px) {
+    .content .me h2 {
+      margin-bottom: 0.5em; } }
+  @media print {
     .content .me h2 {
       margin-bottom: 0.5em; } }
 
@@ -223,6 +250,9 @@ header {
   @media only screen and (max-width: 1200px) {
     .content .me p {
       margin-left: 0; } }
+  @media print {
+    .content .me p {
+      margin-left: 0; } }
 
 .content dd {
   font-size: 1.05em; }
@@ -230,6 +260,9 @@ header {
     margin-top: 0.5em;
     margin-bottom: 0.75em; }
     @media only screen and (max-width: 1200px) {
+      .content dd h3 {
+        margin-bottom: 0.5em; } }
+    @media print {
       .content dd h3 {
         margin-bottom: 0.5em; } }
   .content dd.empty h3 {
@@ -242,6 +275,10 @@ header {
   margin: 3em 0; }
 
 @media only screen and (max-width: 1200px) {
+  .content {
+    margin: 5em 0 0 0; } }
+
+@media print {
   .content {
     margin: 5em 0 0 0; } }
 
