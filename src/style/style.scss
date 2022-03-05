@@ -88,7 +88,6 @@ dt {
 
 header {
   text-align: left;
-
   h1 + h2 {
     font-size: 1.6em;
     line-height: 1.1em;
@@ -110,9 +109,6 @@ header {
 
 .content {
   .me {
-    @include media(print) {
-      page-break-before: avoid;
-    }
     h2 {
       margin-bottom: 1em;
 
