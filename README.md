@@ -9,28 +9,19 @@ So, here lies a Svelte app. Overblown in every way.
 ## Development
 
 ```
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
 You can now load `localhost:5000` to load the app with live-reload.
 
-## Preview
-
-```
-yarn build
-yarn serve
-```
-
-You can now load `localhost:5000` to preview the production build.
-
 ## Deploy
 
-Open an PR. Once approved, the main branch will automatically build and deploy to Github Pages.
+Open an PR. Once approved and merged, the main branch will automatically build and deploy to Github Pages.
 
 ---
 
 ## TODO
 
-- [ ] Tests
+- [ ] Drop Typescript for JSDoc?
 - [ ] Implement i18Next for translations

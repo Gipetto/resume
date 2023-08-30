@@ -17,7 +17,7 @@
   },
   "[svelte]": {
     "editor.tabSize": 2,
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "[css]": {
     "editor.tabSize": 2
@@ -28,5 +28,5 @@
   "debug.javascript.codelens.npmScripts": "never",
   "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "eslint.codeActionsOnSave.mode": "all",
-  "ansible.python.interpreterPath": "/home/shawn/.asdf/shims/python",
+  "svelte.enable-ts-plugin": true,
 }
