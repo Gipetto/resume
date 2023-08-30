@@ -7,7 +7,7 @@
   },
   "contact": {
     "address": {
-      "streetAddress": "8410 NE 167th Ave",
+      "streetAddress": null,
       "locality": "Vancouver",
       "region": "Washington",
       "postalCode": "98682",
@@ -15,8 +15,8 @@
     },
     "methods": {
       "email": "shawn@topfroggraphics.com",
-      "telFormatted": "+1 (720) 308-9773",
-      "telE164": "+17203089773",
+      "telFormatted": null,
+      "telE164": null,
       "url": "https://top-frog.com"
     }
   },
@@ -85,8 +85,10 @@
     "location": "Vancouver, WA",
     "positions": [
       {
-        "from": 2023,
-        "to": null,
+        "from": {
+          "month": 3,
+          "year": 2023
+        },
         "title": "House Husband",
         "description": [
           "Cooking, cleaning, and getting my head together."
@@ -101,8 +103,14 @@
       "url": "https://revops.io",
       "positions": [
         {
-          "from": 2022,
-          "to": 2023,
+          "from": {
+            "month": 4,
+            "year": 2022
+          },
+          "to": {
+            "month": 3,
+            "year": 2023
+          },
           "title": "Lead Software Engineer",
           "description": [
           ]
@@ -114,8 +122,14 @@
       "location": "San Francisco, CA",
       "positions": [
         {
-          "from": 2019,
-          "to": 2022,
+          "from": {
+            "month": 7,
+            "year": 2019
+          },
+          "to": {
+            "month": 1,
+            "year": 2022
+          },
           "title": "Staff Software Engineer / Tech Lead, Growth Engineering",
           "description": [
             "Support multiple small teams in the development of the signup and onboarding flow, as well as tools to enable customer growth and learning. Working with project managers, help define features, scope, and requirements for upcoming projects. Working with the team to build systems that are scalable, fault tolerant, tested, and easy to maintain.",
@@ -124,14 +138,26 @@
           ]
         },
         {
-          "from": 2018,
-          "to": 2019,
+          "from": {
+            "month": 8,
+            "year": 2018
+          },
+          "to": {
+            "month": 7,
+            "year": 2019
+          },
           "title": "Senior Software Engineer 2",
           "description": []
         },
         {
-          "from": 2011,
-          "to": 2017,
+          "from": {
+            "month": 6,
+            "year": 2011
+          },
+          "to": {
+            "month": 8,
+            "year": 2017
+          },
           "title": "Senior Software Engineer 1",
           "description": [
             "During these years at Twilio I've been a part of many different teams, including Growth Engineering / Onboarding, Experimentation Platform, Phone Numbers / Shortcodes, Console and OpenVBX.",
@@ -148,8 +174,14 @@
       "location": "Denver, CO",
       "positions": [
         {
-          "from": 2008,
-          "to": 2011,
+          "from": {
+            "month": 5,
+            "year": 2008
+          },
+          "to": {
+            "month": 6,
+            "year": 2011
+          },
           "title": "Senior Developer",
           "description": [
             "Developed custom solutions for building on and extending WordPress as a publishing platform. Developed project requirements and development plans for projects ranging from plugin development or API integrations to large scale deployments that require careful server resource management and integration plans for different services.",
@@ -163,8 +195,14 @@
       "location": "Englewood, CO",
       "positions": [
         {
-          "from": 2003,
-          "to": 2008,
+          "from": {
+            "month": 11,
+            "year": 2003
+          },
+          "to": {
+            "month": 5,
+            "year": 2008
+          },
           "title": "Web Developer & Designer",
           "description": [
             "Maintained the client facing website and client portal for a hardware, software and technical services distributor. Built a custom framework for managing product information, client portal access, and educational class schedules. Provided the marketing team with tools to help efficiently develop client communications."
@@ -176,7 +214,10 @@
   "education": [
     {
       "description": "Bachelors Degree in Visual Arts",
-      "date": "December 1996",
+      "date": {
+        "month": 12,
+        "year": 1996
+      },
       "institution": "University of Northern Colorado, Greeley, Colorado"
     }
   ]
