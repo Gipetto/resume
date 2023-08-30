@@ -3,5 +3,5 @@
 </script>
 
 <footer>
-	<p>&copy; {(new Date()).getFullYear()} {_("footer.copyright", "Me!")}</p>
+  <p>&copy; {new Date().getFullYear()} {_("footer.copyright", "Me!")}</p>
 </footer>

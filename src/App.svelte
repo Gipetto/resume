@@ -1,32 +1,102 @@
 <script lang="ts">
-import { content } from "./store"
-import Header from "./components/Header.svelte"
-import History from "./components/History.svelte"
-import Buzzwords from "./components/Buzzwords.svelte"
-import Footer from "./components/Footer.svelte"
+  // import "./style/style.scss"
 
-const unusbscribe = content.subscribe(() => {})
+  import { content } from "./store"
+  import Header from "./components/Header.svelte"
+  import History from "./components/History.svelte"
+  import Buzzwords from "./components/Buzzwords.svelte"
+  import Footer from "./components/Footer.svelte"
+
+  const unusbscribe = content.subscribe(() => {})
 </script>
 
-<Header 
-	name={$content.data.name} 
-	contact={$content.data.contact}
-	isLoading={$content.isLoading}
+<Header
+  name={$content.data.name}
+  contact={$content.data.contact}
+  isLoading={$content.isLoading}
 />
 {#if $content.isLoading == false}
-<section class="content">
-	<History 
-		objective={$content.data.objective}
-		currentWork={$content.data.currentWork}
-		workHistory={$content.data.workHistory}
-		education={$content.data.education}
-	/>
-</section>
-<aside>
-	<Buzzwords 
-		buzzwordGroups={$content.data.buzzwords} 
-		links={$content.data.links} 
-	/>
-</aside>
+  <section class="content">
+    <History
+      objective={$content.data.objective}
+      currentWork={$content.data.currentWork}
+      workHistory={$content.data.workHistory}
+      education={$content.data.education}
+    />
+  </section>
+  <aside>
+    <Buzzwords
+      buzzwordGroups={$content.data.buzzwords}
+      links={$content.data.links}
+    />
+  </aside>
 {/if}
-<Footer/>
+<Footer />
+
+<style global lang="scss">
+  @import "./style/_headline-font";
+  @import "./style/_body-font";
+  @import "./style/layout";
+
+  :root {
+    --color-orange: #CD8500;
+    --color-dark-orange: #7b5307;
+    --header-font: pt_sansbold, sans-serif;
+    --header-font-italic: pt_sansitalic, sans-serif;
+    --header-font-bold-italic: pt_sansbold_italic, sans-serif;
+    --header-font-black: EncodeSansBlack, sans-serif;
+    --body-font: tex_gyre_termesregular, serif;
+    --body-font-italic: tex_gyre_termesitalic, serif;
+  }
+
+  ::selection {
+    background: var(--color-orange);
+    color: #fff;
+    text-shadow: 1px 1px 5px var(--color-dark-orange) ;
+  }
+
+  * {
+    text-rendering: optimizeLegibility;
+    font-variant-ligatures: common-ligatures;
+    font-variant-numeric: oldstyle-nums stacked-fractions;
+  }
+
+  body {
+    font-size: 1.125em;
+    line-height: 1.5em;
+    font-family: var(--body-font);
+  }
+
+  h1, h2, h3, h4 {
+    font-variant-ligatures: normal;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-family: var(--header-font-black);
+  }
+
+  .content {
+    @include media(md-screen, print) {
+      margin: 5em 0 0 0;
+    }
+  }
+
+  aside {
+    ul {
+      list-style: none inside;
+      padding: 0;
+
+      li {
+        padding: 0.25em 0;
+
+        svg {
+          width: 14px;
+          height: 14px;
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+</style>

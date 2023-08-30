@@ -1,9 +1,8 @@
-<script type="ts">
-export let text: string[]
-export let className: string = ""
-//const lines = text.split("\\n").map((t: string): string => t.trim())
+<script lang="ts">
+  export let text: string[]
+  export let className: string = ""
 </script>
 
 {#each text as line}
-<p class="{className}">{@html line}</p>
+  <p class={className}>{@html line}</p>
 {/each}

@@ -1,9 +1,10 @@
 @import "./mixins";
 
 body {
-  padding: 4rem 25% 4rem 15%;
 
   #main {
+    padding: 4rem 25% 4rem 15%;
+
     height: calc(100vh - 10px);
     display: grid;
     grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
@@ -29,9 +30,9 @@ body {
   }
 
   @include media(md-screen, print) {
-    padding: 2rem;
-
     #main {
+      padding: 2rem;
+
       grid-template-columns: 100%;
       grid-template-rows: auto;
       gap: 0;

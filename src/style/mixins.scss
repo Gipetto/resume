@@ -1,10 +1,10 @@
-@mixin font-weight-normal {
-  font-weight: normal;
-}
+// @mixin font-weight-normal {
+//   font-weight: normal;
+// }
 
-@mixin no-ligatures {
-  font-variant-ligatures: normal;
-}
+// @mixin no-ligatures {
+//   font-variant-ligatures: normal;
+// }
 
 @mixin md-screen {
   @media only screen and (max-width: 1200px) {
@@ -45,9 +45,7 @@
 }
 
 @mixin border-radius($radius) {
-  -moz-border-radius: $radius; /* FF1+ */
-  -webkit-border-radius: $radius; /* Saf3+, Chrome */
-  border-radius: $radius; /* Standard. IE9 */
+  border-radius: $radius;
 }
 
 @mixin hoverable() {
@@ -77,16 +75,8 @@
     background-color: rgb(253, 253, 253);
 
     border: 1px solid rgb(225, 225, 225);
-    -moz-box-shadow: inset 1px 1px 8px $sectionInnerShadow;
-    -webkit-box-shadow: inset 1px 1px 8px $sectionInnerShadow;
     box-shadow: inset 1px 1px 8px $sectionInnerShadow;
 
-    -webkit-transition: top $transitionDuration ease-out,
-      right $transitionDuration ease-out, bottom $transitionDuration ease-out,
-      left $transitionDuration ease-out, opacity $transitionDuration ease-out;
-    -moz-transition: top $transitionDuration ease-out,
-      right $transitionDuration ease-out, bottom $transitionDuration ease-out,
-      left $transitionDuration ease-out, opacity $transitionDuration ease-out;
     transition: top $transitionDuration ease-out,
       right $transitionDuration ease-out, bottom $transitionDuration ease-out,
       left $transitionDuration ease-out, opacity $transitionDuration ease-out;

@@ -49,22 +49,29 @@ type Job = {
   positions: Position[]
 }
 
+type StartEndDate = {
+  month?: Maybe<number>,
+  year: Maybe<number>
+}
+
 type Position = {
-  from: Maybe<number>
-  to: Maybe<number>
+  from?: StartEndDate
+  to?: StartEndDate
   title: string
   description: string[]
 }
 
 type BookSmarts = {
   description: string
-  date: string
+  date: StartEndDate
   institution?: Maybe<string>
 }
 
+type Objective = Maybe<string[]>
+
 export type ResumeData = {
   name?: Name
-  objective?: Maybe<string[]>
+  objective?: Objective
   contact?: ContactMethods
   buzzwords?: BuzzwordGroup[]
   links?: Link[]
