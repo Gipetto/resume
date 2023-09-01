@@ -2,7 +2,7 @@
   import type { ContactMethods, Name } from "../global"
 
   export let name: Name
-  export let contact: ContactMethods
+  export let contact: ContactMethods | undefined
   export let isLoading: boolean
 </script>
 
@@ -21,50 +21,57 @@
       {#if name.title}
         <h2 class="title">{name.title}</h2>
       {/if}
-      <div class="contact">
-        <p class="adr">
-          {#if contact.address.streetAddress}
-            <span class="street-address">{contact.address.streetAddress}</span
-            ><br />
-          {/if}
-          {#if contact.address.locality && contact.address.region}
-            <span class="locality">{contact.address.locality}</span>,
-            <span class="region">{contact.address.region}</span><br />
-          {/if}
-          {#if contact.address.postalCode && contact.address.countryName}
-            <span class="postal-code">{contact.address.postalCode}</span>,
-            <span class="country-name">{contact.address.countryName}</span>
-          {/if}
-        </p>
-        <div class="contact-methods">
-          {#if contact.methods.telE164}
-            <p>
-              <a class="tel" href="tel:{contact.methods.telE164}"
-                >{contact.methods.telFormatted}</a
-              >
+      {#if contact}
+        <div class="contact">
+          {#if contact.address}
+            <p class="adr">
+              {#if contact.address.streetAddress}
+                <span class="street-address"
+                  >{contact.address.streetAddress}</span
+                ><br />
+              {/if}
+              {#if contact.address.locality && contact.address.region}
+                <span class="locality">{contact.address.locality}</span>,
+                <span class="region">{contact.address.region}</span><br />
+              {/if}
+              {#if contact.address.postalCode && contact.address.countryName}
+                <span class="postal-code">{contact.address.postalCode}</span>,
+                <span class="country-name">{contact.address.countryName}</span>
+              {/if}
             </p>
           {/if}
-          {#if contact.methods.url}
-            <p>
-              <a
-                class="url org"
-                rel="noopener noreferrer"
-                target="_blank"
-                href={contact.methods.url}
-              >
-                {contact.methods.url}
-              </a>
-            </p>
-          {/if}
-          {#if contact.methods.email}
-            <p>
-              <a class="email" href="mailto:{contact.methods.email}"
-                >{contact.methods.email}</a
-              >
-            </p>
+          {#if contact.methods}
+            <div class="contact-methods">
+              {#if contact.methods.telE164}
+                <p>
+                  <a class="tel" href="tel:{contact.methods.telE164}"
+                    >{contact.methods.telFormatted}</a
+                  >
+                </p>
+              {/if}
+              {#if contact.methods.url}
+                <p>
+                  <a
+                    class="url org"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href={contact.methods.url}
+                  >
+                    {contact.methods.url}
+                  </a>
+                </p>
+              {/if}
+              {#if contact.methods.email}
+                <p>
+                  <a class="email" href="mailto:{contact.methods.email}"
+                    >{contact.methods.email}</a
+                  >
+                </p>
+              {/if}
+            </div>
           {/if}
         </div>
-      </div>
+      {/if}
     </div>
   </header>
 {/if}

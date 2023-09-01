@@ -15,14 +15,14 @@ export type Name = {
 }
 
 export type ContactMethods = {
-  address: {
-    streetAddress: string
+  address?: {
+    streetAddress?: Maybe<string>
     locality: string
     region: string
     postalCode: string
     countryName: string
   }
-  methods: {
+  methods?: {
     email?: Maybe<string>
     telFormatted?: Maybe<string>
     telE164?: Maybe<string>
@@ -70,7 +70,7 @@ type BookSmarts = {
 type Objective = Maybe<string[]>
 
 export type ResumeData = {
-  name?: Name
+  name: Name
   objective?: Objective
   contact?: ContactMethods
   buzzwords?: BuzzwordGroup[]

@@ -2,8 +2,8 @@
   import type { BuzzwordGroup, Link } from "../global"
   import Icon from "./Icon.svelte"
   import _ from "../services/i18n"
-  export let buzzwordGroups: BuzzwordGroup[] = []
-  export let links: Link[] = []
+  export let buzzwordGroups: BuzzwordGroup[] | undefined
+  export let links: Link[] | undefined
 
   const docRoot = document.documentElement
 
@@ -15,33 +15,45 @@
 
 <svelte:body on:mousemove={handleMousemove} />
 
-<h2>{_("title.buzzwords", "Buzzwords")}</h2>
-{#each buzzwordGroups as buzzwords}
-  <ul class="bubbles">
-    {#each buzzwords as item (item.name)}
-      <li class="bubblewrap">
-        {item.name}
-        <span class="bubble f-bi">{@html item.text}</span>
+{#if buzzwordGroups}
+  <h2>{_("title.buzzwords", "Buzzwords")}</h2>
+  {#each buzzwordGroups as buzzwords}
+    <ul class="bubbles">
+      {#each buzzwords as item (item.name)}
+        <li class="bubblewrap">
+          {item.name}
+          <span class="bubble f-bi">{@html item.text}</span>
+        </li>
+      {/each}
+    </ul>
+  {/each}
+{/if}
+{#if links}
+  <ul>
+    {#each links as link (link.href)}
+      <li>
+        <a
+          class="icon {link.icon}"
+          rel="noopener noreferrer"
+          target="_blank"
+          href={link.href}
+        >
+          <Icon name={link.icon} />
+          {link.text}
+        </a>
       </li>
     {/each}
   </ul>
-{/each}
-<ul>
-  {#each links as link (link.href)}
-    <li>
-      <a
-        class="icon {link.icon}"
-        rel="noopener noreferrer"
-        target="_blank"
-        href={link.href}
-      >
-        <Icon name={link.icon} />
-        {link.text}
-      </a>
-    </li>
-  {/each}
-</ul>
+{/if}
 
 <style lang="scss">
   @import "../style/bubbles.scss";
+
+  .bubbles {
+    border-bottom: 1px dotted gray;
+
+    li:last-of-type {
+      margin-bottom: 1em;
+    }
+  }
 </style>

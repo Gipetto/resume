@@ -1,6 +1,4 @@
 <script lang="ts">
-  // import "./style/style.scss"
-
   import { content } from "./store"
   import Header from "./components/Header.svelte"
   import History from "./components/History.svelte"
@@ -39,8 +37,8 @@
   @import "./style/layout";
 
   :root {
-    --color-orange: #CD8500;
-    --color-dark-orange: #7b5307;
+    --color-orange: #cd8500;
+    --color-dark-orange: #613f00;
     --header-font: pt_sansbold, sans-serif;
     --header-font-italic: pt_sansitalic, sans-serif;
     --header-font-bold-italic: pt_sansbold_italic, sans-serif;
@@ -52,7 +50,7 @@
   ::selection {
     background: var(--color-orange);
     color: #fff;
-    text-shadow: 1px 1px 5px var(--color-dark-orange) ;
+    text-shadow: 1px 1px 3px var(--color-dark-orange);
   }
 
   * {
@@ -67,7 +65,10 @@
     font-family: var(--body-font);
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-variant-ligatures: normal;
     font-weight: normal;
   }

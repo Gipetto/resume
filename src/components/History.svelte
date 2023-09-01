@@ -5,45 +5,51 @@
   import Date from "../components/Date.svelte"
   import _ from "../services/i18n"
 
-  export let objective: Objective
-  export let currentWork: Job
-  export let workHistory: Job[]
-  export let education: BookSmarts[]
-
-  const headerObjective = objective as string[]
+  export let objective: Objective | undefined
+  export let currentWork: Job | undefined
+  export let workHistory: Job[] | undefined
+  export let education: BookSmarts[] | undefined
 </script>
 
-<section class="me">
-  <h2>{_("title.me", "About Me")}</h2>
-  <div>
-    <Text text={headerObjective} />
-  </div>
-</section>
-<section class="current">
-  <h2>{_("title.current-work", "Current Work")}</h2>
-  <dl>
-    <JobDefinition job={currentWork} />
-  </dl>
-</section>
-<section class="history">
-  <h2>{_("title.work-history", "Work History")}</h2>
-  <dl>
-    {#each workHistory as job (job.company)}
-      <JobDefinition {job} />
-    {/each}
-  </dl>
-</section>
-<section class="education">
-  <h2>{_("title.education", "Education")}</h2>
-  <ul>
-    {#each education as stint (stint.description)}
-      <li>
-        {stint.description}, <Date date={stint.date} /><br />
-        <span>{stint.institution}</span>
-      </li>
-    {/each}
-  </ul>
-</section>
+{#if objective}
+  <section class="me">
+    <h2>{_("title.me", "About Me")}</h2>
+    <div>
+      <Text text={objective} />
+    </div>
+  </section>
+{/if}
+{#if currentWork}
+  <section class="current">
+    <h2>{_("title.current-work", "Current Work")}</h2>
+    <dl>
+      <JobDefinition job={currentWork} />
+    </dl>
+  </section>
+{/if}
+{#if workHistory}
+  <section class="history">
+    <h2>{_("title.work-history", "Work History")}</h2>
+    <dl>
+      {#each workHistory as job (job.company)}
+        <JobDefinition {job} />
+      {/each}
+    </dl>
+  </section>
+{/if}
+{#if education}
+  <section class="education">
+    <h2>{_("title.education", "Education")}</h2>
+    <ul>
+      {#each education as stint (stint.description)}
+        <li>
+          {stint.description}, <Date date={stint.date} /><br />
+          <span>{stint.institution}</span>
+        </li>
+      {/each}
+    </ul>
+  </section>
+{/if}
 
 <style lang="scss">
   @import "../style/mixins";
