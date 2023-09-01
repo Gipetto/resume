@@ -4,7 +4,8 @@ type Maybe<T> = T | null
 
 type Loadable<T> = {
   isLoading: boolean
-  data: T
+  data: T | undefined
+  error?: string
 }
 
 export type Name = {
@@ -38,7 +39,7 @@ type Buzzword = {
 type BuzzwordGroup = Buzzword[]
 
 type Link = {
-  icon: string
+  icon: IconName
   href: string
   text: string
 }

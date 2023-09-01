@@ -4,16 +4,14 @@
   import History from "./components/History.svelte"
   import Buzzwords from "./components/Buzzwords.svelte"
   import Footer from "./components/Footer.svelte"
-
-  const unusbscribe = content.subscribe(() => {})
 </script>
 
-<Header
-  name={$content.data.name}
-  contact={$content.data.contact}
-  isLoading={$content.isLoading}
-/>
-{#if $content.isLoading == false}
+{#if $content.isLoading == false && $content.data}
+  <Header
+    name={$content.data.name}
+    contact={$content.data.contact}
+    isLoading={$content.isLoading}
+  />
   <section class="content">
     <History
       objective={$content.data.objective}
@@ -28,6 +26,8 @@
       links={$content.data.links}
     />
   </aside>
+{:else if $content.isLoading == false && $content.error}
+  <p>{$content.error}</p>
 {/if}
 <Footer />
 
