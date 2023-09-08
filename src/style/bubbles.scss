@@ -9,7 +9,6 @@
 
   $bubbleShadow: rgb(110, 110, 110);
   $bubbleBorderColor: rgb(225, 225, 225);
-  $bubbleBackgroundColor: rgb(253, 253, 253);
   $borderRadius: 10px;
   $borderRadiusSmall: 7px;
 
@@ -42,11 +41,15 @@
     margin-bottom: 0.25em;
     border-bottom: 1px dotted $bubbleBorderColor;
     &:hover {
-      border-bottom: 1px solid var(--color-orange);
+      border-bottom: 1px solid var(--color-orange) !important;
+    }
+    &:last-of-type {
+      border-bottom: 1px solid transparent;
     }
   }
 
   .bubble {
+    background: var(--background-color-bubble);
     opacity: 0;
     border: 1px solid $bubbleBorderColor;
     padding: 10px 10px 10px 14px;
@@ -54,7 +57,6 @@
     right: -5000px;
     top: -12px;
     width: $bubbleWidth;
-    background: $bubbleBackgroundColor;
     text-align: left;
     line-height: 18px;
     z-index: 10;
@@ -76,11 +78,11 @@
 
     &:after {
       @extend .bubble-before-after;
+      border-color: transparent var(--background-color-bubble);
       top: $afterTop;
       left: $afterLeft;
       border-width: $afterBorderTop $afterBorderRight $afterBorderBottom
         $afterBorderLeft;
-      border-color: transparent $bubbleBackgroundColor;
       z-index: 11;
     }
   }

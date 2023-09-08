@@ -4,6 +4,17 @@
   import History from "./components/History.svelte"
   import Buzzwords from "./components/Buzzwords.svelte"
   import Footer from "./components/Footer.svelte"
+  import { theme } from "./store"
+
+  let selectedTheme;
+
+  theme.subscribe((value) => {
+    selectedTheme = value
+    console.log("Subscribed: " + selectedTheme)
+    document.body.classList.remove("light", "dark")
+    document.body.classList.add(selectedTheme === "dark" ? "dark" : "light")
+  })
+
 </script>
 
 {#if $content.isLoading == false && $content.data}
@@ -35,10 +46,9 @@
   @import "./style/_headline-font";
   @import "./style/_body-font";
   @import "./style/layout";
+  @import "./style/theme";
 
   :root {
-    --color-orange: #cd8500;
-    --color-dark-orange: #613f00;
     --header-font: pt_sansbold, sans-serif;
     --header-font-italic: pt_sansitalic, sans-serif;
     --header-font-bold-italic: pt_sansbold_italic, sans-serif;
@@ -57,12 +67,26 @@
     text-rendering: optimizeLegibility;
     font-variant-ligatures: common-ligatures;
     font-variant-numeric: oldstyle-nums stacked-fractions;
+    text-underline-offset: 0.13em;
+    text-decoration-skip-ink: auto;
   }
 
   body {
     font-size: 1.125em;
     line-height: 1.5em;
     font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  a {
+    color: var(--link-color);
+    &:hover {
+      text-decoration: none;
+    }
+    &:visited {
+      color: var(--link-color-visited);
+    }
   }
 
   h1,

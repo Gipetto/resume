@@ -1,5 +1,7 @@
 /// <reference types="svelte" />
 
+type Theme = "light" | "dark"
+
 type Maybe<T> = T | null
 
 type Loadable<T> = {
