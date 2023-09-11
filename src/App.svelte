@@ -80,6 +80,11 @@
     transition: background-color 0.125s;
   }
 
+  i, em {
+    font-style: normal;
+    font-family: var(--body-font-italic);
+  }
+
   a {
     color: var(--link-color);
     &:hover {
@@ -94,7 +99,7 @@
   h2,
   h3,
   h4 {
-    font-variant-ligatures: normal;
+    font-variant-ligatures: common-ligatures;
     font-weight: normal;
   }
 

@@ -44,7 +44,7 @@
       {#each education as stint (stint.description)}
         <li>
           {stint.description}, <Date date={stint.date} /><br />
-          <span>{stint.institution}</span>
+          <i>{stint.institution}</i>
         </li>
       {/each}
     </ul>
@@ -78,10 +78,6 @@
 
       li {
         line-height: 1.3;
-        span {
-          font-weight: normal;
-          font-family: var(--body-font-italic);
-        }
       }
     }
   }
