@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Job } from "../global"
+  import type { Job } from "../types/global"
   import Position from "../components/Position.svelte"
 
   export let job: Job

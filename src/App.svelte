@@ -5,25 +5,25 @@
   import Buzzwords from "./components/Buzzwords.svelte"
   import Footer from "./components/Footer.svelte"
   import { theme } from "./store"
+  import SkipLink from "./components/SkipLink.svelte"
 
   let selectedTheme;
 
   theme.subscribe((value) => {
     selectedTheme = value
-    console.log("Subscribed: " + selectedTheme)
     document.body.classList.remove("light", "dark")
     document.body.classList.add(selectedTheme === "dark" ? "dark" : "light")
   })
-
 </script>
 
 {#if $content.isLoading == false && $content.data}
+  <SkipLink />
   <Header
     name={$content.data.name}
     contact={$content.data.contact}
     isLoading={$content.isLoading}
   />
-  <section class="content">
+  <section id="content" class="content">
     <History
       objective={$content.data.objective}
       currentWork={$content.data.currentWork}
@@ -86,6 +86,7 @@
   }
 
   a {
+    cursor: pointer;
     color: var(--link-color);
     &:hover {
       text-decoration: none;
@@ -120,14 +121,12 @@
 
       li {
         padding: 0.25em 0;
-
-        svg {
-          width: 14px;
-          height: 14px;
-          margin-right: 10px;
-          vertical-align: middle;
-        }
       }
     }
+  }
+
+  svg.icon {
+    margin-right: 10px;
+    vertical-align: baseline;
   }
 </style>

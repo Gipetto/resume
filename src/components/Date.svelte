@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { StartEndDate } from "../global"
+  import type { StartEndDate } from "../types/global"
 
   export let date: StartEndDate
 

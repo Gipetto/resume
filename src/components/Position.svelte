@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Position } from "../global"
+  import type { Position } from "../types/global"
   import Text from "./Text.svelte"
   import Date from "./Date.svelte"
 

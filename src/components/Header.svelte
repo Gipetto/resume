@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ContactMethods, Name } from "../global"
+  import type { ContactMethods, Name } from "../types/global"
 
   export let name: Name
   export let contact: ContactMethods | undefined

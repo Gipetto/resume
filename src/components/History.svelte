@@ -1,9 +1,11 @@
 <script lang="ts">
-  import type { BookSmarts, Job, Objective } from "../global"
-  import JobDefinition from "./JobDefinition.svelte"
-  import Text from "../components/Text.svelte"
-  import Date from "../components/Date.svelte"
+  import type { BookSmarts, Job, Objective } from "../types/global"
   import _ from "../services/i18n"
+  import JobDefinition from "./JobDefinition.svelte"
+  import Text from "./Text.svelte"
+  import Date from "./Date.svelte"
+  import Icon from "./Icon.svelte"
+    import BackToTop from "./BackToTop.svelte"
 
   export let objective: Objective | undefined
   export let currentWork: Job | undefined
@@ -50,6 +52,8 @@
     </ul>
   </section>
 {/if}
+
+<BackToTop />
 
 <style lang="scss">
   @import "../style/mixins";

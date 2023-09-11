@@ -1,5 +1,5 @@
 import { readable, writable } from "svelte/store"
-import type { Loadable, ResumeData, Theme } from "./global"
+import type { Loadable, ResumeData, Theme } from "./types/global"
 import type { Subscriber } from "svelte/store"
 import stringsData from "../public/data/strings-en_US.json"
 
