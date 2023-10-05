@@ -7,7 +7,7 @@
     theme.set(value)
   }
 
-  let selectedTheme: Theme;
+  let selectedTheme: Theme
 
   theme.subscribe((value) => {
     selectedTheme = value
