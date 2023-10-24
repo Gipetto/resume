@@ -24,10 +24,7 @@
 >
 
 <style lang="scss" global>
-  svg {
-    filter: brightness(0) saturate(100%);
-  }
   .dark svg {
-    filter: invert(100%);
+    fill: white;
   }
 </style>
