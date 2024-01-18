@@ -7,9 +7,14 @@ on:
     branches: [ master ]
   workflow_dispatch:
 
+env:
+  CI: true
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      NODE_VERSION: "18.x"
+      NODE_OPTIONS: "--max_old_space_size=4096"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
