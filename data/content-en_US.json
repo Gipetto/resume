@@ -23,24 +23,20 @@
   "buzzwords": [
     [
       {
-        "name": "Scala, Python, Node, PHP, whatever…",
+        "name": "Python, Node, PHP, Scala, whatever…",
         "text": "Doesn't matter – just write tests for it!"
       },
       {
-        "name": "Typescript, Javascript, CSS, Node, Svelte, React",
+        "name": "Typescript/Javascript, SvelteKit, React, CSS, Node",
         "text": "We still love you, jQuery!<br>But we love Svelte more..."
       },
       {
-        "name": "REST APIs, Web Services, Ajax, GraphQL",
+        "name": "REST APIs, Web Services, Cloud Functions, GraphQL",
         "text": "Y’know, all that modern web jazz that’s making a buzz on the interwebs."
       },
       {
         "name": "Greasing Wheels, Growing Engineers",
         "text": "Project/Tech specs, mentoring, planning, watering the EICs."
-      },
-      {
-        "name": "Amazon Web Services",
-        "text": "Terraforming EC2, S3, EBS, RDS, Lambda, and a partridge in a pear tree…"
       },
       {
         "name": "I18n / L10n",
@@ -51,17 +47,13 @@
         "text": "Wait, this all starts drawing from which corner now?"
       },
       {
-        "name": "SSO",
-        "text": "Well, at one time. Nobody really knows everything about SSO…"
-      },
-      {
-        "name": "Version Control, Command Line Scripting, CI",
+        "name": "Version Control, Command Line Scripting, Automation & CI",
         "text": "Not very glamorous but well worth the time it takes to learn. Do you know where your .profile has been?"
       }
     ],
     [
       {
-        "name": "WordPress Contributor",
+        "name": "WordPress Contributor & Plugin Maintainer",
         "text": "Mostly bug fixes and small enhancements, but its all for the greater good, right?"
       },
       {
@@ -78,7 +70,7 @@
     }
   ],
   "objective": [
-    "I am a software engineer specializing in distributed web systems with RESTful APIs. I have worked alone as well as been a part of &mdash; and led &mdash; small to medium sized groups of engineers."
+    "I am a full stack software engineer with experience in distributed web systems. I have worked alone as well as been a part of &mdash; and led &mdash; small to medium sized groups of engineers."
   ],
   "currentWork": {
     "company": "Taking a Break",
@@ -113,6 +105,8 @@
           },
           "title": "Lead Software Engineer",
           "description": [
+            "Lead a team focused on customer and product growth. Implement new features in a Python & React/Typescript code base. Work with Product, Sales and Support to scope and design new features. Increase application performance and reduce build size through analysis of browser performance tools and package analysis. Coach younger engineers in, among other things: software development best practice, project management, and on-call response.",
+            "Oversee a team of remote contractors in the finalization of an internal Design System. Ensure that code quality and design pattern consistency was met through code review and documentation."
           ]
         }
       ]
@@ -139,26 +133,14 @@
         },
         {
           "from": {
-            "month": 8,
-            "year": 2018
+            "month": 6,
+            "year": 2011
           },
           "to": {
             "month": 7,
             "year": 2019
           },
-          "title": "Senior Software Engineer 2",
-          "description": []
-        },
-        {
-          "from": {
-            "month": 6,
-            "year": 2011
-          },
-          "to": {
-            "month": 8,
-            "year": 2017
-          },
-          "title": "Senior Software Engineer 1",
+          "title": "Senior Software Engineer 1 & 2",
           "description": [
             "During these years at Twilio I've been a part of many different teams, including Growth Engineering / Onboarding, Experimentation Platform, Phone Numbers / Shortcodes, Console and OpenVBX.",
             "Built a customer data platform  to support the experimentation platform as well as enable teams to make run time decisions about their customers based on live data and computed metrics.",
