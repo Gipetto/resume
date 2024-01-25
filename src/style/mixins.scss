@@ -1,11 +1,3 @@
-// @mixin font-weight-normal {
-//   font-weight: normal;
-// }
-
-// @mixin no-ligatures {
-//   font-variant-ligatures: normal;
-// }
-
 @mixin md-screen {
   @media only screen and (max-width: 800px) {
     @content;
