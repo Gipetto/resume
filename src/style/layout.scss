@@ -3,8 +3,9 @@
 body {
 
   #main {
-    padding: 4rem 25% 4rem 15%;
-
+    width: min(1160px, 100% - 4rem);
+    margin-inline: auto;
+    padding: 2% 0 2% 0;
     height: calc(100vh - 10px);
     display: grid;
     grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);

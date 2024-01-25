@@ -89,13 +89,11 @@
 
     h1 {
       font-size: 3.25rem;
-      font-family: var(--header-font-black);
     }
 
     h2 {
       font-size: 1.8rem;
       margin-top: 0.25em;
-      font-family: var(--header-font-bold-italic);
 
       @include media(md-screen, print) {
         font-size: 2rem;

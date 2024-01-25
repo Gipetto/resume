@@ -4,8 +4,7 @@
   import JobDefinition from "./JobDefinition.svelte"
   import Text from "./Text.svelte"
   import Date from "./Date.svelte"
-  import Icon from "./Icon.svelte"
-    import BackToTop from "./BackToTop.svelte"
+  import BackToTop from "./BackToTop.svelte"
 
   export let objective: Objective | undefined
   export let currentWork: Job | undefined
@@ -69,11 +68,6 @@
       @include media(md-screen, print) {
         margin-bottom: 0.5em;
       }
-    }
-
-    div {
-      font-size: 1.2em;
-      line-height: 1.3;
     }
   }
   .education {

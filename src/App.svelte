@@ -43,18 +43,12 @@
 <Footer />
 
 <style global lang="scss">
-  @import "./style/_headline-font";
-  @import "./style/_body-font";
   @import "./style/layout";
   @import "./style/theme";
 
   :root {
-    --header-font: pt_sansbold, sans-serif;
-    --header-font-italic: pt_sansitalic, sans-serif;
-    --header-font-bold-italic: pt_sansbold_italic, sans-serif;
-    --header-font-black: EncodeSansBlack, sans-serif;
-    --body-font: tex_gyre_termesregular, serif;
-    --body-font-italic: tex_gyre_termesitalic, serif;
+    --header-font: system-ui, sans-serif;
+    --body-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   }
 
   ::selection {
@@ -72,17 +66,12 @@
   }
 
   body {
-    font-size: 1.125em;
-    line-height: 1.5em;
+    font-size: 18px;
+    line-height: 1.7em;
     font-family: var(--body-font);
     color: var(--text-color);
     background-color: var(--background-color);
     transition: background-color 0.125s;
-  }
-
-  i, em {
-    font-style: normal;
-    font-family: var(--body-font-italic);
   }
 
   a {
@@ -100,12 +89,9 @@
   h2,
   h3,
   h4 {
+    font-family: var(--header-font);
     font-variant-ligatures: common-ligatures;
-    font-weight: normal;
-  }
-
-  h2 {
-    font-family: var(--header-font-black);
+    font-weight: 900;
   }
 
   .content {
