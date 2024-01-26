@@ -23,7 +23,7 @@
   "buzzwords": [
     [
       {
-        "name": "Python, Node, PHP, Scala, whatever…",
+        "name": "Python, Java, PHP, Scala, whatever…",
         "text": "Doesn't matter – just write tests for it!"
       },
       {
@@ -52,13 +52,13 @@
       },
       {
         "name": "Mac & Linux",
-        "text": "Windows use is for family tech support only."
+        "text": "Windows use is for family tech support and cross-browser testing only."
       }
     ],
     [
       {
         "name": "WordPress Contributor & Plugin Maintainer",
-        "text": "Mostly bug fixes and small enhancements, but its all for the greater good, right?"
+        "text": "Mostly bug fixes and small enhancements to the WP Core, but its all for the greater good, right?"
       },
       {
         "name": "OpenVBX Project Maintainer",
