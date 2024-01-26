@@ -6,7 +6,19 @@
 <footer>
   <p>
     &copy; {new Date().getFullYear()} {_("footer.copyright", "Me!")}
-    {" "}|{" "}
-    <ThemeSwitcher />
+    <span class="theme-button">
+      {" "}|{" "}
+      <ThemeSwitcher />
+    </span>
+    <span class="printed-from">
+      {" "}|{" "}
+      Printed from <a href="https://gipetto.github.io/resume">https://gipetto.github.io/resume</a>
+    </span>
   </p>
 </footer>
+
+<style lang="scss">
+  .printed-from {
+    display: none;
+  }
+</style>

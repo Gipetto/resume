@@ -21,16 +21,15 @@
 
   dt {
     margin-top: 1.5em;
-    font-size: 1.5rem;
-    line-height: 1.1;
+    font-size: 1.25em;
     font-family: var(--header-font);
     font-variant-ligatures: normal;
     font-weight: 900;
     text-decoration: underline;
     text-decoration-thickness: 1px;
 
-    @include media(md-screen, print) {
-      font-size: 1.6rem;
+    @include media(md-screen) {
+      font-size: 1.6em;
     }
   }
 

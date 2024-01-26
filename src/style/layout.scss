@@ -30,9 +30,9 @@ body {
     }
   }
 
-  @include media(md-screen, print) {
+  @include media(md-screen) {
     #main {
-      padding: 2rem;
+      padding: 0;
 
       grid-template-columns: 100%;
       grid-template-rows: auto;

@@ -45,8 +45,11 @@
 <style global lang="scss">
   @import "./style/layout";
   @import "./style/theme";
+  @import "./style/print";
 
   :root {
+    --font-size: 18px;
+    --line-height: 1.7em;
     --header-font: system-ui, sans-serif;
     --body-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   }
@@ -66,8 +69,8 @@
   }
 
   body {
-    font-size: 18px;
-    line-height: 1.7em;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
     font-family: var(--body-font);
     color: var(--text-color);
     background-color: var(--background-color);

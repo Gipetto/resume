@@ -31,12 +31,16 @@
                 ><br />
               {/if}
               {#if contact.address.locality && contact.address.region}
-                <span class="locality">{contact.address.locality}</span>,
-                <span class="region">{contact.address.region}</span><br />
+                <span>
+                  <span class="locality">{contact.address.locality}</span>,
+                  <span class="region">{contact.address.region}</span>
+                </span><br />
               {/if}
               {#if contact.address.postalCode && contact.address.countryName}
-                <span class="postal-code">{contact.address.postalCode}</span>,
-                <span class="country-name">{contact.address.countryName}</span>
+                <span>
+                  <span class="postal-code">{contact.address.postalCode}</span>,
+                  <span class="country-name">{contact.address.countryName}</span>
+                </span>
               {/if}
             </p>
           {/if}
@@ -88,15 +92,15 @@
     }
 
     h1 {
-      font-size: 3.25rem;
+      font-size: 3em;
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 1.6em;
       margin-top: 0.25em;
 
-      @include media(md-screen, print) {
-        font-size: 2rem;
+      @include media(md-screen) {
+        font-size: 2em;
       }
     }
 
@@ -108,7 +112,7 @@
       margin-left: 1.5em;
     }
 
-    @include media(md-screen, print) {
+    @include media(md-screen) {
       text-align: center;
 
       .contact {
