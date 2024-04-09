@@ -49,6 +49,7 @@ type Link = {
 type Job = {
   company: string
   location?: Maybe<string>
+  url?: string
   positions: Position[]
 }
 
@@ -78,7 +79,7 @@ export type ResumeData = {
   contact?: ContactMethods
   buzzwords?: BuzzwordGroup[]
   links?: Link[]
-  currentWork?: Job
+  currentWork?: Job[]
   workHistory?: Job[]
   education?: BookSmarts[]
 }

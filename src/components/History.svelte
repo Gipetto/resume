@@ -7,7 +7,7 @@
   import BackToTop from "./BackToTop.svelte"
 
   export let objective: Objective | undefined
-  export let currentWork: Job | undefined
+  export let currentWork: Job[] | undefined
   export let workHistory: Job[] | undefined
   export let education: BookSmarts[] | undefined
 </script>
@@ -24,7 +24,9 @@
   <section class="current">
     <h2>{_("title.current-work", "Current Work")}</h2>
     <dl>
-      <JobDefinition job={currentWork} />
+      {#each currentWork as currentJob (currentJob.company)}
+        <JobDefinition job={currentJob} />
+      {/each}
     </dl>
   </section>
 {/if}
