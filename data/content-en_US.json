@@ -76,27 +76,45 @@
   "objective": [
     "I am a full stack software engineer with experience in distributed web systems. I have worked alone as well as been a part of &mdash; and led &mdash; small to medium sized groups of engineers."
   ],
-  "currentWork": {
-    "company": "Taking a Break",
-    "location": "Vancouver, WA",
-    "positions": [
-      {
-        "from": {
-          "month": 3,
-          "year": 2023
-        },
-        "title": "House Husband",
-        "description": [
-          "Cooking, cleaning, and getting my head together. Maybe or maybe not also working on some secret stuff…"
-        ]
-      }
-    ]
-  },
+  "currentWork": [
+    {
+      "company": "Taking a Break",
+      "location": "Vancouver, WA",
+      "positions": [
+        {
+          "from": {
+            "month": 3,
+            "year": 2023
+          },
+          "title": "House Husband",
+          "description": [
+            "Cooking, cleaning, and getting my head together."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "QuizStreak",
+      "location": "Vancouver, WA",
+      "url": "https://www.quizstreak.com",
+      "positions": [
+        {
+          "from": {
+            "month": 10,
+            "year": 2023
+          },
+          "title": "Lead Developer / Co-owner",
+          "description": [
+            "Building an online trivia game using Svelte, Supabase, duct tape, hopes and dreams."
+          ]
+        }
+      ]
+    }
+  ],
   "workHistory": [
     {
       "company": "RevOpos, Inc",
       "location": "Berkeley, CA",
-      "url": "https://revops.io",
       "positions": [
         {
           "from": {
