@@ -1,13 +1,14 @@
 <script lang="ts">
   import type { Job } from "../types/global"
   import Position from "../components/Position.svelte"
+  import Icon from "./Icon.svelte"
 
   export let job: Job
 </script>
 
 <dt>
   <span>{job.company}, {job.location}</span>{#if job.url}
-  <a href="{job.url}" title={job.company}><span class="sr-only" hidden>{job.company} website</span></a>{/if}
+  <a href="{job.url}" title={job.company}><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title="{job.company}" /></a>{/if}
 </dt>
 {#each job.positions as position (position.title)}
   {#if position.from}
@@ -38,20 +39,7 @@
 
     a {
       text-decoration: none;
-      
-      &::before {
-        content: "WWW";
-        font-weight: 300;
-        font-size: 0.4em;
-        border: 1px solid var(--link-color);
-        border-radius: 5px;
-        padding: 2px 4px;
-        margin-left: 1em;
-      }
-
-      &:hover::before {
-        outline: 1px solid var(--link-color);
-      }
+      padding-left: 0.5em;
     }
   }
 
