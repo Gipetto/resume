@@ -78,17 +78,21 @@
   ],
   "currentWork": [
     {
-      "company": "Taking a Break",
+      "company": "Culture Foundry",
       "location": "Vancouver, WA",
       "positions": [
         {
           "from": {
             "month": 3,
-            "year": 2023
+            "year": 2024
           },
-          "title": "House Husband",
+          "to": {
+            "month": 5,
+            "year": 2024
+          },
+          "title": "Software Engineer, Contractor",
           "description": [
-            "Cooking, cleaning, and getting my head together."
+            "Build custom sites using WordPress using themes based on Bootstrap and Tailwind. Patching together frameworks and plugins to quickly build out custom marketing sites."
           ]
         }
       ]
