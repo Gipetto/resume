@@ -27,8 +27,12 @@
         "text": "Doesn't matter – just write tests for it!"
       },
       {
-        "name": "Typescript/Javascript, SvelteKit, React, CSS, Node",
+        "name": "Typescript/Javascript, SvelteKit, React, Node",
         "text": "We still love you, jQuery!<br>But we love Svelte more..."
+      },
+      {
+        "name": "CSS, Tailwind, and even Boostrap",
+        "text": "Tailwind seems to be eating the world, but I do love me some artisinaly crafted CSS."
       },
       {
         "name": "REST APIs, Web Services, Cloud Functions, GraphQL",
@@ -39,7 +43,7 @@
         "text": "Project/Tech specs, mentoring, planning, watering the EICs."
       },
       {
-        "name": "I18n / L10n",
+        "name": "I18n, L10n, A11y",
         "text": "I’ve learned more than I ever thought I wanted to know about character sets, locales, and externalization."
       },
       {
@@ -59,10 +63,6 @@
       {
         "name": "WordPress Contributor & Plugin Maintainer",
         "text": "Mostly bug fixes and small enhancements to the WP Core, but its all for the greater good, right?"
-      },
-      {
-        "name": "OpenVBX Project Maintainer",
-        "text": "Open Source cloud PBX. Handy stuff. It left us too soon."
       }
     ]
   ],
@@ -74,9 +74,28 @@
     }
   ],
   "objective": [
-    "I am a full stack software engineer with experience in distributed web systems. I have worked alone as well as been a part of &mdash; and led &mdash; small to medium sized groups of engineers."
+    "I am a full stack software engineer with experience in distributed web systems and modern Javascript based web application development. I have worked alone as well as been a part of &mdash; and led &mdash; small to medium sized groups of engineers."
   ],
   "currentWork": [
+    {
+      "company": "QuizStreak",
+      "location": "Vancouver, WA",
+      "url": "https://www.quizstreak.com",
+      "positions": [
+        {
+          "from": {
+            "month": 10,
+            "year": 2023
+          },
+          "title": "Lead Developer / Co-owner",
+          "description": [
+            "Design and build an online trivia game using Svelte, Supabase, and custom CSS. Using a bare minimum of node modules, build features using custom components and CSS to reduce the application footprint and keep raw size to a minimum.",
+            "Analyze user data and behavior, perform customer interviews, and process user feedback to determine feature usage and performance.",
+            "Build job runners using a mixture of edge functions to perform daily routines and Postgres functions to update statistical user data. Build CI pipeline using Github Actions to safely deploy & merge schema updates through different environments."
+          ]
+        }
+      ]
+    },
     {
       "company": "Culture Foundry",
       "location": "Vancouver, WA",
@@ -92,24 +111,9 @@
           },
           "title": "Software Engineer, Contractor",
           "description": [
-            "Build custom sites using WordPress using themes based on Bootstrap and Tailwind. Patching together frameworks and plugins to quickly build out custom marketing sites."
-          ]
-        }
-      ]
-    },
-    {
-      "company": "QuizStreak",
-      "location": "Vancouver, WA",
-      "url": "https://www.quizstreak.com",
-      "positions": [
-        {
-          "from": {
-            "month": 10,
-            "year": 2023
-          },
-          "title": "Lead Developer / Co-owner",
-          "description": [
-            "Building an online trivia game using Svelte, Supabase, duct tape, hopes and dreams."
+            "Build custom sites using on WordPress using themes based on Bootstrap and Tailwind. Extend WordPress functionality through plugins such as Advanced Custom Field or with custom written plugins.",
+            "Break down and plan development work based on client needs, mobile use, accessibility, and functionality defined in design mocks.",
+            "Build workflows for automated CI and deployments on to WPEngine and customer owned properties."
           ]
         }
       ]
