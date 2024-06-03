@@ -6,17 +6,8 @@
 
   body {
     #main {
+      display: block;
       width: auto;
-
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      gap: 0;
-
-      > * {
-        grid-column: 1 / -1 !important;
-        grid-row: auto !important;
-      }
-
       padding: 1em 2em;
       margin: 0;
     }
@@ -43,23 +34,26 @@
     }
 
     section {
-      h2 {
-        break-after: avoid !important;
+      h2:first-of-type {
+        break-after: avoid;
       }
-      dt {
-        break-after: avoid !important;
-      }
-      dd {
-        h3,
-        h4 {
-          break-after: avoid !important;
+
+      dl {
+        break-before: avoid;
+        
+        dt {
+          break-after: avoid-page;
+        }
+        dd {
+          break-inside: avoid-page;
         }
       }
+
     }
   
     aside {
       h2 {
-        break-after: avoid;
+        // break-after: avoid;
       }
       
       .bubble {
