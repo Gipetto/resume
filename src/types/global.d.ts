@@ -15,6 +15,7 @@ export type Name = {
   lastName: string
   nickName?: Maybe<string>
   title?: Maybe<string>
+  tagline?: Maybe<string>
 }
 
 export type ContactMethods = {

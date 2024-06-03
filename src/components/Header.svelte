@@ -18,6 +18,9 @@
         {/if}
         <span class="family-name">{name.lastName}</span>
       </h1>
+      {#if name.tagline}
+        <h2 class="tagline" data-tagline={name.tagline}>{name.tagline}</h2>
+      {/if}
       {#if name.title}
         <h2 class="title">{name.title}</h2>
       {/if}
@@ -92,11 +95,17 @@
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 1.8em;
     }
 
-    h2 {
-      font-size: 1.6em;
+    h2.tagline {
+      color: var(--color-orange);
+      font-size: 3.4em;
+      text-shadow: 1px 1px 0 black;
+    }
+
+    h2.title {
+      font-size: 1.4em;
       margin-top: 0.25em;
 
       @include media(md-screen) {

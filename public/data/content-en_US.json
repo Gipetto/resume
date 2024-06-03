@@ -2,8 +2,8 @@
   "name": {
     "firstName": "Shawn",
     "lastName": "Parker",
-    "nickName": "Wookiee",
-    "title": "Tech Lead / Staff Engineer"
+    "title": "Tech Lead / Staff Engineer",
+    "tagline": "Wookiee at Large"
   },
   "contact": {
     "address": {
