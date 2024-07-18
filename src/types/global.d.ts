@@ -47,11 +47,20 @@ type Link = {
   text: string
 }
 
+type Patent = {
+  type: string
+  number: string
+  title: string
+  issued: string
+  description: string[]
+}
+
 type Job = {
   company: string
   location?: Maybe<string>
   url?: string
   positions: Position[]
+  patents: Patent[]
 }
 
 type StartEndDate = {

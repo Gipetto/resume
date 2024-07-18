@@ -14,7 +14,6 @@
 
 {#if objective}
   <section class="me">
-    <h2>{_("title.me", "About Me")}</h2>
     <div>
       <Text text={objective} />
     </div>

@@ -44,12 +44,13 @@
 
 <style global lang="scss">
   @import "./style/layout";
+  @import "./style/utility";
   @import "./style/theme";
   @import "./style/print";
 
   :root {
-    --font-size: 18px;
-    --line-height: 1.7em;
+    --font-size: 17px;
+    --line-height: 1.85rem;
     --header-font: system-ui, sans-serif;
     --body-font: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   }
@@ -95,6 +96,10 @@
     font-family: var(--header-font);
     font-variant-ligatures: common-ligatures;
     font-weight: 900;
+  }
+
+  p {
+    margin-block: 0.75em;
   }
 
   .content {

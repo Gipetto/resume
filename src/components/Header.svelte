@@ -98,7 +98,7 @@
       font-size: 1.8em;
     }
 
-    h2.tagline {
+    .tagline {
       color: var(--color-orange);
       font-size: 3.4em;
       text-shadow: 1px 1px 0 black;

@@ -179,6 +179,17 @@
             "Drove a culture of testing as a normal part of the development lifecycle. Drove adoption of technologies and tooling to improve system observability."
           ]
         }
+      ],
+      "patents": [
+        {
+          "type": "U.S. Patent",
+          "number": "11,153,390 B2",
+          "issued": "Oct. 19, 2021",
+          "title": "Multi-Jurisdictional Endpoint Allocation Compliance",
+          "description": [
+            "A system for evaluating and verifying jurisdictional eligibility to allocate resources based on identification data and regulatory rule sets."
+          ]
+        }
       ]
     },
     {

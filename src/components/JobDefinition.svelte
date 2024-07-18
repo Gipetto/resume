@@ -1,6 +1,9 @@
 <script lang="ts">
   import type { Job } from "../types/global"
+  import _ from "../services/i18n"
   import Position from "../components/Position.svelte"
+  import BulletedHeading from "./BulletedHeading.svelte"
+  import Patent from "./Patent.svelte"
   import Icon from "./Icon.svelte"
 
   export let job: Job
@@ -17,7 +20,18 @@
     </dd>
   {/if}
 {/each}
-
+{#if job.patents}
+  <dd class="patents">
+    <BulletedHeading of="h3" class="mb-0">{_("title.patents", "Patents")}</BulletedHeading>
+    <ul>
+      {#each job.patents as patent (patent.number)}
+        <li>
+          <Patent {patent} />
+        </li> 
+      {/each}
+    </ul>
+  </dd>
+{/if}
 <style lang="scss">
   @import "../style/mixins";
 
@@ -48,6 +62,12 @@
 
     @include media(sm-screen) {
       margin-left: 0;
+    }
+
+    &.patents {
+      ul {
+        list-style-type: disc outside;
+      }
     }
   }
 </style>
