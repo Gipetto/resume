@@ -7,8 +7,8 @@
   $bubbleWidth: 250px;
   $bubbleRight: 0 - $bubbleWidth - 42;
 
-  $bubbleShadow: rgb(110, 110, 110);
-  $bubbleBorderColor: rgb(225, 225, 225);
+  $bubbleShadow: var(--shadow-color-bubble);
+  $bubbleBorderColor: var(--border-color-bubble);
   $borderRadius: 10px;
   $borderRadiusSmall: 7px;
 
@@ -52,7 +52,7 @@
     background: var(--background-color-bubble);
     opacity: 0;
     border: 1px solid $bubbleBorderColor;
-    padding: 10px 10px 10px 14px;
+    padding: 10px 12px 10px 16px;
     position: fixed;
     right: -5000px;
     top: -12px;
@@ -102,5 +102,12 @@
   .bubble::before {
     // em-dash & space
     content: "\2013\0020";
+  }
+}
+
+@media screen {
+  .bubble {
+    font-size: 0.95em;
+    line-height: 1.4rem;
   }
 }
