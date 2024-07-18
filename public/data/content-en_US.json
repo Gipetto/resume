@@ -8,9 +8,9 @@
   "contact": {
     "address": {
       "streetAddress": null,
-      "locality": "Vancouver",
-      "region": "Washington",
-      "postalCode": "98682",
+      "locality": "Castle Pines",
+      "region": "CO",
+      "postalCode": "80108",
       "countryName": "USA"
     },
     "methods": {
@@ -79,7 +79,7 @@
   "currentWork": [
     {
       "company": "QuizStreak",
-      "location": "Vancouver, WA",
+      "location": "Castle Pines, CO",
       "url": "https://www.quizstreak.com",
       "positions": [
         {
@@ -106,7 +106,7 @@
             "year": 2024
           },
           "to": {
-            "month": 5,
+            "month": 6,
             "year": 2024
           },
           "title": "Software Engineer, Contractor",
