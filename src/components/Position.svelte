@@ -28,5 +28,6 @@
     font-weight: normal;
     margin-top: 0;
     line-height: 1em;
+    color: var(--text-color-dark-gray);
   }
 </style>

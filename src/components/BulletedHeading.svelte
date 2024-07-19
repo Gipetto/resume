@@ -17,8 +17,9 @@
     &:before {
       position: absolute;
       font-weight: 400;
-      content: "\22C4";
-      left: -1rem;
+      content: "#";
+      left: -1.1rem;
+      color: lightgray;
     }
   }
 </style>
