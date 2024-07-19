@@ -11,7 +11,7 @@
 
 <dt>
   <span>{job.company}, {job.location}</span>{#if job.url}
-  <a href="{job.url}" title={job.company}><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title="{job.company}" /></a>{/if}
+  <a href="{job.url}" title={job.company} target="_blank"><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title="{job.company}" /></a>{/if}
 </dt>
 {#each job.positions as position (position.title)}
   {#if position.from}
