@@ -91,7 +91,7 @@
           "description": [
             "Design and build an online trivia game using Svelte, Supabase, and custom CSS. Using a bare minimum of node modules, build features using custom components and CSS to reduce the application footprint and keep raw size to a minimum.",
             "Analyze user data and behavior, perform customer interviews, and process user feedback to determine feature usage and performance.",
-            "Build job runners using a mixture of edge functions to perform daily routines and Postgres functions to update statistical user data. Build CI pipeline using Github Actions to safely deploy & merge schema updates through different environments."
+            "Build job runners using edge functions and Postgres functions to update statistical user data. Build CI pipeline using GitHub Actions to deploy & merge schema updates through different environments safely."
           ]
         }
       ]
@@ -111,9 +111,9 @@
           },
           "title": "Software Engineer, Contractor",
           "description": [
-            "Build custom sites using on WordPress using themes based on Bootstrap and Tailwind. Extend WordPress functionality through plugins such as Advanced Custom Field or with custom written plugins.",
+            "Build custom sites on WordPress using themes based on Bootstrap and Tailwind. Extend WordPress functionality through plugins such as Advanced Custom Field or with custom-written plugins.",
             "Break down and plan development work based on client needs, mobile use, accessibility, and functionality defined in design mocks.",
-            "Build workflows for automated CI and deployments on to WPEngine and customer owned properties."
+            "Build workflows for automated CI and deployments onto WPEngine and customer-owned properties."
           ]
         }
       ]
@@ -135,8 +135,8 @@
           },
           "title": "Lead Software Engineer",
           "description": [
-            "Lead a team focused on customer and product growth. Implement new features in a Python & React/Typescript code base. Work with Product, Sales and Support to scope and design new features. Increase application performance and reduce build size through analysis of browser performance tools and package analysis. Coach younger engineers in, among other things: software development best practice, project management, and on-call response.",
-            "Oversee a team of remote contractors in the finalization of an internal Design System. Ensure that code quality and design pattern consistency was met through code review and documentation."
+            "Lead a team focused on customer and product growth. Implement new features in a Python & React/Typescript code base. Work with Product, Sales, and Support to scope and design new features. Increase application performance and reduce build size through analysis of browser performance tools and package analysis. Coach younger engineers in, among other things: software development best practices, project management, and on-call response.",
+            "Oversee a team of remote contractors in the finalization of an internal Design System. Ensure that code quality and design pattern consistency are met through code review and documentation."
           ]
         }
       ]
@@ -156,9 +156,9 @@
           },
           "title": "Staff Software Engineer / Tech Lead, Growth Engineering",
           "description": [
-            "Support multiple small teams in the development of the signup and onboarding flow, as well as tools to enable customer growth and learning. Working with project managers, help define features, scope, and requirements for upcoming projects. Working with the team to build systems that are scalable, fault tolerant, tested, and easy to maintain.",
-            "Coach younger engineers on approaches to engineering, build skills in breaking down projects and tasks into consumable chunks, troubleshooting problems, and to commit as few sins against programming as possible along the way.",
-            "Oversee team of remote contractors. Ensure productivity is maintained by clearing roadblocks, wrangling product managers to clarify expectations, and setting clear task definitions."
+            "Support multiple small teams in the development of the signup and onboarding flow, as well as tools to enable customer growth and learning. Working with project managers, help define features, scope, and requirements for upcoming projects. Working with the team to build systems that are scalable, fault-tolerant, tested, and easy to maintain.",
+            "Coach younger engineers on approaches to engineering, build skills in breaking down projects and tasks into consumable chunks, troubleshoot problems, and commit as few sins against programming as possible along the way.",
+            "Oversee a team of remote contractors. Ensure productivity is maintained by clearing roadblocks, wrangling product managers to clarify expectations, and setting clear task definitions."
           ]
         },
         {
@@ -172,11 +172,11 @@
           },
           "title": "Senior Software Engineer 1 & 2",
           "description": [
-            "During these years at Twilio I've been a part of many different teams, including Growth Engineering / Onboarding, Experimentation Platform, Phone Numbers / Shortcodes, Console and OpenVBX.",
-            "Built a customer data platform  to support the experimentation platform as well as enable teams to make run time decisions about their customers based on live data and computed metrics.",
-            "Designed customer workflow for, and built systems to support, a regulatory process to provision phone numbers in compliance with world wide, country specific rules.",
-            "Deconstructed a monolithic console code base to enable individual teams to support their own development lifecycles, decrease contention over core sections of the codebase, and enable different teams to adopt the back-end languages that were right for them.",
-            "Drove a culture of testing as a normal part of the development lifecycle. Drove adoption of technologies and tooling to improve system observability."
+            "During these years at Twilio, I was part of many different teams, including Growth Engineering / Onboarding, Experimentation Platform, Phone Numbers / Shortcodes, Console, and OpenVBX.",
+            "Built a customer data platform to support the experimentation platform as well as enable teams to make run-time decisions about their customers based on live data and computed metrics.",
+            "Designed customer workflow for, and built systems to support, a regulatory process to provision phone numbers in compliance with worldwide, country-specific rules.",
+            "Deconstructed a monolithic console code base to enable individual teams to support their development lifecycles, decrease contention over core sections of the codebase, and enable different teams to adopt the back-end languages that were right for them.",
+            "Drove a culture of testing as a normal part of the development lifecycle Increased adoption of technologies and tooling to improve system observability and drive down recovery time from errors."
           ]
         }
       ],
@@ -207,8 +207,8 @@
           },
           "title": "Senior Developer",
           "description": [
-            "Developed custom solutions for building on and extending WordPress as a publishing platform. Developed project requirements and development plans for projects ranging from plugin development or API integrations to large scale deployments that require careful server resource management and integration plans for different services.",
-            "While the bulk of my work involved developing tools for client websites that build on and extend the functionality of WordPress I was also responsible for developing systems built on top of CodeIgniter and that take advantage of Amazon’s cloud services to scale to meet the demands of high-volume, time sensitive data processing."
+            "Developed custom solutions for building on and extending WordPress as a publishing platform. Developed project requirements and development plans for projects ranging from plugin development or API integrations to large-scale deployments that require careful server resource management and integration plans for different services.",
+            "While the bulk of my work involved developing tools for client websites that build on and extend the functionality of WordPress I was also responsible for developing systems built on top of CodeIgniter that take advantage of Amazon’s cloud services to scale to meet the demands of high-volume, time-sensitive data processing."
           ]
         }
       ]
@@ -228,7 +228,7 @@
           },
           "title": "Web Developer & Designer",
           "description": [
-            "Maintained the client facing website and client portal for a hardware, software and technical services distributor. Built a custom framework for managing product information, client portal access, and educational class schedules. Provided the marketing team with tools to help efficiently develop client communications."
+            "Maintained the client-facing website and client portal for a hardware, software, and technical services distributor. Built a custom framework for managing product information, client portal access, and educational class schedules. Provided the marketing team with tools to help efficiently develop client communications."
           ]
         }
       ]
