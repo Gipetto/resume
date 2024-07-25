@@ -38,8 +38,7 @@
           target="_blank"
           href={link.href}
         >
-          <Icon name={link.icon} />
-          {link.text}
+          <Icon name={link.icon} /><span> </span>{link.text}
         </a>
       </li>
     {/each}

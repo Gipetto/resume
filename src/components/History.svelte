@@ -62,15 +62,15 @@
     margin: 3em 0;
   }
 
-  .me {
-    h2 {
-      margin-bottom: 1em;
+  // .me {
+  //   h2 {
+  //     margin-bottom: 1em;
 
-      @include media(md-screen, print) {
-        margin-bottom: 0.5em;
-      }
-    }
-  }
+  //     @include media(md-screen, print) {
+  //       margin-bottom: 0.5em;
+  //     }
+  //   }
+  // }
   .education {
     ul {
       padding-left: 1em;

@@ -5,6 +5,10 @@
   }
 
   body {
+    a, a:visited {
+      color: black;
+    }
+
     #main {
       display: block;
       width: auto;

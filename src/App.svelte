@@ -81,8 +81,10 @@
   a {
     cursor: pointer;
     color: var(--link-color);
+    text-underline-offset: 0.13em;
+
     &:hover {
-      text-decoration: none;
+      text-underline-offset: 0.3em;
     }
     &:visited {
       color: var(--link-color-visited);
