@@ -108,6 +108,14 @@
     @include media(md-screen, print) {
       margin: 5em 0 0 0;
     }
+
+    ul {
+    padding-left: 1.5em;
+
+    li {
+      line-height: 1.3;
+    }
+  }
   }
 
   aside {

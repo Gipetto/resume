@@ -14,4 +14,4 @@
   const month = _formatter.format(_date)
 </script>
 
-{#if hasMonth}{month}, {/if}{year}
+{#if hasMonth}{month} {/if}{year}

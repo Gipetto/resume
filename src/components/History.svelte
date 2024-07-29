@@ -45,7 +45,7 @@
     <ul>
       {#each education as stint (stint.description)}
         <li>
-          {stint.description}, <Date date={stint.date} /><br />
+          <b>{stint.description}</b>, <Date date={stint.date} /><br />
           <i>{stint.institution}</i>
         </li>
       {/each}
@@ -71,13 +71,4 @@
   //     }
   //   }
   // }
-  .education {
-    ul {
-      padding-left: 1em;
-
-      li {
-        line-height: 1.3;
-      }
-    }
-  }
 </style>
