@@ -14,8 +14,6 @@
   <link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
   <link rel="profile" href="http://microformats.org/profile/hcard" />
   <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="stylesheet" href="build/main.css?v=1.5.0" />
-  <script defer src="build/main.js?v=1.5.0"></script>
   <noscript>
     <style type="text/css">
       blockquote {
@@ -48,13 +46,6 @@
 </head>
 
 <body>
-  <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
   <noscript>
     <blockquote>
       <p>How anxiously I yearned for the Javascript I had forsaken.</p>
@@ -62,6 +53,7 @@
     </blockquote>
   </noscript>
   <div id="main"></div>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>

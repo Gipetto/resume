@@ -66,7 +66,7 @@
 
     &.patents {
       ul {
-        list-style-type: disc outside;
+        list-style: disc outside;
       }
     }
   }
