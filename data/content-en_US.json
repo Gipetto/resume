@@ -109,10 +109,6 @@
             "month": 3,
             "year": 2024
           },
-          "to": {
-            "month": 6,
-            "year": 2024
-          },
           "title": "Software Engineer, Contractor",
           "description": [
             "Build custom sites on WordPress using themes based on Bootstrap and Tailwind. Extend WordPress functionality through plugins such as Advanced Custom Field or with custom-written plugins.",
@@ -235,7 +231,8 @@
             "Maintained the client-facing website and client portal for a hardware, software, and technical services distributor. Built a custom framework for managing product information, client portal access, and educational class schedules. Provided the marketing team with tools to help efficiently develop client communications."
           ]
         }
-      ]
+      ],
+      "hidden": true
     }
   ],
   "education": [
