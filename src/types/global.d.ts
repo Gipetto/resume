@@ -61,6 +61,7 @@ type Job = {
   url?: string
   positions: Position[]
   patents: Patent[]
+  hidden?: true | false
 }
 
 type StartEndDate = {

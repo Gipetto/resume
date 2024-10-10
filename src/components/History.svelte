@@ -34,7 +34,9 @@
     <h2>{_("title.work-history", "Work History")}</h2>
     <dl>
       {#each workHistory as job (job.company)}
+        {#if !job.hidden}
         <JobDefinition {job} />
+        {/if}
       {/each}
     </dl>
   </section>
