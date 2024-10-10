@@ -1,3 +1,5 @@
+<script lang="ts"></script>
+
 <a class="skip-link" href="#content">Skip to content</a>
 
 <style lang="css">

@@ -110,12 +110,12 @@
     }
 
     ul {
-    padding-left: 1.5em;
+      padding-left: 1.5em;
 
-    li {
-      line-height: 1.3;
+      li {
+        line-height: 1.3;
+      }
     }
-  }
   }
 
   aside {

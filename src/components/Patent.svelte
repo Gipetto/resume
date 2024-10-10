@@ -1,6 +1,5 @@
 <script lang="ts">
   export let patent
-  console.log(patent)
 </script>
 
 <h4>{patent.type} {patent.number} - <span>{patent.title}</span></h4>
