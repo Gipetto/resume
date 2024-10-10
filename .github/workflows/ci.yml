@@ -1,10 +1,10 @@
 # This is a basic workflow to help you get started with Actions
-name: Build and Publish
+name: Build
 
 on:
-  push:
-    branches: [ master ]
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 env:
   CI: true
@@ -26,8 +26,3 @@ jobs:
         env:
           NODE_OPTIONS: ${{ env.NODE_OPTIONS }}
         run: npm run build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: dist
