@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: "npm"
+      - name: Install
+        run: npm install
       - name: Build
         env:
           NODE_OPTIONS: ${{ env.NODE_OPTIONS }}
