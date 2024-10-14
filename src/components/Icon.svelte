@@ -4,10 +4,17 @@
 
   type IconName = keyof typeof icons
   
-  export let name: IconName
-  export let width: number = 16
-  export let height: number = 16
-  export let title: string | undefined = undefined
+  const { 
+    name,
+    width = 16,
+    height = 16,
+    title = undefined
+  }: {
+    name: IconName
+    width?: number
+    height?: number
+    title?: string | undefined
+  } = $props()
 
   const typedIcons: IconData = icons
   const icon = typedIcons[name]

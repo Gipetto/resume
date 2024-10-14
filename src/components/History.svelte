@@ -6,10 +6,17 @@
   import Date from "./Date.svelte"
   import BackToTop from "./BackToTop.svelte"
 
-  export let objective: Objective | undefined
-  export let currentWork: Job[] | undefined
-  export let workHistory: Job[] | undefined
-  export let education: BookSmarts[] | undefined
+  const { 
+    objective, 
+    currentWork, 
+    workHistory, 
+    education 
+  }: {
+    objective: Objective | undefined
+    currentWork: Job[] | undefined
+    workHistory: Job[] | undefined
+    education: BookSmarts[] | undefined
+  } = $props()
 </script>
 
 {#if objective}

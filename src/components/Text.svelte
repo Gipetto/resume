@@ -1,6 +1,11 @@
 <script lang="ts">
-  export let text: string[]
-  export let className: string = ""
+  const { 
+    text,
+    className = ""
+  }: {
+    text: string[]
+    className?: string
+  } = $props()
 </script>
 
 {#each text as line}

@@ -3,7 +3,6 @@ import { svelte } from "@sveltejs/vite-plugin-svelte"
 import { sveltePreprocess} from "svelte-preprocess"
 
 const production = process.env.NODE_ENV === "production"
-console.log(process.env)
 
 export default defineConfig({
   base: production ? "/resume" : "",

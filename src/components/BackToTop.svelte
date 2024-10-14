@@ -2,7 +2,9 @@
   import Icon from "./Icon.svelte"
 </script>
 
-<p><a class="back-to-top" href="#main" on:click|preventDefault|stopPropagation={() => { 
+<p><a class="back-to-top" href="#main" onclick={(e) => {
+  e.preventDefault()
+  e.stopPropagation()
   window.scrollTo(0, 0) 
 }}><Icon name="returnArrow" width={18} height={18} />Back to top</a></p>
 

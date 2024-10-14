@@ -1,7 +1,9 @@
 <script lang="ts">
   import type { StartEndDate } from "../types/global"
 
-  export let date: StartEndDate
+  const { date }: {
+     date: StartEndDate
+  } = $props()
 
   const hasMonth = date.month && date.month > 0 && date.month <= 12
   const _formatter = new Intl.DateTimeFormat("en", { month: "short"})
@@ -14,4 +16,4 @@
   const month = _formatter.format(_date)
 </script>
 
-{#if hasMonth}{month} {/if}{year}
+{#if hasMonth}{month}&nbsp;{/if}{year}

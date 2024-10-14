@@ -1,4 +1,5 @@
 import { readable, writable } from "svelte/store"
+import { on } from "svelte/events"
 import type { Loadable, ResumeData, Theme } from "./types/global"
 import type { Subscriber } from "svelte/store"
 import stringsData from "./data/strings-en_US.json"
@@ -49,7 +50,9 @@ const startingTheme = storedTheme || (browserThemePreference.matches ? "dark" : 
 export const theme = writable<Theme>(storedTheme || startingTheme)
 theme.subscribe((value) => localStorage.setItem("theme", value))
 
-browserThemePreference.addEventListener("change", (e) => {
+// Handle the browser preferences changing
+on(browserThemePreference, "change", (e) => {
+  console.log("on")
   /**
    * The media query above is specifically for dark mode, 
    * so `e.matches` here is "dark mode === true"

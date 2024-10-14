@@ -2,9 +2,12 @@
   import type { Position } from "../types/global"
   import Text from "./Text.svelte"
   import Date from "./Date.svelte"
-    import BulletedHeading from "./BulletedHeading.svelte"
+  import BulletedHeading from "./BulletedHeading.svelte"
 
-  export let position: Position
+  const { position }: {
+    position: Position
+  } = $props()
+
   let empty = position.description.length < 1
 </script>
 
@@ -12,9 +15,11 @@
 <BulletedHeading of="h3" class="mb-0">
   {position.title}
 </BulletedHeading>
-<h4 class="mb-0">
-  <Date date={position.from} /> – {#if position.to}<Date date={position.to} />{:else}present{/if}
-</h4>
+{#if position.from}
+  <h4 class="mb-0">
+    <Date date={position.from} /> – {#if position.to}<Date date={position.to} />{:else}present{/if}
+  </h4>
+{/if}
 {#if !empty}
   <div>
     <Text text={position.description} />

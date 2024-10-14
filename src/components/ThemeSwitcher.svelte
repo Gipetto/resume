@@ -15,11 +15,11 @@
 </script>
 
 {#if selectedTheme === "light"}
-<button on:click={() => setTheme("dark")} aria-label="Switch to Dark Theme">
+<button onclick={() => setTheme("dark")} aria-label="Switch to Dark Theme">
   <Icon name="sun" width={20} height={20} />
 </button>
 {:else}
-<button on:click={() => setTheme("light")} aria-label="Switch to Light Theme">
+<button onclick={() => setTheme("light")} aria-label="Switch to Light Theme">
   <Icon name="moon" width={20} height={20} />
 </button>
 {/if}
