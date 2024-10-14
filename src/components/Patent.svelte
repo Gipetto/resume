@@ -1,5 +1,9 @@
 <script lang="ts">
-  export let patent
+    import type { Patent } from "../types/global"
+
+  const { patent }: {
+    patent: Patent
+  } = $props()
 </script>
 
 <h4>{patent.type} {patent.number} - <span>{patent.title}</span></h4>
@@ -14,5 +18,9 @@
     span {
       font-weight: 400;
     }
+  }
+
+  p {
+    line-height: var(--line-height);
   }
 </style>
