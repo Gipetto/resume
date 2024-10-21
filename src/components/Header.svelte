@@ -1,9 +1,15 @@
 <script lang="ts">
   import type { ContactMethods, Name } from "../types/global"
 
-  export let name: Name
-  export let contact: ContactMethods | undefined
-  export let isLoading: boolean
+  const { 
+    name, 
+    contact, 
+    isLoading 
+  }: {
+    name: Name
+    contact: ContactMethods | undefined
+    isLoading: boolean
+  } = $props()
 </script>
 
 {#if !isLoading}

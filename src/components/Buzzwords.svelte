@@ -2,8 +2,11 @@
   import type { BuzzwordGroup, Link } from "../types/global"
   import Icon from "./Icon.svelte"
   import _ from "../services/i18n"
-  export let buzzwordGroups: BuzzwordGroup[] | undefined
-  export let links: Link[] | undefined
+
+  const { buzzwordGroups, links }: {
+    buzzwordGroups: BuzzwordGroup[] | undefined
+    links: Link[] | undefined
+  } = $props()
 
   const docRoot = document.documentElement
 
@@ -13,7 +16,7 @@
   }
 </script>
 
-<svelte:body on:mousemove={handleMousemove} />
+<svelte:body onmousemove={handleMousemove} />
 
 {#if buzzwordGroups}
   <h2>{_("title.buzzwords", "Buzzwords")}</h2>

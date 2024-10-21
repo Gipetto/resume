@@ -1,10 +1,20 @@
 <script lang="ts">
-  export let of: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
-  let className = ""
-  export { className as class }
+  import type { Snippet } from "svelte"
+
+  const { 
+    children, 
+    class: className, 
+    of 
+  }: {
+    children: Snippet
+    of: "h1" | "h2" | "h3" | "h4" | "h5" | "h6"
+    class: string
+  } = $props()
 </script>
 
-<svelte:element this={of} class={className}><slot/></svelte:element>
+<svelte:element this={of} class={className}>
+  {@render children()}
+</svelte:element>
 
 <style lang="scss">
   h1,
