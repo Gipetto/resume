@@ -35,7 +35,7 @@
   </dd>
 {/if}
 <style lang="scss">
-  @import "../style/mixins";
+  @use "../style/mixins";
 
   dt {
     margin-top: 1.5em;
@@ -49,7 +49,7 @@
       text-decoration-thickness: 1px;
     }
 
-    @include media(md-screen) {
+    @include mixins.media(md-screen) {
       font-size: 1.6em;
     }
 
@@ -62,7 +62,7 @@
   dd {
     margin-left: 1.25em;
 
-    @include media(sm-screen) {
+    @include mixins.media(sm-screen) {
       margin-left: 0;
     }
 

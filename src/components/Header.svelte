@@ -90,7 +90,7 @@
 {/if}
 
 <style lang="scss">
-  @import "../style/mixins";
+  @use "../style/mixins";
 
   header {
     h1,
@@ -114,7 +114,7 @@
       font-size: 1.4em;
       margin-top: 0.25em;
 
-      @include media(md-screen) {
+      @include mixins.media(md-screen) {
         font-size: 2em;
       }
     }
@@ -127,7 +127,7 @@
       margin-left: 1.5em;
     }
 
-    @include media(md-screen) {
+    @include mixins.media(md-screen) {
       text-align: center;
 
       .contact {

@@ -65,7 +65,7 @@
 <BackToTop />
 
 <style lang="scss">
-  @import "../style/mixins";
+  @use "../style/mixins";
 
   section:not(:first-of-type) {
     margin: 3em 0;
@@ -75,7 +75,7 @@
   //   h2 {
   //     margin-bottom: 1em;
 
-  //     @include media(md-screen, print) {
+  //     @include mixins.media(md-screen, print) {
   //       margin-bottom: 0.5em;
   //     }
   //   }

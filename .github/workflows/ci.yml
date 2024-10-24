@@ -4,15 +4,16 @@ name: Build
 on:
   pull_request:
     branches:
-      - main
+      - master
+  workflow_dispatch:
 
 env:
   CI: true
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     env:
-      NODE_VERSION: "20.x"
+      NODE_VERSION: "22.x"
       NODE_OPTIONS: "--max_old_space_size=4096"
     steps:
       - name: Checkout
