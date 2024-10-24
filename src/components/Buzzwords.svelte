@@ -49,7 +49,7 @@
 {/if}
 
 <style lang="scss">
-  @import "../style/bubbles.scss";
+  @use "../style/bubbles.scss";
 
   .bubbles {
     border-bottom: 1px dotted gray;

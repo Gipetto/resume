@@ -43,10 +43,11 @@
 <Footer />
 
 <style global lang="scss">
-  @import "./style/layout";
-  @import "./style/utility";
-  @import "./style/theme";
-  @import "./style/print";
+  @use "./style/layout";
+  @use "./style/utility";
+  @use "./style/theme";
+  @use "./style/print";
+  @use "./style/mixins";
 
   :root {
     --font-size: 17px;
@@ -105,7 +106,7 @@
   }
 
   .content {
-    @include media(md-screen, print) {
+    @include mixins.media(md-screen, print) {
       margin: 5em 0 0 0;
     }
 

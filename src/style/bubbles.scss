@@ -1,4 +1,4 @@
-@import "./mixins.scss";
+@use "mixins.scss";
 
 @media not print and (hover: hover) {
   $exposeDuration: 0.15s;
@@ -61,7 +61,7 @@
     line-height: 18px;
     z-index: 10;
 
-    @include border-radius($borderRadiusSmall);
+    @include mixins.border-radius($borderRadiusSmall);
 
     box-shadow: 1px 1px 5px $bubbleShadow;
     transition: opacity $hideDuration ease-in;
