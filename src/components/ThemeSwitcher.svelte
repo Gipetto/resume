@@ -1,20 +1,14 @@
 <script lang="ts">
   import Icon from "./Icon.svelte"
-  import { theme } from "../store"
+  import { theme } from "../store.svelte"
   import type { Theme } from "../types/global"
 
   const setTheme = (value: Theme): undefined => {
-    theme.set(value)
+    theme.value = value
   }
-
-  let selectedTheme: Theme
-
-  theme.subscribe((value) => {
-    selectedTheme = value
-  })
 </script>
 
-{#if selectedTheme === "light"}
+{#if theme.value === "light"}
 <button onclick={() => setTheme("dark")} aria-label="Switch to Dark Theme">
   <Icon name="sun" width={20} height={20} />
 </button>

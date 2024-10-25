@@ -1,18 +1,15 @@
 <script lang="ts">
-  import { content } from "./store"
+  import { content } from "./store.svelte"
   import Header from "./components/Header.svelte"
   import History from "./components/History.svelte"
   import Buzzwords from "./components/Buzzwords.svelte"
   import Footer from "./components/Footer.svelte"
-  import { theme } from "./store"
+  import { theme } from "./store.svelte"
   import SkipLink from "./components/SkipLink.svelte"
 
-  let selectedTheme;
-
-  theme.subscribe((value) => {
-    selectedTheme = value
+  $effect(() => {
     document.body.classList.remove("light", "dark")
-    document.body.classList.add(selectedTheme === "dark" ? "dark" : "light")
+    document.body.classList.add(theme.value === "dark" ? "dark" : "light")
   })
 </script>
 

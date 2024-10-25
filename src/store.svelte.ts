@@ -47,15 +47,27 @@ const storedTheme = localStorage.getItem("theme") as Theme
 const browserThemePreference = window.matchMedia("(prefers-color-scheme: dark)")
 const startingTheme = storedTheme || (browserThemePreference.matches ? "dark" : "light")
 
-export const theme = writable<Theme>(storedTheme || startingTheme)
-theme.subscribe((value) => localStorage.setItem("theme", value))
+const createThemeStore = (initialValue: "light" | "dark") => {
+  let theme = $state(initialValue)
+
+  return {
+    get value() {
+      return theme
+    },
+    set value(value) {
+      theme = value
+      localStorage.setItem("theme", theme)
+    }
+  }
+}
+
+export let theme = createThemeStore(storedTheme || startingTheme)
 
 // Handle the browser preferences changing
 on(browserThemePreference, "change", (e) => {
-  console.log("on")
   /**
    * The media query above is specifically for dark mode, 
    * so `e.matches` here is "dark mode === true"
    */
-  theme.set(e.matches ? "dark" : "light")
+  theme.value = e.matches ? "dark" : "light"
 })

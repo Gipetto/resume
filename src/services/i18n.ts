@@ -1,4 +1,4 @@
-import { strings } from "../store"
+import { strings } from "../store.svelte"
 import { get } from "svelte/store"
 
 const uiStrings = get(strings)
