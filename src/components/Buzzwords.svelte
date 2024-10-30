@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { BuzzwordGroup, Link } from "../types/global"
   import Icon from "./Icon.svelte"
-  import _ from "../services/i18n"
+  import _ from "../services/i18n.svelte"
 
   const { buzzwordGroups, links }: {
     buzzwordGroups: BuzzwordGroup[] | undefined

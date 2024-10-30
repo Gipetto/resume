@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { BookSmarts, Job, Objective } from "../types/global"
-  import _ from "../services/i18n"
+  import _ from "../services/i18n.svelte"
   import JobDefinition from "./JobDefinition.svelte"
   import Text from "./Text.svelte"
   import Date from "./Date.svelte"

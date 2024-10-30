@@ -1,44 +1,41 @@
 <script lang="ts">
-  import { content } from "./store"
+  import { content } from "./store.svelte"
   import Header from "./components/Header.svelte"
   import History from "./components/History.svelte"
   import Buzzwords from "./components/Buzzwords.svelte"
   import Footer from "./components/Footer.svelte"
-  import { theme } from "./store"
+  import { theme } from "./store.svelte"
   import SkipLink from "./components/SkipLink.svelte"
 
-  let selectedTheme;
-
-  theme.subscribe((value) => {
-    selectedTheme = value
+  $effect(() => {
     document.body.classList.remove("light", "dark")
-    document.body.classList.add(selectedTheme === "dark" ? "dark" : "light")
+    document.body.classList.add(theme.value === "dark" ? "dark" : "light")
   })
 </script>
 
-{#if $content.isLoading == false && $content.data}
+{#if content.value.isLoading == false && content.value.data}
   <SkipLink />
   <Header
-    name={$content.data.name}
-    contact={$content.data.contact}
-    isLoading={$content.isLoading}
+    name={content.value.data.name}
+    contact={content.value.data.contact}
+    isLoading={content.value.isLoading}
   />
   <section id="content" class="content">
     <History
-      objective={$content.data.objective}
-      currentWork={$content.data.currentWork}
-      workHistory={$content.data.workHistory}
-      education={$content.data.education}
+      objective={content.value.data.objective}
+      currentWork={content.value.data.currentWork}
+      workHistory={content.value.data.workHistory}
+      education={content.value.data.education}
     />
   </section>
   <aside>
     <Buzzwords
-      buzzwordGroups={$content.data.buzzwords}
-      links={$content.data.links}
+      buzzwordGroups={content.value.data.buzzwords}
+      links={content.value.data.links}
     />
   </aside>
-{:else if $content.isLoading == false && $content.error}
-  <p>{$content.error}</p>
+{:else if content.value.isLoading == false && content.value.error}
+  <p>{content.value.error}</p>
 {/if}
 <Footer />
 

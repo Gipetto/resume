@@ -1,7 +1,6 @@
-import { strings } from "../store"
-import { get } from "svelte/store"
+import stringsData from "../data/strings-en_US.json"
 
-const uiStrings = get(strings)
+const uiStrings: {[key: string]: string} = stringsData
 
 const _ = (key: string, _default: string = ""): string => {
   return uiStrings.hasOwnProperty(key) ? uiStrings[key] : _default

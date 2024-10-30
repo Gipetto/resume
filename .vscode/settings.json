@@ -29,4 +29,6 @@
   "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "eslint.codeActionsOnSave.mode": "all",
   "svelte.enable-ts-plugin": true,
+  "scm.showInputActionButton": false,
+  "scm.showActionButton": false
 }
