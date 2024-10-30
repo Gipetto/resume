@@ -1,5 +1,5 @@
 <script lang="ts">
-  import _ from "../services/i18n"
+  import _ from "../services/i18n.svelte"
   import ThemeSwitcher from "./ThemeSwitcher.svelte"
 </script>
 

@@ -13,29 +13,29 @@
   })
 </script>
 
-{#if $content.isLoading == false && $content.data}
+{#if content.value.isLoading == false && content.value.data}
   <SkipLink />
   <Header
-    name={$content.data.name}
-    contact={$content.data.contact}
-    isLoading={$content.isLoading}
+    name={content.value.data.name}
+    contact={content.value.data.contact}
+    isLoading={content.value.isLoading}
   />
   <section id="content" class="content">
     <History
-      objective={$content.data.objective}
-      currentWork={$content.data.currentWork}
-      workHistory={$content.data.workHistory}
-      education={$content.data.education}
+      objective={content.value.data.objective}
+      currentWork={content.value.data.currentWork}
+      workHistory={content.value.data.workHistory}
+      education={content.value.data.education}
     />
   </section>
   <aside>
     <Buzzwords
-      buzzwordGroups={$content.data.buzzwords}
-      links={$content.data.links}
+      buzzwordGroups={content.value.data.buzzwords}
+      links={content.value.data.links}
     />
   </aside>
-{:else if $content.isLoading == false && $content.error}
-  <p>{$content.error}</p>
+{:else if content.value.isLoading == false && content.value.error}
+  <p>{content.value.error}</p>
 {/if}
 <Footer />
 

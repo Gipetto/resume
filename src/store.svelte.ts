@@ -1,8 +1,5 @@
-import { readable, writable } from "svelte/store"
 import { on } from "svelte/events"
 import type { Loadable, ResumeData, Theme } from "./types/global"
-import type { Subscriber } from "svelte/store"
-import stringsData from "./data/strings-en_US.json"
 
 const jsonFetcher = async <T>(dataPath: string): Promise<T> => {
   return fetch(dataPath).then((res) => res.json())
@@ -11,34 +8,31 @@ const jsonFetcher = async <T>(dataPath: string): Promise<T> => {
 /**
  * Resume Data
  */
-const getResumeData = (set: Subscriber<Loadable<ResumeData>>): void => {
+const createResumeStore = () => {
+  const content = $state<Loadable<ResumeData>>({
+    isLoading: true,
+    data: undefined
+  })
+
   jsonFetcher<ResumeData>("data/content-en_US.json").then((res) => {
-    set({
-      isLoading: false,
-      data: res,
-    })
+    content.isLoading = false
+    content.data = res
   })
   .catch((err) => {
-    set({
-      isLoading: false,
-      data: undefined,
-      error: "There was an error loading the resume content. Check the console for more information."
-    })
-    console.error(err)
+    content.isLoading = false
+    content.data = undefined
+    content.error = "There was an error loading the resume content. Check the console for more information."
+    console.log(err)
   })
+
+  return {
+    get value() {
+      return content
+    }
+  }
 }
 
-export const content = readable<Loadable<ResumeData>>(
-  {
-    isLoading: true,
-    data: undefined,
-  },
-  (set) => {
-    getResumeData(set)    
-    return () => {}
-  }
-)
-export const strings = readable<{ [key: string]: string }>(stringsData)
+export let content = createResumeStore()
 
 /**
  * Color Theme

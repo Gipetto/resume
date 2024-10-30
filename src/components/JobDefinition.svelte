@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Job } from "../types/global"
-  import _ from "../services/i18n"
+  import _ from "../services/i18n.svelte"
   import Position from "../components/Position.svelte"
   import BulletedHeading from "./BulletedHeading.svelte"
   import Patent from "./Patent.svelte"
