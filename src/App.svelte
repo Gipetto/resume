@@ -96,10 +96,14 @@
     font-family: var(--header-font);
     font-variant-ligatures: common-ligatures;
     font-weight: 900;
+    text-wrap: balance;
   }
 
   p {
     margin-block: 0.75em;
+    hanging-punctuation: first allow-end last;
+    orphans: 3;
+    text-wrap: pretty;
   }
 
   .content {
