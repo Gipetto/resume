@@ -1,7 +1,0 @@
-data/
-dist/
-Makefile
-npm-debug.log
-webpack.config.js
-package.json
-

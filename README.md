@@ -1,6 +1,6 @@
 # Resume Project
 
-For some inexplicable reason I'm drawn to the resume as a demo project to learn and practice new front end technologies.
+For some inexplicable reason I’m drawn to the resume as a demo project to learn and practice new front end technologies.
 
 So, here lies a Svelte app. Overblown in every way.
 
@@ -23,5 +23,4 @@ Open an PR. Once approved and merged, the main branch will automatically build a
 
 ## TODO
 
-- [ ] Drop Typescript for JSDoc?
 - [ ] Implement i18Next for translations
