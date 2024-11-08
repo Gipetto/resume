@@ -25,6 +25,8 @@ jobs:
           cache: "npm"
       - name: Install
         run: npm install
+      - name: Lint
+        run: npm run lint -- --no-fix --max-warnings 0
       - name: Build
         env:
           NODE_OPTIONS: ${{ env.NODE_OPTIONS }}
