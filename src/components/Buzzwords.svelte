@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* eslint-disable svelte/no-at-html-tags */
   import type { BuzzwordGroup, Link } from "../types/global"
   import Icon from "./Icon.svelte"
   import _ from "../services/i18n.svelte"

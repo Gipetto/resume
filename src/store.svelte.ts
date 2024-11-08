@@ -18,12 +18,12 @@ const createResumeStore = () => {
     content.isLoading = false
     content.data = res
   })
-  .catch((err) => {
-    content.isLoading = false
-    content.data = undefined
-    content.error = "There was an error loading the resume content. Check the console for more information."
-    console.log(err)
-  })
+    .catch((err) => {
+      content.isLoading = false
+      content.data = undefined
+      content.error = "There was an error loading the resume content. Check the console for more information."
+      console.log(err)
+    })
 
   return {
     get value() {
@@ -32,7 +32,7 @@ const createResumeStore = () => {
   }
 }
 
-export let content = createResumeStore()
+export const content = createResumeStore()
 
 /**
  * Color Theme
@@ -55,7 +55,7 @@ const createThemeStore = (initialValue: "light" | "dark") => {
   }
 }
 
-export let theme = createThemeStore(storedTheme || startingTheme)
+export const theme = createThemeStore(storedTheme || startingTheme)
 
 // Handle the browser preferences changing
 on(browserThemePreference, "change", (e) => {

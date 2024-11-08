@@ -13,7 +13,7 @@
   })
 </script>
 
-{#if content.value.isLoading == false && content.value.data}
+{#if content.value.isLoading === false && content.value.data}
   <SkipLink />
   <Header
     name={content.value.data.name}
@@ -34,7 +34,7 @@
       links={content.value.data.links}
     />
   </aside>
-{:else if content.value.isLoading == false && content.value.error}
+{:else if content.value.isLoading === false && content.value.error}
   <p>{content.value.error}</p>
 {/if}
 <Footer />
@@ -65,6 +65,12 @@
     font-variant-numeric: oldstyle-nums stacked-fractions;
     text-underline-offset: 0.13em;
     text-decoration-skip-ink: auto;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   body {

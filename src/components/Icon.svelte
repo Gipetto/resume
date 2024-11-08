@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* eslint-disable svelte/no-at-html-tags */
   import * as icons from "../icons.json"
   import type { IconData } from "../types/icons"
 
@@ -31,8 +32,8 @@
   ><title>{@html title || icon.title}</title><g>{@html icon.svg}</g></svg
 >
 
-<style lang="scss" global>
-  .dark svg {
+<style lang="scss">
+  :global(.dark svg) {
     fill: white;
   }
 </style>
