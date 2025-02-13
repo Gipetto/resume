@@ -100,10 +100,6 @@
       line-height: 1.1;
     }
 
-    h1 {
-      font-size: 1.8em;
-    }
-
     .tagline {
       color: var(--color-orange);
       font-size: 3.4em;

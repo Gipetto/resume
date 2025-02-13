@@ -18,6 +18,10 @@
 </footer>
 
 <style lang="scss">
+  footer {
+    padding-bottom: 1.5em;
+  }
+
   .printed-from {
     display: none;
   }
