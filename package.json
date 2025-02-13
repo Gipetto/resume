@@ -28,9 +28,7 @@
     "vite": "^5.4.8"
   },
   "engines": {
-    "yarn": "use npm!",
-    "npm": ">=10.2.3 <11.0.0",
-    "node": ">=20.18.0 <21.0.0"
+    "node": "22.x"
   },
   "dependencies": {
     "typescript-eslint": "^8.13.0"

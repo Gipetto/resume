@@ -10,11 +10,11 @@
 
 {#if theme.value === "light"}
 <button onclick={() => setTheme("dark")} aria-label="Switch to Dark Theme">
-  <Icon name="sun" width={20} height={20} />
+  <Icon name="sun" width={20} height={20} align="middle" />
 </button>
 {:else}
 <button onclick={() => setTheme("light")} aria-label="Switch to Light Theme">
-  <Icon name="moon" width={20} height={20} />
+  <Icon name="moon" width={20} height={20} align="middle" />
 </button>
 {/if}
 
@@ -24,10 +24,6 @@
     background: transparent;
     cursor: pointer;
     position: relative;
-
-    :global(svg) {
-      position: relative;
-      bottom: -4px;
-    }
+    padding: 0;
   }
 </style>

@@ -37,12 +37,11 @@
     {#each links as link (link.href)}
       <li>
         <a
-          class="icon {link.icon}"
           rel="noopener noreferrer"
           target="_blank"
           href={link.href}
         >
-          <Icon name={link.icon} /><span> </span>{link.text}
+          <span class="icon {link.icon}"><Icon name={link.icon} /></span> {link.text}
         </a>
       </li>
     {/each}
@@ -57,6 +56,10 @@
 
     li:last-of-type {
       margin-bottom: 1em;
+    }
+
+    .icon {
+      margin-right: 0.5em;
     }
   }
 </style>

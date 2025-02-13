@@ -9,12 +9,14 @@
     name,
     width = 16,
     height = 16,
-    title = undefined
+    title = undefined,
+    align = "baseline"
   }: {
     name: IconName
     width?: number
     height?: number
     title?: string | undefined
+    align?: "baseline" | "middle"
   } = $props()
 
   const typedIcons: IconData = icons
@@ -22,7 +24,7 @@
 </script>
 
 <svg
-  class="icon"
+  class="icon va-{align}"
   role="img"
   width={width}
   height={height}
@@ -33,7 +35,13 @@
 >
 
 <style lang="scss">
-  :global(.dark svg) {
-    fill: white;
+  .icon {
+    position: relative;
+  }
+
+  :global {
+    .dark .icon {
+      fill: white;
+    }
   }
 </style>

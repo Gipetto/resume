@@ -3,3 +3,12 @@
     margin-bottom: 0;
   }
 }
+
+.va {
+  &-baseline {
+    vertical-align: baseline;
+  }
+  &-middle {
+    vertical-align: middle;
+  }
+}

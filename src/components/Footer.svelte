@@ -4,17 +4,17 @@
 </script>
 
 <footer>
-  <p>
-    &copy; {new Date().getFullYear()} {_("footer.copyright", "Me!")}
+    <span>
+      &copy; {_("footer.copyright", "Me!")}
+    </span>
     <span class="theme-button">
-      {" "}|{" "}
+      &nbsp;|&nbsp;
       <ThemeSwitcher />
     </span>
     <span class="printed-from">
-      {" "}|{" "}
+      &nbsp;|&nbsp;
       Printed from <a href="https://gipetto.github.io/resume">https://gipetto.github.io/resume</a>
     </span>
-  </p>
 </footer>
 
 <style lang="scss">
