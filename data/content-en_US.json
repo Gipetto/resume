@@ -98,9 +98,9 @@
           },
           "title": "Lead Developer / Co-owner",
           "description": [
-            "Built an engaging online trivia game using Svelte, Supabase, and custom CSS, minimizing node modules to create a lightweight application.",
-            "Conducted user behavior analysis and customer interviews to identify feature opportunities and improve performance.",
-            "Designed job runners with edge functions and Postgres to manage statistical data, and implemented CI/CD pipelines for seamless deployments."
+            "Build an engaging online trivia game using Svelte, Supabase, and custom CSS, minimizing node modules to create a lightweight application that works well on both desktop and mobile devices.",
+            "Transform game data into statistics suitable for user rankings, comparisons, and automated league categorization.",
+            "Conduct user behavior analysis and customer interviews to identify feature opportunities and improve engagement."
           ]
         }
       ]
@@ -116,9 +116,9 @@
           },
           "title": "Software Engineer, Contractor",
           "description": [
-            "Developed custom WordPress sites using Bootstrap and Tailwind, enhancing functionality through custom code and with plugins like Advanced Custom Fields.",
-            "Collaborated with clients to break down requirements and plan development work, focusing on mobile responsiveness and accessibility.",
-            "Automated workflows for CI/CD pipelines across WPEngine and customer hosted environments."
+            "Develop custom WordPress sites using Bootstrap and Tailwind, enhancing functionality through custom code and with plugins like Advanced Custom Fields.",
+            "Collaborate with clients to break down requirements and plan development work, focusing on mobile responsiveness and accessibility.",
+            "Automate workflows for CI/CD pipelines across WPEngine and customer hosted environments."
           ]
         }
       ]
