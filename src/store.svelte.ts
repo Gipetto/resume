@@ -7,6 +7,7 @@ const jsonFetcher = async <T>(dataPath: string): Promise<T> => {
 
 /**
  * Resume Data
+ * @TODO - convert to Context
  */
 const createResumeStore = () => {
   const content = $state<Loadable<ResumeData>>({
@@ -28,6 +29,14 @@ const createResumeStore = () => {
   return {
     get value() {
       return content
+    },
+    config: {
+      useBullets() {
+        return content.data?.config.history.bullets === true
+      }
+    },
+    data<T extends keyof ResumeData>(field: T) {
+      return content.data?.[field]
     }
   }
 }

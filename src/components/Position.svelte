@@ -3,6 +3,9 @@
   import Text from "./Text.svelte"
   import Date from "./Date.svelte"
   import BulletedHeading from "./BulletedHeading.svelte"
+  import { content } from "../store.svelte"
+
+  const useBullets = content.config.useBullets()
 
   const { position }: {
     position: Position
@@ -21,9 +24,17 @@
   </h4>
 {/if}
 {#if !empty}
-  <div>
-    <Text text={position.description} />
-  </div>
+  {#if useBullets}
+    <ul>
+      {#each position.description as entry }
+        <li>{entry}</li>
+      {/each}
+    </ul>
+  {:else}
+    <div>
+      <Text text={position.description} />
+    </div>
+  {/if}
 {/if}
 
 <style lang="scss">

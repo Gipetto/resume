@@ -1,22 +1,15 @@
 <script lang="ts">
-  import type { BookSmarts, Job, Objective } from "../types/global"
   import _ from "../services/i18n.svelte"
   import JobDefinition from "./JobDefinition.svelte"
   import Text from "./Text.svelte"
   import Date from "./Date.svelte"
   import BackToTop from "./BackToTop.svelte"
+  import { content } from "../store.svelte"
 
-  const { 
-    objective, 
-    currentWork, 
-    workHistory, 
-    education 
-  }: {
-    objective: Objective | undefined
-    currentWork: Job[] | undefined
-    workHistory: Job[] | undefined
-    education: BookSmarts[] | undefined
-  } = $props()
+  const objective = content.data("objective")
+  const currentWork = content.data("currentWork")
+  const workHistory = content.data("workHistory")
+  const education = content.data("education")
 </script>
 
 {#if objective}
@@ -70,14 +63,4 @@
   section:not(:first-of-type) {
     margin: 3em 0;
   }
-
-  // .me {
-  //   h2 {
-  //     margin-bottom: 1em;
-
-  //     @include mixins.media(md-screen, print) {
-  //       margin-bottom: 0.5em;
-  //     }
-  //   }
-  // }
 </style>

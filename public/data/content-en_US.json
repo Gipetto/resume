@@ -1,4 +1,9 @@
 {
+  "config": {
+    "history": {
+      "bullets": true
+    }
+  },
   "name": {
     "firstName": "Shawn",
     "lastName": "Parker",
@@ -78,7 +83,7 @@
     }
   ],
   "objective": [
-    "I am a full-stack software engineer with experience in distributed web systems and modern Javascript-based web application development. I have worked alone and been a part of — and led — small to medium-sized groups of engineers."
+    "I'm a passionate full-stack software engineer with over a decade of experience in building scalable web applications and leading cross-functional teams. I thrive in both individual and team settings, delivering high-quality solutions that combine technical excellence with user-centric design. My expertise spans distributed systems, modern JavaScript frameworks, and back-end development."
   ],
   "currentWork": [
     {
@@ -93,9 +98,9 @@
           },
           "title": "Lead Developer / Co-owner",
           "description": [
-            "Design and build an online trivia game using Svelte, Supabase, and custom CSS. Using a bare minimum of node modules, build features using custom components and CSS to reduce the application footprint and keep raw size to a minimum.",
-            "Analyze user data and behavior, perform customer interviews, and process user feedback to determine feature usage and performance.",
-            "Build job runners using edge functions and Postgres functions to update statistical user data. Build a CI pipeline using GitHub Actions to deploy and merge schema updates safely through different environments."
+            "Built an engaging online trivia game using Svelte, Supabase, and custom CSS, minimizing node modules to create a lightweight application.",
+            "Conducted user behavior analysis and customer interviews to identify feature opportunities and improve performance.",
+            "Designed job runners with edge functions and Postgres to manage statistical data, and implemented CI/CD pipelines for seamless deployments."
           ]
         }
       ]
@@ -111,9 +116,9 @@
           },
           "title": "Software Engineer, Contractor",
           "description": [
-            "Build custom sites on WordPress using themes based on Bootstrap and Tailwind. Extend WordPress functionality through plugins such as Advanced Custom Field or with custom-written plugins.",
-            "Break down and plan development work based on client needs, mobile use, accessibility, and functionality defined in design mocks.",
-            "Build workflows for automated CI and deployments onto WPEngine and customer-owned properties."
+            "Developed custom WordPress sites using Bootstrap and Tailwind, enhancing functionality through custom code and with plugins like Advanced Custom Fields.",
+            "Collaborated with clients to break down requirements and plan development work, focusing on mobile responsiveness and accessibility.",
+            "Automated workflows for CI/CD pipelines across WPEngine and customer hosted environments."
           ]
         }
       ]
@@ -135,8 +140,9 @@
           },
           "title": "Lead Software Engineer",
           "description": [
-            "Lead a team focused on customer and product growth. Implement new features in a Python & React/Typescript code base. Work with Product, Sales, and Support to scope and design new features. Increase application performance and reduce build size by analyzing browser performance tools and package analysis. Coach younger engineers in software development best practices, project management, and on-call response.",
-            "Oversee a team of remote contractors in finalizing an internal Design System. Through code review and documentation, ensure that code quality and design pattern consistency are met."
+            "Led a team focused on customer and product growth to implement new features in Python and React/TypeScript, working closely with Product, Sales, and Support.",
+            "Improved application performance by reducing build size through browser analysis and package optimization.",
+            "Supervised remote contractors in finalizing an internal Design System, ensuring consistent code quality and design patterns."
           ]
         }
       ]
@@ -156,9 +162,9 @@
           },
           "title": "Staff Software Engineer / Tech Lead, Growth Engineering",
           "description": [
-            "Support multiple small teams in developing the signup and onboarding flow and tools to enable customer growth and learning. Working with project managers, help define features, scope, and requirements for upcoming projects. Working with the team to build scalable, fault-tolerant, tested, and easy-to-maintain systems.",
-            "Coach younger engineers on approaches to engineering, build skills in breaking down projects and tasks into consumable chunks, troubleshoot problems, and commit as few sins against programming as possible along the way.",
-            "Oversee a team of remote contractors. Maintain productivity by clearing roadblocks, wrangling product managers to clarify expectations, and setting clear task definitions."
+            "Supported multiple teams in developing scalable and fault-tolerant systems for customer growth and onboarding.",
+            "Mentored engineers on project and task management, engineering best practices, problem-solving, and code quality.",
+            "Oversaw remote contractors and streamlined team productivity by clarifying expectations and task definitions."
           ]
         },
         {
@@ -172,7 +178,7 @@
           },
           "title": "Senior Software Engineer 1 & 2",
           "description": [
-            "During these years at Twilio, I was part of many different teams, including Growth Engineering / Onboarding, Experimentation Platform, Phone Numbers / Shortcodes, Console, and OpenVBX.",
+            "Contributed to various teams, including Growth Engineering, Experimentation Platform, Phone Numbers, and Console Development.",
             "Built a customer data platform to support the experimentation platform and enable teams to make run-time decisions about their customers based on live data and computed metrics.",
             "Designed customer workflow and built systems to support a regulatory process for provisioning phone numbers in compliance with worldwide, country-specific rules.",
             "Deconstructed a monolithic console code base to enable individual teams to support their development lifecycles, decrease contention over core sections of the codebase, and enable different teams to adopt the back-end languages that were right for them.",
@@ -207,11 +213,12 @@
           },
           "title": "Senior Developer",
           "description": [
-            "Developed custom solutions for building on and extending WordPress as a publishing platform. Developed project requirements and plans for projects ranging from plugin development or API integrations to large-scale deployments requiring careful server resource management and integration plans for different services.",
-            "While the bulk of my work involved developing tools for client websites that build on and extend WordPress’s functionality, I was also responsible for developing systems built on top of CodeIgniter that take advantage of Amazon cloud services to scale to meet the demands of high-volume, time-sensitive data processing."
+            "Developed custom solutions for building on and extending WordPress as a publishing platform.", "Developed project requirements and plans for projects ranging from plugin development to API integrations to large-scale deployments",
+            "Developed systems built on top of CodeIgniter that take advantage of Amazon cloud services to scale to meet the demands of high-volume, time-sensitive data processing."
           ]
         }
-      ]
+      ],
+      "hidden": false
     },
     {
       "company": "Alternative Technology",

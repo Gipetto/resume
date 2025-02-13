@@ -22,12 +22,7 @@
     isLoading={content.value.isLoading}
   />
   <section id="content" class="content">
-    <History
-      objective={content.value.data.objective}
-      currentWork={content.value.data.currentWork}
-      workHistory={content.value.data.workHistory}
-      education={content.value.data.education}
-    />
+    <History />
   </section>
   <aside>
     <Buzzwords

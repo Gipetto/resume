@@ -65,11 +65,5 @@
     @include mixins.media(sm-screen) {
       margin-left: 0;
     }
-
-    &.patents {
-      ul {
-        list-style: disc outside;
-      }
-    }
   }
 </style>

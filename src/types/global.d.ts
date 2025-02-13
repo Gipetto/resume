@@ -82,9 +82,16 @@ type BookSmarts = {
   institution?: Maybe<string>
 }
 
+type Config = {
+  history: {
+    bullets: boolean
+  }
+}
+
 type Objective = Maybe<string[]>
 
 export type ResumeData = {
+  config: Config
   name: Name
   objective?: Objective
   contact?: ContactMethods

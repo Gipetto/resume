@@ -14,6 +14,7 @@
     line-height: 1.25rem;
     font-weight: 700;
     margin-block: 0.5em;
+    display: inline-block;
 
     span {
       font-weight: 400;
@@ -22,5 +23,6 @@
 
   p {
     line-height: var(--line-height);
+    margin-block: 0.5em;
   }
 </style>
