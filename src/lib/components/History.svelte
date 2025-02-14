@@ -6,10 +6,10 @@
   import BackToTop from "./BackToTop.svelte"
   import { content } from "../store.svelte"
 
-  const objective = content.data("objective")
-  const currentWork = content.data("currentWork")
-  const workHistory = content.data("workHistory")
-  const education = content.data("education")
+  const objective = content.get("objective")
+  const currentWork = content.get("currentWork")
+  const workHistory = content.get("workHistory")
+  const education = content.get("education")
 </script>
 
 {#if objective}
@@ -58,7 +58,7 @@
 <BackToTop />
 
 <style lang="scss">
-  @use "../style/mixins";
+  @use "../../style/mixins";
 
   section:not(:first-of-type) {
     margin: 3em 0;

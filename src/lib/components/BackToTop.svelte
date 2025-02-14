@@ -2,7 +2,7 @@
   import Icon from "./Icon.svelte"
 </script>
 
-<p><a class="back-to-top" href="#main" onclick={(e) => {
+<p><a class="back-to-top" href="#top" onclick={(e) => {
   e.preventDefault()
   e.stopPropagation()
   window.scrollTo(0, 0) 

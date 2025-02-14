@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Job } from "../types/global"
+  import type { Job } from "$types/global"
   import _ from "../services/i18n.svelte"
   import Position from "../components/Position.svelte"
   import BulletedHeading from "./BulletedHeading.svelte"
@@ -35,7 +35,7 @@
   </dd>
 {/if}
 <style lang="scss">
-  @use "../style/mixins";
+  @use "../../style/mixins";
 
   dt {
     margin-top: 1.5em;

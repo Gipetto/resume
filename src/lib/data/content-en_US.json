@@ -77,6 +77,11 @@
   ],
   "links": [
     {
+      "icon": "linkedin",
+      "href": "https://www.linkedin.com/in/shawnparker",
+      "text": "LinkedIn Profile"
+    },
+    {
       "icon": "github",
       "href": "https://github.com/Gipetto/resume",
       "text": "View source of this Resume."

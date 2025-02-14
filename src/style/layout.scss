@@ -1,19 +1,18 @@
 @use "mixins";
 
 body {
-
-  #main {
+  main {
     width: min(1160px, 100% - 4rem);
     margin-inline: auto;
     padding: 2% 0 2% 0;
     height: calc(100vh - 10px);
     display: grid;
-    grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
     grid-auto-rows: min-content;
     gap: 4em 50px;
+    grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
 
     header {
-      grid-column: 2 / -1;
+      grid-column: span 2;
     }
 
     aside {
@@ -28,10 +27,14 @@ body {
     footer {
       grid-column: 1 / -1;
     }
+
+    &:has(.grid-single) {
+      display: block;
+    }
   }
 
   @include mixins.media(md-screen) {
-    #main {
+    main {
       padding: 0;
 
       grid-template-columns: 100%;
