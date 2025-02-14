@@ -27,9 +27,9 @@ jobs:
       - name: Build
         env:
           NODE_OPTIONS: ${{ env.NODE_OPTIONS }}
-        run: npm run build
+        run: npm run sync && npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: build
