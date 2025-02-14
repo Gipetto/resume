@@ -1,7 +1,0 @@
-{
-  "name": "Resume",
-  "icons": [
-    { "src": "/icons/favicon-black-192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "/icons/favicon-black-512.png", "type": "image/png", "sizes": "512x512" }
-  ]
-}
