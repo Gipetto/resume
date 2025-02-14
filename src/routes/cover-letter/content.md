@@ -3,6 +3,7 @@
 [Company Address]
 [City, State, ZIP Code]
 
+<div id="content">
 Hello!
 
 With more than two decades of experience as a full-stack software engineer and a proven track record of leading cross-functional teams in building scalable web applications, I am confident that I would be a valuable asset to your team.
@@ -19,3 +20,4 @@ Thank you for considering my application. I would welcome the opportunity to dis
 Sincerely,
 
 Shawn Parker
+</div>
