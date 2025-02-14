@@ -8,6 +8,8 @@ const config = {
   ],
   kit: {
     adapter: adapter({
+      pages: "build",
+      assets: "build",
       fallback: "404.html",
       // eslint-disable-next-line no-undef
       precompress: process.env.NODE_ENV === "production",
