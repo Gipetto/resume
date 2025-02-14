@@ -9,10 +9,12 @@ const config = {
   kit: {
     adapter: adapter({
       fallback: "404.html",
+      // eslint-disable-next-line no-undef
       precompress: process.env.NODE_ENV === "production",
       strict: true
     }),
     paths: {
+      // eslint-disable-next-line no-undef
       base: process.env.NODE_ENV === "development" ? "" : "/resume"
     },
     alias: {
