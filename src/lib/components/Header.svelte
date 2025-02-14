@@ -85,12 +85,16 @@
 
   header {
     text-align: center;
-    
+
     h1,
     h2 {
       margin: 0;
       padding: 0;
       line-height: 1.1;
+    }
+
+    .adr {
+      line-height: var(--line-height-med);
     }
 
     .tagline {
@@ -111,18 +115,6 @@
     .quote {
       color: var(--color-orange);
     }
-
-    // .contact {
-    //   margin-left: 1.5em;
-    // }
-
-    // @include mixins.media(md-screen) {
-    //   text-align: center;
-
-    //   .contact {
-    //     margin-left: 0;
-    //   }
-    // }
 
     .vcard {
       .contact-methods {

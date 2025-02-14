@@ -61,7 +61,7 @@
     }
   }
   .links {
-    line-height: 1.35em;
+    line-height: var(--line-height-small);
 
     li {
       margin-bottom: 0.25em;

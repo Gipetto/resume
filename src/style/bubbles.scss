@@ -37,7 +37,7 @@
 
   .bubblewrap {
     cursor: help;
-    line-height: 1.35em;
+    line-height: var(--line-height-med);
     margin-bottom: 0.25em;
     border-bottom: 1px dotted $bubbleBorderColor;
     &:hover {
