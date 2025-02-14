@@ -1,11 +1,11 @@
 <script lang="ts">
-  import type { Position } from "../types/global"
+  import type { Position } from "$types/global"
   import Text from "./Text.svelte"
   import Date from "./Date.svelte"
   import BulletedHeading from "./BulletedHeading.svelte"
   import { content } from "../store.svelte"
 
-  const useBullets = content.config.useBullets()
+  const useBullets = content.config("history")?.bullets ?? false
 
   const { position }: {
     position: Position

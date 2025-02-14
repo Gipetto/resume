@@ -60,7 +60,7 @@ type Job = {
   location?: Maybe<string>
   url?: string
   positions: Position[]
-  patents: Patent[]
+  patents?: Patent[]
   hidden?: true | false
 }
 

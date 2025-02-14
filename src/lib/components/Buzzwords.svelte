@@ -1,15 +1,18 @@
 <script lang="ts">
   /* eslint-disable svelte/no-at-html-tags */
-  import type { BuzzwordGroup, Link } from "../types/global"
+  import { content } from "$lib/store.svelte"
   import Icon from "./Icon.svelte"
   import _ from "../services/i18n.svelte"
+  import { onMount } from "svelte"
 
-  const { buzzwordGroups, links }: {
-    buzzwordGroups: BuzzwordGroup[] | undefined
-    links: Link[] | undefined
-  } = $props()
+  const buzzwordGroups = content.get("buzzwords")
+  const links = content.get("links")
 
-  const docRoot = document.documentElement
+  let docRoot: HTMLElement
+
+  onMount(() => {
+    docRoot = document.documentElement
+  })
 
   const handleMousemove = (e: MouseEvent) => {
     docRoot.style.setProperty("--mouse-x", e.clientX.toString())
@@ -33,23 +36,22 @@
   {/each}
 {/if}
 {#if links}
-  <ul>
+  <ul class="links">
     {#each links as link (link.href)}
       <li>
+        <span class="icon {link.icon}"><Icon name={link.icon} /></span>
         <a
           rel="noopener noreferrer"
           target="_blank"
           href={link.href}
-        >
-          <span class="icon {link.icon}"><Icon name={link.icon} /></span> {link.text}
-        </a>
+        >{link.text}</a>
       </li>
     {/each}
   </ul>
 {/if}
 
 <style lang="scss">
-  @use "../style/bubbles.scss";
+  @use "../../style/bubbles.scss";
 
   .bubbles {
     border-bottom: 1px dotted gray;
@@ -57,9 +59,18 @@
     li:last-of-type {
       margin-bottom: 1em;
     }
+  }
+  .links {
+    line-height: 1.35em;
 
-    .icon {
-      margin-right: 0.5em;
+    li {
+      margin-bottom: 0.25em;
+      
+      .icon {
+        margin-right: 0.25em;
+        vertical-align: middle;
+      }
     }
+
   }
 </style>
