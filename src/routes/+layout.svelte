@@ -6,6 +6,7 @@
   import Header from "$lib/components/Header.svelte"
   import SkipLink from "$lib/components/SkipLink.svelte"
   import { theme } from "$lib/store.svelte"
+  import Nav from "$lib/components/Nav.svelte"
 
   let { children }: LayoutProps = $props()
 
@@ -24,6 +25,7 @@
 
 <main>
   <SkipLink />
+  <Nav />
   <Header />
   {@render children()}
   <Footer />
