@@ -1,7 +1,7 @@
 <script lang="ts">
   import { base } from "$app/paths"
   import { page } from "$app/state"
-  import logo from "../../../static/favicon.svg?raw"
+  import logo from "../logos/sp.svg?raw"
 
   const company = page.params.company
 
