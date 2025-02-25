@@ -12,7 +12,8 @@ export default [
   {
     ignores: [
       "dist/",
-      "postcss.config.cjs"
+      "postcss.config.cjs",
+      ".svelte-kit"
     ]
   },
   {
