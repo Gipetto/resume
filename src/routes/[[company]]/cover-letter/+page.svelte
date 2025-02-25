@@ -3,7 +3,7 @@
   import markdown from "./content.md?raw"
   import { companies } from "$lib/store.svelte"
   import { page } from "$app/state"
-  
+
   const routeParam = page.params.company as string
 
   const defaultCompany = companies.get("sample")
