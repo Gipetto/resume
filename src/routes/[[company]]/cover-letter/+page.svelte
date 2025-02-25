@@ -20,6 +20,6 @@
   }
 </script>
 
-<div class="cover-letter">
+<div id="content" class="cover-letter">
   {@render md(markdown, variables)}
 </div>
