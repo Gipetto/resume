@@ -5,6 +5,7 @@
   import Footer from "$lib/components/Footer.svelte"
   import Header from "$lib/components/Header.svelte"
   import SkipLink from "$lib/components/SkipLink.svelte"
+  import Nav from "$lib/components/Nav.svelte"
   import { theme } from "$lib/store.svelte"
 
   let { children }: LayoutProps = $props()
@@ -22,9 +23,12 @@
   <link rel="apple-touch-icon" href="{base}/icons/apple-touch-icon.png">
 </svelte:head>
 
-<main>
-  <SkipLink />
-  <Header />
-  {@render children()}
-  <Footer />
-</main>
+<SkipLink />
+<Nav />
+<div class="content">
+  <main class="preserve-scrollbar-space">
+    <Header />
+    {@render children()}
+  </main>
+</div>
+<Footer />

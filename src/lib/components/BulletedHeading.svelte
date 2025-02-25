@@ -25,7 +25,7 @@
   h4,
   h5,
   h6 {
-    position: relative;
+    position:relative;
 
     &:not(.undefined) { /* lol */
       --content: "\00a0";

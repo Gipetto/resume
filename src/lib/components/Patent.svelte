@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { Patent } from "../types/global"
+    import type { Patent } from "../../types/global"
 
   const { patent }: {
     patent: Patent
@@ -11,10 +11,9 @@
 
 <style lang="scss">
   h4 {
-    line-height: 1.25rem;
     font-weight: 700;
     margin-block: 0.5em;
-    display: inline-block;
+    line-height: 1.5rem;
 
     span {
       font-weight: 400;

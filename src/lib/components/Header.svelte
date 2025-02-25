@@ -84,6 +84,8 @@
   @use "../../style/mixins";
 
   header {
+    width: min(1000px, 100% - 5rem);
+    margin-inline: auto;
     text-align: center;
 
     h1,
@@ -103,12 +105,16 @@
       text-shadow: 1px 1px 0 black;
     }
 
-    h2.title {
-      font-size: 1.4em;
-      margin-top: 0.25em;
+    h1 {
+      font-size: 1.85rem;
+    }
 
+    h2.title {
+      font-size: 2rem;
+      margin: 0.5em 0;
+      
       @include mixins.media(md-screen) {
-        font-size: 2em;
+        font-size: 2rem;
       }
     }
 

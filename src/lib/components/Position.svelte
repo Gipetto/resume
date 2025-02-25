@@ -25,7 +25,7 @@
 {/if}
 {#if !empty}
   {#if useBullets}
-    <ul>
+    <ul class="hanging">
       {#each position.description as entry }
         <li>{entry}</li>
       {/each}

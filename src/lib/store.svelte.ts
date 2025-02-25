@@ -2,48 +2,10 @@ import { on } from "svelte/events"
 import type { ResumeData, Theme } from "../types/global"
 import { browser } from "$app/environment"
 
-// const jsonFetcher = async <T>(dataPath: string): Promise<T> => {
-//   return fetch(dataPath).then((res) => res.json())
-// }
-
 /**
  * Resume Data
  * @TODO - convert to Context
  */
-// const createResumeStore = () => {
-//   const content = $state<Loadable<ResumeData>>({
-//     isLoading: true,
-//     data: undefined
-//   })
-
-//   jsonFetcher<ResumeData>("data/content-en_US.json").then((res) => {
-//     content.isLoading = false
-//     content.data = res
-//   })
-//     .catch((err) => {
-//       content.isLoading = false
-//       content.data = undefined
-//       content.error = "There was an error loading the resume content. Check the console for more information."
-//       console.log(err)
-//     })
-
-//   return {
-//     get value() {
-//       return content
-//     },
-//     config: {
-//       useBullets() {
-//         return content.data?.config.history.bullets === true
-//       }
-//     },
-//     data<T extends keyof ResumeData>(field: T) {
-//       return content.data?.[field]
-//     }
-//   }
-// }
-
-// export const content = createResumeStore()
-
 import resumeData from "$lib/data/content-en_US.json"
 class ResumeStore {
   data = $state<ResumeData>()
@@ -62,6 +24,39 @@ class ResumeStore {
 }
 
 const content = new ResumeStore(resumeData)
+
+/**
+ * Company Data for Cover Letter
+ */
+
+type Company = {
+  name: string
+  hiringManager: string
+  address1: string
+  address2?: string
+  city: string
+  state: string
+  zipCode: string
+}
+
+type Companies = {
+  [k: string]: Company
+}
+
+import companiesData from "$lib/data/companies.json"
+class CompanyStore {
+  data = $state<Companies>()
+
+  constructor(companies: Companies) {
+    this.data = companies
+  }
+
+  get<T extends keyof Companies>(key: T) {
+    return this.data?.[key]
+  }
+}
+
+const companies = new CompanyStore(companiesData)
 
 /**
  * Color Theme
@@ -104,5 +99,9 @@ if (browser && browserThemePreference) {
 
 export {
   content,
+  companies,
   theme
+}
+export type {
+  Company
 }

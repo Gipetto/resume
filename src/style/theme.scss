@@ -13,9 +13,6 @@ body {
 
   --accent-color: initial; /* TODO */
 
-  // --link-color: blue;
-  // --link-color-visited: blue;
-
   --color-light-orange: #f0bc5c;
   --color-orange: #cd8500;
   --color-medium-orange: #a46b00;
@@ -34,8 +31,6 @@ body.dark {
   --border-color-bubble: rgb(205, 205, 205);
   --shadow-color-bubble: rgb(0, 0, 0);
 
-  // --link-color: lightblue;
-  // --link-color-visited: lightblue;
   --link-color: var(--color-light-orange);
   --link-color-visited: var(--color-light-orange);
 }

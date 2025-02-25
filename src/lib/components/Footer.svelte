@@ -16,13 +16,3 @@
       Printed from <a href="https://gipetto.github.io/resume">https://gipetto.github.io/resume</a>
     </span>
 </footer>
-
-<style lang="scss">
-  footer {
-    padding-bottom: 1.5em;
-  }
-
-  .printed-from {
-    display: none;
-  }
-</style>

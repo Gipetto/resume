@@ -1,0 +1,10 @@
+{
+  "sample": {
+    "name": "XYZ Company",
+    "hiringManager": "Jane Doe",
+    "address1": "1234 Main St.",
+    "city": "Anytown",
+    "state": "CO",
+    "zipCode": "12345"
+  }
+}
