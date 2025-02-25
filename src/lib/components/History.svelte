@@ -30,6 +30,7 @@
   </section>
 {/if}
 {#if workHistory}
+  <hr>
   <section class="history">
     <h2>{_("title.work-history", "Work History")}</h2>
     <dl>
@@ -42,9 +43,10 @@
   </section>
 {/if}
 {#if education}
+  <hr>
   <section class="education">
     <h2>{_("title.education", "Education")}</h2>
-    <ul>
+    <ul class="hanging">
       {#each education as stint (stint.description)}
         <li>
           <b>{stint.description}</b>, <Date date={stint.date} /><br />
@@ -62,5 +64,16 @@
 
   section:not(:first-of-type) {
     margin: 3em 0;
+  }
+
+  .education {
+    ul {
+      padding-left: 1.5em;
+      li {
+        b {
+          font-family: var(--header-font);
+        }
+      }
+    }
   }
 </style>

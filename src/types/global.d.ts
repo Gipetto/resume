@@ -58,6 +58,7 @@ type Patent = {
 type Job = {
   company: string
   location?: Maybe<string>
+  remote?: boolean
   url?: string
   positions: Position[]
   patents?: Patent[]

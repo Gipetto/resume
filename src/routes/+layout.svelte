@@ -1,13 +1,14 @@
 <script lang="ts">
   import "../app.scss"
   import { base } from "$app/paths"
+  import { page } from "$app/state"
   import type { LayoutProps } from "./$types"
   import Footer from "$lib/components/Footer.svelte"
   import Header from "$lib/components/Header.svelte"
   import SkipLink from "$lib/components/SkipLink.svelte"
-  import { theme } from "$lib/store.svelte"
   import Nav from "$lib/components/Nav.svelte"
-
+  import { theme } from "$lib/store.svelte"
+  console.log(page)
   let { children }: LayoutProps = $props()
 
   $effect(() => {
@@ -23,10 +24,12 @@
   <link rel="apple-touch-icon" href="{base}/icons/apple-touch-icon.png">
 </svelte:head>
 
-<main>
-  <SkipLink />
-  <Nav />
-  <Header />
-  {@render children()}
-  <Footer />
-</main>
+<SkipLink />
+<Nav />
+<div class="content">
+  <main class="preserve-scrollbar-space">
+    <Header />
+    {@render children()}
+  </main>
+</div>
+<Footer />

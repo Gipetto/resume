@@ -1,7 +1,8 @@
-## [Hiring Manager]
+### [Hiring Manager]
 [Company Name]
 [Company Address]
-[City, State, ZIP Code]
+[City], [State], [Zip Code]
+<br />
 
 Hello!
 

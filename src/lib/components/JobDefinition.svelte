@@ -12,7 +12,7 @@
 </script>
 
 <dt>
-  <span>{job.company}, {job.location}</span>{#if job.url}
+  <span class="company">{job.company}, {job.location}</span>{#if job.remote}<span class="remote"> (Remote)</span>{/if}{#if job.url}
   <a class="icon" href="{job.url}" title="{job.company}" target="_blank"><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title={job.company} /></a>{/if}
 </dt>
 {#each job.positions as position (position.title)}
@@ -25,7 +25,7 @@
 {#if job.patents}
   <dd class="patents">
     <BulletedHeading of="h3" class="mb-0">{_("title.patents", "Patents")}</BulletedHeading>
-    <ul>
+    <ul class="hanging">
       {#each job.patents as patent (patent.number)}
         <li>
           <Patent {patent} />
@@ -39,7 +39,7 @@
 
   dt {
     margin-top: 1.5em;
-    font-size: 1.25em;
+    font-size: 1.35rem;
     font-family: var(--header-font);
     font-variant-ligatures: normal;
     font-weight: 900;
@@ -56,6 +56,13 @@
     a {
       text-decoration: none;
       padding-left: 0.5em;
+    }
+
+    .remote {
+      font-weight: normal;
+      font-size: 1rem;
+      padding-left: 0.5em;
+      color: gray;
     }
   }
 

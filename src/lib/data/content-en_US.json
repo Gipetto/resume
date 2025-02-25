@@ -70,7 +70,7 @@
         "text": "Mostly bug fixes and small enhancements to the WP Core, but its all for the greater good, right?"
       },
       {
-        "name": "Plugin Maintainer",
+        "name": "WordPress Plugin Maintainer",
         "text": "Post Password Token, est. September, 2009"
       }
     ]
@@ -88,7 +88,7 @@
     }
   ],
   "objective": [
-    "I'm a full-stack software engineer with more than two decades of experience in building scalable web applications and leading cross-functional teams. I thrive in both individual and team settings, delivering high-quality solutions that combine technical excellence with user-centric design. My expertise spans distributed systems, modern JavaScript frameworks, and back-end development."
+    "I'm a full-stack software engineer experienced in building scalable web applications and leading cross-functional teams. I thrive in both individual and team settings, delivering solutions that combine technical excellence with user-centric design. My expertise spans distributed systems, modern JavaScript frameworks, and back-end development."
   ],
   "currentWork": [
     {
@@ -104,7 +104,7 @@
           "title": "Lead Developer / Co-owner",
           "description": [
             "Build an engaging online trivia game using Svelte, Supabase, and custom CSS, minimizing node modules to create a lightweight application that works well on both desktop and mobile devices.",
-            "Transform game data into statistics suitable for user rankings, comparisons, and automated league categorization.",
+            "Generate in-depth statistics suitable for user rankings, comparisons, and automated league categorization.",
             "Conduct user behavior analysis and customer interviews to identify feature opportunities and improve engagement."
           ]
         }
@@ -112,7 +112,8 @@
     },
     {
       "company": "Culture Foundry",
-      "location": "Vancouver, WA",
+      "location": "Seattle, WA",
+      "remote": true,
       "positions": [
         {
           "from": {
@@ -133,6 +134,7 @@
     {
       "company": "RevOpos, Inc",
       "location": "Berkeley, CA",
+      "remote": true,
       "positions": [
         {
           "from": {
@@ -145,9 +147,10 @@
           },
           "title": "Lead Software Engineer",
           "description": [
-            "Led a team focused on customer and product growth to implement new features in Python and React/TypeScript, working closely with Product, Sales, and Support.",
-            "Improved application performance by reducing build size through browser analysis and package optimization.",
-            "Supervised remote contractors in finalizing an internal Design System, ensuring consistent code quality and design patterns."
+            "Led a team focused on customer and product growth to implement new features in Python and React/TypeScript, working closely with Product, Sales, and Support teams to meet customer and product needs.",
+            "Enabled customers to create complex dynamic pricing models based on custom properties attached to product SKUs.",
+            "Supervised remote contractors in finalizing an internal Design System, ensuring consistent code quality and design patterns.",
+            "Improved application performance by reducing build size through browser analysis and package optimization."
           ]
         }
       ]
@@ -167,7 +170,7 @@
           },
           "title": "Staff Software Engineer / Tech Lead, Growth Engineering",
           "description": [
-            "Supported multiple teams in developing scalable and fault-tolerant systems for customer growth and onboarding.",
+            "Developed scalable, fault-tolerant systems that supported multiple teams in onboarding new members and accelerating product adoption through innovative application designs and effective cross-team collaboration.",
             "Mentored engineers on project and task management, engineering best practices, problem-solving, and code quality.",
             "Oversaw remote contractors and streamlined team productivity by clarifying expectations and task definitions."
           ]
@@ -183,10 +186,10 @@
           },
           "title": "Senior Software Engineer 1 & 2",
           "description": [
-            "Contributed to various teams, including Growth Engineering, Experimentation Platform, Phone Numbers, and Console Development.",
-            "Built a customer data platform to support the experimentation platform and enable teams to make run-time decisions about their customers based on live data and computed metrics.",
-            "Designed customer workflow and built systems to support a regulatory process for provisioning phone numbers in compliance with worldwide, country-specific rules.",
-            "Deconstructed a monolithic console code base to enable individual teams to support their development lifecycles, decrease contention over core sections of the codebase, and enable different teams to adopt the back-end languages that were right for them.",
+            "Contributed to various teams, including Growth Engineering, Experimentation Platform, Phone Numbers, and Console.",
+            "Enabled teams to make run-time decisions about their customers based on live data and computed metrics through a custom built customer data platform integrated in to the experimentation platform.",
+            "Enabled company compliance with international phone number regulations though a patented workflow system to provision phone numbers in compliance with worldwide, country specific rules.",
+            "Enabled individual teams to support their own development lifecycles, decrease contention over core sections of the codebase, and to adopt and grow their back-end services per their own needs by deconstructing a monolithic PHP code base.",
             "Drove a culture of testing as a normal part of the development lifecycle Increased adoption of technologies and tooling to improve system observability and drive down recovery time from errors."
           ]
         }

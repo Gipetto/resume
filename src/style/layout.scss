@@ -1,24 +1,24 @@
 @use "mixins";
 
 body {
+  --main-width: min(1160px, 100% - 5rem);
+
   main {
-    width: min(1160px, 100% - 4rem);
+    width: var(--main-width);
     margin-inline: auto;
-    padding: 2% 0 2% 0;
-    height: calc(100vh - 10px);
+    padding: 6rem 0 1rem 0;
     display: grid;
     grid-auto-rows: min-content;
     gap: 4em 50px;
     grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
 
-    nav,
     header {
       grid-column: span 2;
     }
 
     aside {
       grid-column: 1 / 2;
-      grid-row: 3 / 4;
+      grid-row: 2 / 3;
     }
 
     .content {
@@ -28,16 +28,16 @@ body {
     .grid-single {
       grid-column: span 2;
     }
+  }
 
-    footer {
-      grid-column: 1 / -1;
-    }
+  footer {
+    width: var(--main-width);
+    margin-inline: auto;
+    padding: 2rem 0;
   }
 
   @include mixins.media(md-screen) {
     main {
-      // padding: 0;
-
       grid-template-columns: 100%;
       grid-template-rows: auto;
       gap: 2em 25px;
@@ -46,6 +46,10 @@ body {
         grid-column: 1 / -1 !important;
         grid-row: auto !important;
       }
+    }
+
+    footer {
+      padding: 1.5rem 2rem;
     }
   }
 }

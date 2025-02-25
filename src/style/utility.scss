@@ -96,3 +96,23 @@
     }
   }
 }
+
+.printed-from {
+  display: none;
+}
+
+.preserve-scrollbar-space {
+  // Prevent layout shift when no scrollbar is present:
+  // - While in a container that DOES NOT use `vw` for width
+  // - While scrollbar IS NOT visible `100vw` & `100%` are equal.
+  // - While scrollbar IS visible the difference is the width 
+  //   of the scrollbar
+  padding-left: calc(100vw - 100%);
+}
+
+body {
+  ul.hanging {
+    list-style: disc outside;
+    padding-left: 0;
+  }
+}

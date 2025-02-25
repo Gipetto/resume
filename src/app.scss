@@ -40,6 +40,12 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   transition: background-color 0.125s;
+  margin: 0;
+  padding: 0;
+
+  &>div:first-of-type {
+    display: contents;
+  }
 }
 
 a {
@@ -85,38 +91,25 @@ p {
 }
 
 .content {
-  @include mixins.media(md-screen, print) {
-    margin: 2em 0 0 0;
-  }
-
   ul {
     padding-left: 1.5em;
-
-    li {
-      line-height: 1.3;
-    }
+    margin-block: 0.75em;
   }
 
-  .current,
-  .history {
-    dd {
-      ul {
-        list-style: none;
-        margin-block: 0.75em;
-        padding-left: 0;
-        li {
-          line-height: var(--line-height);
-          &::before {
-            content: "\2022";
-            color: gray;
-            display: inline-block;
-            width: 1em;
-            margin-left: -0.9em;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        }
+  section:not(.me) {
+    ul {
+      li {
+        line-height: 1.75rem;
+        margin-block: 0.5rem;
       }
+    }
+  }
+}
+
+.cover-letter {
+  section {
+    h3:first-child {
+      margin-bottom: -0.5rem;
     }
   }
 }
@@ -124,7 +117,7 @@ p {
 aside {
   ul {
     list-style: none inside;
-    padding: 0;
+    padding: 0 !important;
 
     li {
       padding: 0.25em 0;
@@ -148,4 +141,18 @@ aside {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+hr {  
+  border: 0;
+  height: 1px;
+  border-bottom: 1px dotted gray;
+}
+
+section + hr {
+  margin-top: -1.5em !important;
+}
+
+hr + section {
+  margin-top: 1.5em !important;
 }
