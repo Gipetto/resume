@@ -1,7 +1,7 @@
 <script lang="ts">
   /* eslint-disable svelte/no-at-html-tags */
+  import type { IconData } from "$types/icons"
   import * as icons from "../icons.json"
-  import type { IconData } from "../types/icons"
 
   type IconName = keyof typeof icons
   
@@ -16,7 +16,7 @@
     width?: number
     height?: number
     title?: string | undefined
-    align?: "baseline" | "middle"
+    align?: "baseline" | "middle" | "bottom"
   } = $props()
 
   const typedIcons: IconData = icons
