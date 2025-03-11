@@ -84,4 +84,10 @@
       }
     }
   }
+
+  @media (pointer: coarse), (pointer: none) {
+    nav {
+      border-top: 1px dotted gray;
+    }
+  }
 </style>

@@ -6,11 +6,11 @@ body {
   main {
     width: var(--main-width);
     margin-inline: auto;
-    padding: 6rem 0 1rem 0;
+    padding: 5rem 0 1rem 0;
     display: grid;
     grid-auto-rows: min-content;
-    gap: 4em 50px;
-    grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
+    gap: 5rem;
+    grid-template-columns: minmax(10px, 2fr) minmax(10px, 4fr);
 
     header {
       grid-column: span 2;
@@ -40,7 +40,11 @@ body {
     main {
       grid-template-columns: 100%;
       grid-template-rows: auto;
-      gap: 2em 25px;
+      gap: 0;
+
+      #content {
+        margin-top: 4rem;
+      }
 
       > * {
         grid-column: 1 / -1 !important;
