@@ -1,5 +1,5 @@
 <script lang="ts">
-  /* eslint-disable svelte/no-at-html-tags */
+   
   import { content } from "$lib/store.svelte"
   import Icon from "./Icon.svelte"
   import _ from "../services/i18n.svelte"
@@ -25,11 +25,11 @@
 {#if buzzwordGroups}
   <h2>{_("title.buzzwords", "Buzzwords")}</h2>
   {#each buzzwordGroups as buzzwords}
-    <ul class="bubbles">
+    <ul class="skills">
       {#each buzzwords as item (item.name)}
-        <li class="bubblewrap">
-          {item.name}
-          <span class="bubble f-bi">{@html item.text}</span>
+        <li class="inner flex flex-col">
+          <span>{item.name}</span>
+          <span class="desc">{item.text}</span>
         </li>
       {/each}
     </ul>
@@ -51,15 +51,22 @@
 {/if}
 
 <style lang="scss">
-  @use "../../style/bubbles.scss";
+  @use "../../style/mixins.scss";
 
-  .bubbles {
+  .skills {
     border-bottom: 1px dotted gray;
-
     li:last-of-type {
       margin-bottom: 1em;
     }
+
+    .inner {
+      span:first-of-type {
+        font-family: var(--header-font);
+        font-weight: bold;
+      }
+    }
   }
+
   .links {
     line-height: var(--line-height-small);
 
@@ -71,6 +78,5 @@
         vertical-align: middle;
       }
     }
-
   }
 </style>

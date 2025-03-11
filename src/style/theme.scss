@@ -3,7 +3,8 @@
 }
 
 body {
-  --text-color: #000;
+  --text-color: #151515;
+  --text-color-headline: #000;
   --text-color-dark-gray: #444444;  
   --background-color: #fff;
 
@@ -23,9 +24,10 @@ body {
 }
 
 body.dark {
-  --text-color: #f5f5f5;
+  --text-color: #f0f0f0;
+  --text-color-headline: #fff;
   --text-color-dark-gray: #DDD;
-  --background-color: #282828;
+  --background-color: #303030;
 
   --background-color-bubble: var(--background-color);
   --border-color-bubble: rgb(205, 205, 205);
