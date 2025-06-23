@@ -32,45 +32,45 @@
         "text": "Doesn't matter – just write tests for it!"
       },
       {
-        "name": "Typescript/Javascript, SvelteKit, React, Node",
+        "name": "Typescript/Javascript, SvelteKit, React, Node.",
         "text": "We still love you, jQuery! But we love Svelte more..."
       },
       {
-        "name": "CSS, Tailwind, and even Boostrap",
+        "name": "CSS, Tailwind, and even Boostrap.",
         "text": "Tailwind seems to be eating the world, but I do love me some artisinally crafted CSS."
       },
       {
-        "name": "REST APIs, Web Services, Cloud Functions, GraphQL",
+        "name": "REST APIs, Web Services, Cloud Functions, GraphQL.",
         "text": "Y’know, all that modern web jazz that’s making a buzz on the interwebs."
       },
       {
-        "name": "Greasing Wheels, Growing Engineers",
-        "text": "Project/Tech specs, mentoring, planning, watering the EICs."
+        "name": "Project Management, Growing Engineers.",
+        "text": "Project/Tech specs, planning, mentoring, watering the EICs."
       },
       {
-        "name": "I18n, L10n, A11y",
+        "name": "I18n, L10n, A11y.",
         "text": "I’ve learned more than I ever thought I wanted to know about character sets, locales, and externalization."
       },
       {
-        "name": "PDF Generation",
-        "text": "Wait, this all starts drawing from which corner now?"
+        "name": "PDF Generation & Printing.",
+        "text": "Taking HTML to Print/PDF and building PDFs from PDF templates."
       },
       {
-        "name": "Version Control, Command Line Scripting, Automation & CI",
-        "text": "Not very glamorous but well worth the time it takes to learn. Do you know where your .profile has been?"
+        "name": "Version Control, Command Line Scripting, Automation & CI.",
+        "text": "Building seamless development and deployment pipelines that make developers happier."
       },
       {
-        "name": "Mac & Linux",
+        "name": "Mac & Linux.",
         "text": "Windows use is for family tech support and cross-browser testing only."
       }
     ],
     [
       {
-        "name": "WordPress Contributor",
+        "name": "WordPress Contributor.",
         "text": "Mostly bug fixes and small enhancements to the WP Core, but its all for the greater good, right?"
       },
       {
-        "name": "WordPress Plugin Maintainer",
+        "name": "WordPress Plugin Maintainer.",
         "text": "Post Password Token, est. September, 2009"
       }
     ]

@@ -27,7 +27,7 @@
   {#each buzzwordGroups as buzzwords}
     <ul class="skills">
       {#each buzzwords as item (item.name)}
-        <li class="inner flex flex-col">
+        <li class="inner">
           <span>{item.name}</span>
           <span class="desc">{item.text}</span>
         </li>
