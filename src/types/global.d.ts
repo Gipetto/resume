@@ -96,9 +96,10 @@ type RobotDataItem = {
   title: string
   start: number
   end: number
+  proficiency: number
 }
 
-type RobotDataKey = keyof RobotDataItem
+type RobotDataKey = Extract<keyof RobotDataItem, string>
 
 type RobotDataHeader = {
   title: string

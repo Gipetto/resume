@@ -4,8 +4,8 @@
   import * as icons from "../icons.json"
 
   type IconName = keyof typeof icons
-  
-  const { 
+
+  const {
     name,
     width = 16,
     height = 16,
