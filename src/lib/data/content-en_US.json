@@ -122,6 +122,7 @@
           },
           "title": "Software Engineer, Contractor",
           "description": [
+            "Develop custom web application supporting thousands of daily users using Next.js & Golang.",
             "Develop custom WordPress sites using Bootstrap and Tailwind, enhancing functionality through custom code and with plugins like Advanced Custom Fields.",
             "Collaborate with clients to break down requirements and plan development work, focusing on mobile responsiveness and accessibility.",
             "Automate workflows for CI/CD pipelines across WPEngine and customer hosted environments."
