@@ -322,7 +322,7 @@
         { "title": "Name", "dataKey": "title" },
         { "title": "Start Year", "dataKey": "start" },
         { "title": "End Year", "dataKey": "end" },
-        { "title": "Proficiency", "dataKey": "proficiency" }
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
         { "title": "ElasticSearch", "start": 2016, "end": 2022, "proficiency": 7 },
@@ -339,7 +339,7 @@
         { "title": "Name", "dataKey": "title" },
         { "title": "Start Year", "dataKey": "start" },
         { "title": "End Year", "dataKey": "end" },
-        { "title": "Proficiency", "dataKey": "proficiency" }
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
         { "title": "Elasticache", "start": 2013, "end": 2019, "proficiency": 6 },
@@ -353,7 +353,7 @@
         { "title": "System", "dataKey": "title" },
         { "title": "Start Year", "dataKey": "start" },
         { "title": "End Year", "dataKey": "end" },
-        { "title": "Proficiency", "dataKey": "proficiency" }
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
         { "title": "Docker", "start": 2015, "proficiency": 8 },
@@ -366,7 +366,7 @@
         { "title": "Format", "dataKey": "title" },
         { "title": "Start Year", "dataKey": "start" },
         { "title": "End Year", "dataKey": "end" },
-        { "title": "Proficiency", "dataKey": "proficiency" }
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
         { "title": "JSON", "start": 2008, "proficiency": 9 },
@@ -381,7 +381,7 @@
         { "title": "Service", "dataKey": "title" },
         { "title": "Start Year", "dataKey": "start" },
         { "title": "End Year", "dataKey": "end" },
-        { "title": "Proficiency", "dataKey": "proficiency" }
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
         { "title": "AWS", "start": 2009, "end": 2022, "proficiency": 7 },
@@ -401,7 +401,7 @@
         { "title": "System", "dataKey": "title" },
         { "title": "Start Year", "dataKey": "start" },
         { "title": "End Year", "dataKey": "end" },
-        { "title": "Proficiency", "dataKey": "proficiency" }
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
         { "title": "Kubernetes", "start": 2022, "proficiency": 5 },
@@ -415,7 +415,7 @@
         { "title": "OS", "dataKey": "title" },
         { "title": "Start Year", "dataKey": "start" },
         { "title": "End Year", "dataKey": "end" },
-        { "title": "Proficiency", "dataKey": "proficiency" }
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
         { "title": "Linux", "start": 2001, "proficiency": 8 },
