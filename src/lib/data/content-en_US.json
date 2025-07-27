@@ -306,6 +306,7 @@
         { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
       ],
       "items": [
+        { "title": "Bootstrap", "language": "CSS", "start": 2013, "proficiency": 8 },
         { "title": "CodeIgniter", "language": "PHP", "start": 2008, "end": 2010, "proficiency": 7 },
         { "title": "Django", "language": "python", "start": 2015, "end": 2020, "proficiency": 7 },
         { "title": "Laravel", "language": "PHP", "start": 2014, "end": 2018, "proficiency": 8 },
@@ -313,6 +314,7 @@
         { "title": "React", "language": "Javascript/Typescript", "start": 2015, "proficiency": 7 },
         { "title": "Ruby on Rails", "language": "Ruby", "start": 2012, "end": 2013, "proficiency": 5 },
         { "title": "Svelte/Kit", "language": "Javascript/Typescript", "start": 2019, "proficiency": 8 },
+        { "title": "Tailwind", "language": "CSS", "start": 2024, "proficiency": 8 },
         { "title": "WordPress", "language": "PHP", "start": 2008, "proficiency": 8 }
       ]
     },
