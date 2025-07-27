@@ -91,6 +91,26 @@ type Config = {
 
 type Objective = Maybe<string[]>
 
+
+type RobotDataItem = {
+  title: string
+  start: number
+  end: number
+}
+
+type RobotDataKey = keyof RobotDataItem
+
+type RobotDataHeader = {
+  title: string
+  dataKey: RobotDataKey
+}
+
+type RobotData = {
+  title: string
+  headers: RobotDataHeader[]
+  items: RobotDataItem[]
+}
+
 export type ResumeData = {
   config: Config
   name: Name
@@ -101,4 +121,5 @@ export type ResumeData = {
   currentWork?: Job[]
   workHistory?: Job[]
   education?: BookSmarts[]
+  robotData?: RobotData[]
 }

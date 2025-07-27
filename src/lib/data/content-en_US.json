@@ -260,5 +260,166 @@
       },
       "institution": "University of Northern Colorado, Greeley, Colorado"
     }
+  ],
+  "robotData": [
+    {
+      "title": "Programming Languages",
+      "headers": [
+        { "title": "Language", "dataKey": "title"},
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "Golang", "start": 2015, "proficiency": 6 },
+        { "title": "Java", "start": 2014, "end": 2018, "proficiency": 5 },
+        { "title": "Javascript", "start": 1999, "proficiency": 9 },
+        { "title": "PHP", "start": 2002, "proficiency": 9 },
+        { "title": "Python", "start": 2010, "proficiency": 8 },
+        { "title": "Ruby", "start": 2008, "end": 2013, "proficiency": 7 },
+        { "title": "Rust", "start": 2020, "end": 2023, "proficiency": 5 },
+        { "title": "Scala", "start": 2015, "end": 2020, "proficiency":  5 },
+        { "title": "Typescript", "start": 2015, "proficiency": 8 }
+      ]
+    },
+    {
+      "title": "Markup Languages",
+      "headers": [
+        { "title": "Language", "dataKey": "title"},
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "CSS", "start": 1998, "proficiency": 8 },
+        { "title": "HTML", "start": 1998, "proficiency": 9 },
+        { "title": "Markdown", "start": 2008, "proficiency": 9 }
+      ]
+    },
+    {
+      "title": "Language Frameworks",
+      "headers": [
+        { "title": "Framework", "dataKey": "title" },
+        { "title": "Language", "dataKey": "language" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency (1-10)", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "CodeIgniter", "language": "PHP", "start": 2008, "end": 2010, "proficiency": 7 },
+        { "title": "Django", "language": "python", "start": 2015, "end": 2020, "proficiency": 7 },
+        { "title": "Laravel", "language": "PHP", "start": 2014, "end": 2018, "proficiency": 8 },
+        { "title": "Next.js", "language": "Javascript/Typescript", "start": 2025, "proficiency": 6 },
+        { "title": "React", "language": "Javascript/Typescript", "start": 2015, "proficiency": 7 },
+        { "title": "Ruby on Rails", "language": "Ruby", "start": 2012, "end": 2013, "proficiency": 5 },
+        { "title": "Svelte/Kit", "language": "Javascript/Typescript", "start": 2019, "proficiency": 8 },
+        { "title": "WordPress", "language": "PHP", "start": 2008, "proficiency": 8 }
+      ]
+    },
+    {
+      "title": "Databases",
+      "headers": [
+        { "title": "Name", "dataKey": "title" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "Firestore", "start": 2022, "end": 2023, "proficiency": 5 },
+        { "title": "Postgres", "start": 2012, "proficiency": 7 },
+        { "title": "MySQL", "start": 2000, "proficiency": 8 },
+        { "title": "SQLite", "start": 2009, "proficiency": 7 }
+      ]
+    },
+    {
+      "title": "Key/Value Stores",
+      "headers": [
+        { "title": "Name", "dataKey": "title" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "Elasticache", "start": 2013, "end": 2019, "proficiency": 6 },
+        { "title": "Memcached", "start": 2008, "end": 2014, "proficiency": 6 },
+        { "title": "Redis", "start": 2017, "end": 2022, "proficiency": 6 }
+      ]
+    },
+    {
+      "title": "Virtualization/Containerization",
+      "headers": [
+        { "title": "System", "dataKey": "title" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "Docker", "start": 2015, "proficiency": 8 },
+        { "title": "Docker Compose", "start": 2015, "proficiency": 8 }
+      ]
+    },
+    {
+      "title": "Data File Formats",
+      "headers": [
+        { "title": "Format", "dataKey": "title" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "JSON", "start": 2008, "proficiency": 9 },
+        { "title": "TOML", "start": 2020, "proficiency": 8 },
+        { "title": "XML", "start": 2004, "proficiency": 8 },
+        { "title": "YAML", "start": 2011, "proficiency": 9 }
+      ]
+    },
+    {
+      "title": "Saas/Cloud Services",
+      "headers": [
+        { "title": "Service", "dataKey": "title" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "AWS", "start": 2009, "end": 2022, "proficiency": 7 },
+        { "title": "BugSnag", "start": 2022, "end": 2023, "proficiency": 6 },
+        { "title": "Datadog", "start": 2013, "end": 2022, "proficiency": 7 },
+        { "title": "Google Cloud", "start": 2022, "end": 2023, "proficiency": 7 },
+        { "title": "Resend", "start": 2023, "proficiency": 8 },
+        { "title": "Sendgrid", "start": 2018, "end": 2022, "proficiency": 7 },
+        { "title": "Sentry", "start": 2018, "proficiency": 8 },
+        { "title": "Supabase", "start": 2023, "proficiency": 8 },
+        { "title": "Twilio", "start": 2011, "end": 2022, "proficiency": 9 }
+      ]
+    },
+    {
+      "title": "Cloud Deployment",
+      "headers": [
+        { "title": "System", "dataKey": "title" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "Kubernetes", "start": 2022, "proficiency": 5 },
+        { "title": "Terraform", "start": 2020, "end": 2022, "proficiency": 5 },
+        { "title": "Vercel", "start": 2020, "proficiency": 8 }
+      ]
+    },
+    {
+      "title": "Operating Systems",
+      "headers": [
+        { "title": "OS", "dataKey": "title" },
+        { "title": "Start Year", "dataKey": "start" },
+        { "title": "End Year", "dataKey": "end" },
+        { "title": "Proficiency", "dataKey": "proficiency" }
+      ],
+      "items": [
+        { "title": "Linux", "start": 2001, "proficiency": 8 },
+        { "title": "MacOS", "start": 1984, "proficiency": 9 },
+        { "title": "Windows", "start": 1992, "end": 2015, "proficiency": 7 }
+      ]
+    }
   ]
 }
