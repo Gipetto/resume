@@ -325,9 +325,11 @@
         { "title": "Proficiency", "dataKey": "proficiency" }
       ],
       "items": [
+        { "title": "ElasticSearch", "start": 2016, "end": 2022, "proficiency": 7 },
         { "title": "Firestore", "start": 2022, "end": 2023, "proficiency": 5 },
         { "title": "Postgres", "start": 2012, "proficiency": 7 },
         { "title": "MySQL", "start": 2000, "proficiency": 8 },
+        { "title": "RDS", "start": 2013, "proficiency": 7 },
         { "title": "SQLite", "start": 2009, "proficiency": 7 }
       ]
     },
