@@ -23,7 +23,7 @@ class ResumeStore {
   }
 }
 
-const content = new ResumeStore(resumeData)
+const content = new ResumeStore(resumeData as ResumeData)
 
 /**
  * Company Data for Cover Letter
@@ -77,7 +77,7 @@ const createThemeStore = (initialValue: "light" | "dark") => {
     get value() {
       return theme
     },
-    set value(value) {
+    set value(value: Theme) {
       theme = value
       localStorage.setItem("theme", theme)
     }
@@ -90,18 +90,42 @@ const theme = createThemeStore(startingTheme)
 if (browser && browserThemePreference) {
   on(browserThemePreference, "change", (e) => {
     /**
-     * The media query above is specifically for dark mode, 
+     * The media query above is specifically for dark mode,
      * so `e.matches` here is "dark mode === true"
      */
     theme.value = e.matches ? "dark" : "light"
   })
 }
 
+/**
+ * Robot Footer State
+ */
+type RobotState = "open" | "closed"
+const startingRobotState: RobotState = "closed"
+
+const createRobotState = (initialValue: RobotState) => {
+  let robotState = $state(initialValue)
+
+  return {
+    get value() {
+      return robotState
+    },
+    set value(value: RobotState) {
+      robotState = value
+    }
+  }
+}
+
+const robot = createRobotState(startingRobotState)
+
+
 export {
   content,
   companies,
-  theme
+  theme,
+  robot
 }
 export type {
-  Company
+  Company,
+  RobotState
 }

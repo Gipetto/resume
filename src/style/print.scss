@@ -59,14 +59,15 @@
       width: auto;
       padding: 0;
 
-      .theme-button {
+      .theme-button,
+      .robot-button {
         display: none;
       }
       .printed-from {
         display: revert !important;
       }
     }
-  
+
     .content {
 
       section,
@@ -77,17 +78,17 @@
           }
         }
       }
-  
-      section {        
+
+      section {
         h2:first-of-type {
           break-after: avoid;
         }
-  
+
         dl {
           break-before: avoid;
-          
+
           dt {
-            /* 
+            /*
               HAX: prevent the top of the DT element from
                    appearing on the previous page in Chrome
             */
@@ -99,7 +100,7 @@
           }
         }
       }
-  
+
       section:not(.me) {
         ul {
           li {
@@ -108,15 +109,15 @@
           }
         }
       }
-    
+
       aside {
         break-inside: avoid-page;
-        
+
         .bubble {
           color: darkgray;
         }
       }
-  
+
       hr {
         display: none !important;
       }
