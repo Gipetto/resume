@@ -32,29 +32,57 @@
 
 <style lang="scss">
   table {
+    border-collapse: collapse;
     margin-block: 2rem;
     font-family: system-ui;
+    width: 100%;
 
     caption {
       font-weight: 900;
-    }
-
-    th {
-      font-weight: 700;
-    }
-
-    th, td, caption {
       text-align: left;
     }
 
-    th, td {
-      padding-inline-start: 0.25rem;
-      padding-inline-end: 1.5rem;
-    }
 
     tr:hover {
       td {
         background-color: ghostwhite;
+      }
+    }
+
+    tr {
+      th, td {
+        padding-inline-start: 0.125rem;
+        padding-inline-end: 1rem;
+        text-align: right;
+        font-size: 0.9em;
+      }
+
+      td {
+        border: 1px dotted rgb(0 0 0 / 0.25);
+      }
+
+      th {
+        font-weight: 700;
+      }
+
+      th:nth-child(1),
+      td:nth-child(1) {
+        text-align: left;
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: 11ch;
+      }
+
+      th:nth-child(3),
+      td:nth-child(3) {
+        width: 11ch;
+      }
+
+      th:nth-child(4),
+      td:nth-child(4) {
+        width: 16ch;
       }
     }
   }

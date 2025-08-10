@@ -129,4 +129,27 @@
       display: none;
     }
   }
+
+}
+
+html {
+  footer {
+    .robot-content {
+      break-before: always;
+
+      .robot-data-table {
+        break-inside: avoid;
+        break-before: page;
+        font-family: monospace;
+        line-height: 1em;
+        font-size: 8pt;
+
+        tr {
+          td, th {
+            padding: 0.125rem;
+          }
+        }
+      }
+    }
+  }
 }
