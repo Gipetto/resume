@@ -51,10 +51,13 @@
 
     tr {
       th, td {
-        padding-inline-start: 0.125rem;
+        padding-inline-start: 0.25rem;
         padding-inline-end: 1rem;
+        padding-block: 0.3rem;
         text-align: right;
         font-size: 0.9em;
+        line-height: 1.1;
+        font-variant-numeric: tabular-nums;
       }
 
       td {
