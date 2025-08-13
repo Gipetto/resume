@@ -2,10 +2,14 @@
   color-scheme: light dark;
 }
 
+::view-transition-group(root) {
+  animation-duration: 0.5s;
+}
+
 body {
   --text-color: #151515;
   --text-color-headline: #000;
-  --text-color-dark-gray: #444444;  
+  --text-color-dark-gray: #444444;
   --background-color: #fff;
 
   --background-color-bubble: var(--background-color);

@@ -78,7 +78,13 @@ const createThemeStore = (initialValue: "light" | "dark") => {
       return theme
     },
     set value(value: Theme) {
-      theme = value
+      if (document.startViewTransition) {
+        document.startViewTransition(() => {
+          theme = value
+        })
+      } else {
+        theme = value
+      }
       localStorage.setItem("theme", theme)
     }
   }

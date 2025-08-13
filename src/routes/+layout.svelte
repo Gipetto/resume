@@ -11,8 +11,10 @@
   let { children }: LayoutProps = $props()
 
   $effect(() => {
+    // document.startViewTransition(async () => {
     document.body.classList.remove("light", "dark")
     document.body.classList.add(theme.value === "dark" ? "dark" : "light")
+    // })
   })
 </script>
 
