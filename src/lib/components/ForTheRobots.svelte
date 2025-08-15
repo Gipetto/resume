@@ -7,20 +7,20 @@
 
 {#if data}
   <h2>{_("title.robotData", "For The Robots")}</h2>
-  {#each data as section}
+  {#each data as section (section.title)}
     <table>
       <caption>{section.title}</caption>
       <thead>
         <tr>
-          {#each section.headers as header}
+          {#each section.headers as header (`header-${header.dataKey}`)}
             <th>{header.title}</th>
           {/each}
         </tr>
       </thead>
       <tbody>
-      {#each section.items as item}
+      {#each section.items as item (item.title)}
         <tr>
-          {#each section.headers as header}
+          {#each section.headers as header (`row-${header.dataKey}`)}
           <td>{item[header.dataKey]}</td>
           {/each}
         </tr>

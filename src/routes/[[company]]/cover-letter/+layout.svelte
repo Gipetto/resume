@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { LayoutProps } from "../../cover-letter/$types"
+  import type { LayoutProps } from "./$types"
 
   let { children }: LayoutProps = $props()
 </script>

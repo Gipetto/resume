@@ -1,6 +1,6 @@
 <script lang="ts">
   /* eslint-disable svelte/no-at-html-tags */
-  const { 
+  const {
     text,
     className = ""
   }: {
@@ -9,6 +9,6 @@
   } = $props()
 </script>
 
-{#each text as line}
+{#each text as line, i (`line-${i}`)}
   <p class={className}>{@html line}</p>
 {/each}

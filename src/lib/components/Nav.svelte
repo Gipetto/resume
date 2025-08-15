@@ -1,18 +1,18 @@
 <script lang="ts">
-  import { base } from "$app/paths"
+  import { resolve } from "$app/paths"
   import { page } from "$app/state"
   import logo from "../logos/sp.svg?raw"
 
   const company = page.params.company
 
   const buildPath = (path: string) => {
-    let _path = `${path}`.replace(/^\//, "")
+    let _path = path
 
     if (company) {
-      _path = `${company}${path}`
+      _path = `/${company}${path}`
     }
 
-    return `${base}/${_path}`
+    return resolve(_path)
   }
 
   const links = [
@@ -38,7 +38,7 @@
         <img src={logoEncoded} role="presentation" alt="" width={24} height={24} />
       </a>
     </li>
-    {#each links as link}
+    {#each links as link (link.href)}
       <li class="flex-grow-1" class:active={active === link.href} >
         <a href="{link.href}">{link.text}</a>
       </li>

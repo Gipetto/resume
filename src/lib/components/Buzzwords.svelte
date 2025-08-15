@@ -1,5 +1,5 @@
 <script lang="ts">
-   
+
   import { content } from "$lib/store.svelte"
   import Icon from "./Icon.svelte"
   import _ from "../services/i18n.svelte"
@@ -24,7 +24,7 @@
 
 {#if buzzwordGroups}
   <h2>{_("title.buzzwords", "Buzzwords")}</h2>
-  {#each buzzwordGroups as buzzwords}
+  {#each buzzwordGroups as buzzwords, i (`buzz-group-${i}`)}
     <ul class="skills">
       {#each buzzwords as item (item.name)}
         <li class="inner">
@@ -72,7 +72,7 @@
 
     li {
       margin-bottom: 0.25em;
-      
+
       .icon {
         margin-right: 0.25em;
         vertical-align: middle;

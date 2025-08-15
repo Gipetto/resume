@@ -26,7 +26,7 @@
 {#if !empty}
   {#if useBullets}
     <ul class="hanging">
-      {#each position.description as entry }
+      {#each position.description as entry, i (`entry-${i}`)}
         <li>{entry}</li>
       {/each}
     </ul>
