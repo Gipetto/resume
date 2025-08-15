@@ -293,7 +293,10 @@
       "items": [
         { "title": "CSS", "start": 1998, "proficiency": 8 },
         { "title": "HTML", "start": 1998, "proficiency": 9 },
-        { "title": "Markdown", "start": 2008, "proficiency": 9 }
+        { "title": "Less", "start": 2013, "end": 2016, "proficiency": "7" },
+        { "title": "Markdown", "start": 2008, "proficiency": 9 },
+        { "title": "Sass", "start": 2012, "proficiency": 9 },
+        { "title": "Tailwind CSS", "start": 2023, "proficiency": "7" }
       ]
     },
     {
