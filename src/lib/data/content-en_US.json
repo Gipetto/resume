@@ -90,6 +90,14 @@
   "objective": [
     "I'm a full-stack software engineer experienced in building scalable web applications and leading cross-functional teams. I thrive in both individual and team settings, delivering solutions that combine technical excellence with user-centric design. My expertise spans distributed systems, modern JavaScript frameworks, and back-end development."
   ],
+  "sideProject": {
+    "name": "QuizStreak",
+    "url": "https://www.quizstreak.com",
+    "description": [
+      "QuizStreak is a daily trivia game that is built from my brother-in-law's idea and my development skills.",
+      "Built on Sveltekit and Supabase, using only the bare minimum of NPM libraries, and with artisinally crafted CSS. It is fun to work on and the subject matter is interesting as well."
+    ]
+  },
   "currentWork": [
     {
       "company": "QuizStreak",
@@ -108,7 +116,8 @@
             "Conduct user behavior analysis and customer interviews to identify feature opportunities and improve engagement."
           ]
         }
-      ]
+      ],
+      "hidden": true
     },
     {
       "company": "Culture Foundry",
@@ -227,7 +236,7 @@
           ]
         }
       ],
-      "hidden": false
+      "hidden": true
     },
     {
       "company": "Alternative Technology",

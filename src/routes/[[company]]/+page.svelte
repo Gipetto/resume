@@ -2,6 +2,7 @@
   import { content } from "$lib/store.svelte"
   import History from "$lib/components/History.svelte"
   import Buzzwords from "$lib/components/Buzzwords.svelte"
+  import SideProject from "$lib/components/SideProject.svelte"
 </script>
 
 {#if content.data}
@@ -9,6 +10,7 @@
     <History />
   </section>
   <aside>
+    <SideProject />
     <Buzzwords />
   </aside>
 {:else}

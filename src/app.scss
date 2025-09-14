@@ -130,6 +130,28 @@ aside {
       margin-right: 1em;
     }
   }
+
+  .featured-project {
+    border-bottom: 1px dotted gray;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    .project-link {
+      margin-top: 0;
+      font-size: 0.95rem;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
 }
 
 .sr-only {
@@ -144,7 +166,7 @@ aside {
   border-width: 0;
 }
 
-hr {  
+hr {
   border: 0;
   height: 1px;
   border-bottom: 1px dotted gray;

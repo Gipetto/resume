@@ -11,29 +11,32 @@
   } = $props()
 </script>
 
-<dt>
-  <span class="company">{job.company}, {job.location}</span>{#if job.remote}<span class="remote"> (Remote)</span>{/if}{#if job.url}
-  <a class="icon" href="{job.url}" title="{job.company}" target="_blank"><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title={job.company} /></a>{/if}
-</dt>
-{#each job.positions as position (position.title)}
-  {#if position.from}
-    <dd>
-      <Position {position} />
+{#if !job.hidden}
+  <dt>
+    <span class="company">{job.company}, {job.location}</span>{#if job.remote}<span class="remote"> (Remote)</span>{/if}{#if job.url}
+    <a class="icon" href="{job.url}" title="{job.company}" target="_blank"><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title={job.company} /></a>{/if}
+  </dt>
+  {#each job.positions as position (position.title)}
+    {#if position.from}
+      <dd>
+        <Position {position} />
+      </dd>
+    {/if}
+  {/each}
+  {#if job.patents}
+    <dd class="patents">
+      <BulletedHeading of="h3" class="mb-0">{_("title.patents", "Patents")}</BulletedHeading>
+      <ul class="hanging">
+        {#each job.patents as patent (patent.number)}
+          <li>
+            <Patent {patent} />
+          </li>
+        {/each}
+      </ul>
     </dd>
   {/if}
-{/each}
-{#if job.patents}
-  <dd class="patents">
-    <BulletedHeading of="h3" class="mb-0">{_("title.patents", "Patents")}</BulletedHeading>
-    <ul class="hanging">
-      {#each job.patents as patent (patent.number)}
-        <li>
-          <Patent {patent} />
-        </li> 
-      {/each}
-    </ul>
-  </dd>
 {/if}
+
 <style lang="scss">
   @use "../../style/mixins";
 

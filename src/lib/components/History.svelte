@@ -2,7 +2,6 @@
   import _ from "../services/i18n.svelte"
   import JobDefinition from "./JobDefinition.svelte"
   import Text from "./Text.svelte"
-  import Date from "./Date.svelte"
   import BackToTop from "./BackToTop.svelte"
   import { content } from "../store.svelte"
 
@@ -35,9 +34,7 @@
     <h2>{_("title.work-history", "Work History")}</h2>
     <dl>
       {#each workHistory as job (job.company)}
-        {#if !job.hidden}
         <JobDefinition {job} />
-        {/if}
       {/each}
     </dl>
   </section>
@@ -49,7 +46,7 @@
     <ul class="hanging">
       {#each education as stint (stint.description)}
         <li>
-          <b>{stint.description}</b>, <Date date={stint.date} /><br />
+          <b>{stint.description}</b><br />
           <i>{stint.institution}</i>
         </li>
       {/each}

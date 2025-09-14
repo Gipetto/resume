@@ -112,6 +112,12 @@ type RobotData = {
   items: RobotDataItem[]
 }
 
+type SideProject = {
+  name: string
+  url: string
+  description: string[]
+}
+
 export type ResumeData = {
   config: Config
   name: Name
@@ -123,4 +129,5 @@ export type ResumeData = {
   workHistory?: Job[]
   education?: BookSmarts[]
   robotData?: RobotData[]
+  sideProject?: SideProject
 }
