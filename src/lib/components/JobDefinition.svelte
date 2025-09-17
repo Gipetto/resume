@@ -5,6 +5,7 @@
   import BulletedHeading from "./BulletedHeading.svelte"
   import Patent from "./Patent.svelte"
   import Icon from "./Icon.svelte"
+  import { resolve } from "$app/paths"
 
   const { job }: {
     job: Job
@@ -13,11 +14,11 @@
 
 {#if !job.hidden}
   <dt>
-    <span class="company">{job.company}, {job.location}</span>{#if job.remote}<span class="remote"> (Remote)</span>{/if}{#if job.url}
-    <a class="icon" href="{job.url}" title="{job.company}" target="_blank"><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title={job.company} /></a>{/if}
+    <span class="company">{job.company}{#if job.location}, {job.location}{/if}</span>{#if job.remote}<span class="remote"> (Remote)</span>{/if}{#if job.url}
+    <a class="icon" href="{resolve(job.url)}" title="{job.company}" target="_blank"><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title={job.company} /></a>{/if}
   </dt>
-  {#each job.positions as position (position.title)}
-    {#if position.from}
+  {#each job.positions as position, key (`position-${key}`)}
+    {#if position.description}
       <dd>
         <Position {position} />
       </dd>

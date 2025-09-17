@@ -22,7 +22,10 @@
       "email": "shawn@topfroggraphics.com",
       "telFormatted": null,
       "telE164": null,
-      "url": "https://top-frog.com"
+      "urls": [
+        "https://top-frog.com",
+        "https://github.com/Gipetto"
+      ]
     }
   },
   "buzzwords": [
@@ -61,7 +64,7 @@
       },
       {
         "name": "Mac & Linux.",
-        "text": "Windows use is for family tech support and cross-browser testing only."
+        "text": "Windows use is for family tech support and cross-browser testing only, right?"
       }
     ],
     [
@@ -88,7 +91,7 @@
     }
   ],
   "objective": [
-    "I'm a full-stack software engineer experienced in building scalable web applications and leading cross-functional teams. I thrive in both individual and team settings, delivering solutions that combine technical excellence with user-centric design. My expertise spans distributed systems, modern JavaScript frameworks, and back-end development."
+    "Senior Software Engineer and tech lead with 11+ years of experience building and scaling full-stack web applications in startup environments. Specializing in TypeScript, React, and Node.js, with a proven track record of leading projects from concept to launch, improving system reliability, and mentoring engineers. Passionate about moving slow and fixing things."
   ],
   "sideProject": {
     "name": "QuizStreak",
@@ -141,6 +144,18 @@
     }
   ],
   "workHistory": [
+    {
+      "company": "Career Break",
+      "positions": [
+        {
+          "description": [
+            "Launched a full-stack trivia game (quizstreak.com) with Svelte/SvelteKit, diving deep into modern web development to see what the hype was about.",
+            "Got hands-on with Kubernetes by building local clusters from scratch, moving beyond just using them to truly understanding how they work under the hood.",
+            "Took a break after 11 years in the startup grind to recharge, retool, and return to work with fresh energy and new perspectives."
+          ]
+        }
+      ]
+    },
     {
       "company": "RevOpos, Inc",
       "location": "Berkeley, CA",

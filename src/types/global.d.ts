@@ -30,7 +30,7 @@ export type ContactMethods = {
     email?: Maybe<string>
     telFormatted?: Maybe<string>
     telE164?: Maybe<string>
-    url?: Maybe<string>
+    urls?: string[]
   }
 }
 

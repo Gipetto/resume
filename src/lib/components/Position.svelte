@@ -11,13 +11,15 @@
     position: Position
   } = $props()
 
-  let empty = position.description.length < 1
+  let empty = position.description?.length < 1
 </script>
 
 
+{#if position.title}
 <BulletedHeading of="h3" class="mb-0">
   {position.title}
 </BulletedHeading>
+{/if}
 {#if position.from}
   <h4 class="mb-0">
     <Date date={position.from} /> – {#if position.to}<Date date={position.to} />{:else}present{/if}

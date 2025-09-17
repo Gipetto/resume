@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { resolve } from "$app/paths"
   import { content } from "$lib/store.svelte"
 
   const name = content.get("name")
@@ -54,17 +55,21 @@
                 >
               </p>
             {/if}
-            {#if contact.methods.url}
-              <p>
-                <a
-                  class="url org"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href={contact.methods.url}
-                >
-                  {contact.methods.url}
-                </a>
-              </p>
+            {#if contact.methods.urls}
+              <ul class="urls">
+                {#each contact.methods.urls as url (url)}
+                  <li>
+                    <a
+                      class="url org"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      href={url}
+                    >
+                      {url}
+                    </a>
+                  </li>
+                {/each}
+              </ul>
             {/if}
             {#if contact.methods.email}
               <p>
@@ -112,7 +117,7 @@
     h2.title {
       font-size: 2rem;
       margin: 0.5em 0;
-      
+
       @include mixins.media(md-screen) {
         font-size: 2rem;
       }
@@ -129,6 +134,16 @@
           margin-bottom: 0;
         }
       }
+    }
+
+    .urls {
+      margin-inline: auto;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1rem;
     }
   }
 </style>
