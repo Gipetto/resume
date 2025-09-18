@@ -144,6 +144,11 @@
       flex-direction: row;
       justify-content: center;
       gap: 1rem;
+
+      @include mixins.media(md-screen) {
+        flex-direction: column;
+        gap: 0;
+      }
     }
   }
 </style>
