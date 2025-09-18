@@ -1,1 +1,0 @@
-{"version":3,"file":"2.D4qUJDhT.js","sources":["../../../../../../src/routes/[[company]]/cover-letter/+layout.svelte"],"sourcesContent":["<script lang=\"ts\">\n  import type { LayoutProps } from \"./$types\"\n\n  let { children }: LayoutProps = $props()\n</script>\n\n<div class=\"grid-single\">\n  {@render children?.()}\n</div>\n"],"names":[],"mappings":"wKAAA,oDAIA"}
