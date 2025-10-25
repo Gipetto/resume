@@ -1,14 +1,6 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
-    // // "target": "ES2017",
-    // // "module": "ESNext",
-    // "types": ["svelte", "node"],
-    // "resolveJsonModule": true,
-    // "typeRoots": [
-    //   "node_modules/@types",
-    //   "src/types"
-    // ]
     "allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,

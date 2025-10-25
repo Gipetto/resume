@@ -1,5 +1,6 @@
 import { defineConfig } from "vite"
 import { sveltekit } from "@sveltejs/kit/vite"
+import yaml from "@rollup/plugin-yaml"
 
 const production = process.env.NODE_ENV === "production"
 
@@ -13,12 +14,6 @@ export default defineConfig({
   },
   plugins: [
     sveltekit(),
+    yaml()
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        api: "modern-compiler"
-      }
-    },
-  },
 })

@@ -6,7 +6,7 @@ import { browser } from "$app/environment"
  * Resume Data
  * @TODO - convert to Context
  */
-import resumeData from "$lib/data/content-en_US.json"
+const resumeData = await loadYaml<ResumeData>("/src/lib/data/content-en_US.yaml")
 class ResumeStore {
   data = $state<ResumeData>()
 
@@ -43,7 +43,8 @@ type Companies = {
   [k: string]: Company
 }
 
-import companiesData from "$lib/data/companies.json"
+const companiesData = await loadYaml<Companies>("/src/lib/data/companies.yaml")
+import { loadYaml } from "./utils/yaml"
 class CompanyStore {
   data = $state<Companies>()
 
