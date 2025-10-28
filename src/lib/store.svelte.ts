@@ -83,11 +83,12 @@ const createThemeStore = (initialValue: "light" | "dark") => {
       if (document.startViewTransition) {
         document.startViewTransition(() => {
           theme = value
+          localStorage.setItem("theme", theme)
         })
       } else {
         theme = value
+        localStorage.setItem("theme", theme)
       }
-      localStorage.setItem("theme", theme)
     }
   }
 }
