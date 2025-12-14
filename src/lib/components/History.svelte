@@ -6,7 +6,7 @@
   import { content } from "../store.svelte"
 
   const objective = content.get("objective")
-  const currentWork = content.get("currentWork")
+  const currentWork = content.get("currentWork")?.filter((item) => !item.hidden)
   const workHistory = content.get("workHistory")
   const education = content.get("education")
 </script>

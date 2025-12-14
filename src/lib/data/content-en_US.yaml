@@ -87,6 +87,17 @@ currentWork:
     - Conduct user behavior analysis and customer interviews to identify feature opportunities
       and improve engagement.
   hidden: true
+- company: Wander.com
+  location: Austin, TX
+  remote: true
+  positions:
+  - from:
+      month: 12
+      year: 2025
+    title: Software Engineer IV
+    description:
+    - "Just getting started..."
+workHistory:
 - company: Culture Foundry
   location: Seattle, WA
   remote: true
@@ -94,6 +105,9 @@ currentWork:
   - from:
       month: 3
       year: 2024
+    to:
+      month: 12
+      year: 2025
     title: Software Engineer, Contractor
     description:
     - Engineered custom web applications and sites for a diverse client portfolio,
@@ -108,11 +122,10 @@ currentWork:
     - Implemented and maintained automated CI/CD pipelines to streamline deployment
       and testing processes across various hosting environments, including WPEngine
       and client-managed infrastructure.
-workHistory:
 - company: Career Break
   positions:
   - description:
-    - Launched a full-stack trivia game (quizstreak.com) with Svelte/SvelteKit, diving
+    - Launched a trivia game (quizstreak.com) with Svelte/SvelteKit & Supabase, diving
       deep into modern web development, game design, and statistics.
     - Got hands-on with Kubernetes by building local clusters from scratch, moving
       beyond just using them to truly understanding how they work under the hood.
