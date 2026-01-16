@@ -64,13 +64,7 @@ const companies = new CompanyStore(companiesData)
  * Color Theme
  */
 let startingTheme: Theme = "light"
-let browserThemePreference
-
-if (browser) {
-  const storedTheme = localStorage.getItem("theme") as Theme
-  browserThemePreference = window.matchMedia("(prefers-color-scheme: dark)")
-  startingTheme = storedTheme || (browserThemePreference.matches ? "dark" : "light")
-}
+let browserThemePreference: MediaQueryList | null = null
 
 const createThemeStore = (initialValue: "light" | "dark") => {
   let theme = $state(initialValue)
@@ -95,8 +89,13 @@ const createThemeStore = (initialValue: "light" | "dark") => {
 
 const theme = createThemeStore(startingTheme)
 
-// Handle the browser preferences changing
-if (browser && browserThemePreference) {
+if (browser) {
+  const storedTheme = localStorage.getItem("theme")
+  browserThemePreference = window.matchMedia("(prefers-color-scheme: dark)")
+  startingTheme = (storedTheme === "light" || storedTheme === "dark")
+    ? storedTheme
+    : (browserThemePreference.matches ? "dark" : "light")
+
   on(browserThemePreference, "change", (e) => {
     /**
      * The media query above is specifically for dark mode,
