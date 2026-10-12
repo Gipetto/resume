@@ -118,6 +118,16 @@ type SideProject = {
   description: string[]
 }
 
+type AgentPractice = {
+  title: string
+  description: string
+}
+
+type HowIUseAgents = {
+  items: AgentPractice[]
+  config: { text: string; url: string }
+}
+
 export type ResumeData = {
   config: Config
   name: Name
@@ -130,4 +140,5 @@ export type ResumeData = {
   education?: BookSmarts[]
   robotData?: RobotData[]
   sideProject?: SideProject
+  howIUseAgents?: HowIUseAgents
 }

@@ -62,6 +62,19 @@ sideProject:
   - Built on Sveltekit and Supabase, using only the bare minimum of NPM libraries,
     and with artisinally crafted CSS. It is fun to work on and the subject matter
     is interesting as well.
+howIUseAgents:
+  items:
+  - title: Done is defined first.
+    description: I sign off on acceptance criteria before any code gets written.
+  - title: Separate hands.
+    description: Planning, implementing, verifying, and reviewing are different agents
+      with narrow permissions. The reviewer checks the diff against the criteria,
+      not the implementer’s summary.
+  - title: I hold the keys.
+    description: Pushes, PRs, and anything destructive wait for my approval.
+  config:
+    text: My personal AI agent config
+    url: https://github.com/Gipetto/opencode-config
 currentWork:
 - company: QuizStreak
   location: Castle Pines, CO

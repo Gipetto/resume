@@ -3,6 +3,7 @@
   import History from "$lib/components/History.svelte"
   import Buzzwords from "$lib/components/Buzzwords.svelte"
   import SideProject from "$lib/components/SideProject.svelte"
+  import HowIUseAgents from "$lib/components/HowIUseAgents.svelte"
 </script>
 
 {#if content.data}
@@ -11,6 +12,7 @@
   </section>
   <aside>
     <SideProject />
+    <HowIUseAgents />
     <Buzzwords />
   </aside>
 {:else}
