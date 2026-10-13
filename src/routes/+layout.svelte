@@ -6,9 +6,12 @@
   import Header from "$lib/components/Header.svelte"
   import SkipLink from "$lib/components/SkipLink.svelte"
   import Nav from "$lib/components/Nav.svelte"
-  import { theme } from "$lib/store.svelte"
+  import { content, theme } from "$lib/store.svelte"
+  import { personJsonLd } from "$lib/schema"
 
   let { children }: LayoutProps = $props()
+
+  const ldJson = $derived(personJsonLd(content.data))
 
   $effect(() => {
     // document.startViewTransition(async () => {
@@ -23,6 +26,9 @@
   <link rel="icon" href="{base}/favicon.ico" sizes="32x32">
   <link rel="icon" href="{base}/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="{base}/icons/apple-touch-icon.png">
+  {#if ldJson}
+    {@html `<script type="application/ld+json">${ldJson}<\/script>`}
+  {/if}
 </svelte:head>
 
 <SkipLink />

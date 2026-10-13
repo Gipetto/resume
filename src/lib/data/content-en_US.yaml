@@ -48,6 +48,11 @@ links:
 - icon: github
   href: https://github.com/Gipetto/resume
   text: View source of this Resume.
+sameAs:
+- https://flickr.com/photos/tehgipster
+- https://www.quizstreak.com/u/Wookiee
+- https://poocherino.com
+- https://hachyderm.io/@wookieeboy
 objective:
 - Tech lead / staff engineer with 20+ years turning fuzzy product asks into dependable
   systems, across startups, scale-ups, and client shops. I’ve taken apart monoliths
@@ -96,6 +101,8 @@ currentWork:
 - company: Wander.com
   location: Austin, TX
   remote: true
+  url: https://www.wander.com
+  hideUrl: true
   positions:
   - from:
       month: 12
@@ -110,6 +117,8 @@ workHistory:
 - company: Culture Foundry
   location: Seattle, WA
   remote: true
+  url: https://www.culturefoundry.com
+  hideUrl: true
   positions:
   - from:
       month: 3
@@ -139,6 +148,8 @@ workHistory:
 - company: RevOps
   location: Berkeley, CA
   remote: true
+  url: https://www.revops.io
+  hideUrl: true
   positions:
   - from:
       month: 4
@@ -161,6 +172,8 @@ workHistory:
       application build size.
 - company: Twilio
   location: San Francisco, CA
+  url: https://www.twilio.com
+  hideUrl: true
   positions:
   - from:
       month: 7

@@ -14,7 +14,7 @@
 
 {#if !job.hidden}
   <dt>
-    <span class="company">{job.company}{#if job.location}<span class="location">, &nbsp;{job.location}</span>{/if}</span>{#if job.remote}<span class="remote"> (Remote)</span>{/if}{#if job.url}
+    <span class="company">{job.company}{#if job.location}<span class="location">, &nbsp;{job.location}</span>{/if}</span>{#if job.remote}<span class="remote"> (Remote)</span>{/if}{#if job.url && !job.hideUrl}
     <a class="icon" href="{resolve(job.url)}" title="{job.company}" target="_blank"><span class="sr-only" hidden>{job.company} website</span><Icon name="link" title={job.company} /></a>{/if}
   </dt>
   {#each job.positions as position, key (`position-${key}`)}

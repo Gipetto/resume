@@ -60,6 +60,7 @@ type Job = {
   location?: Maybe<string>
   remote?: boolean
   url?: string
+  hideUrl?: boolean
   positions: Position[]
   patents?: Patent[]
   hidden?: true | false
@@ -145,6 +146,7 @@ export type ResumeData = {
   contact?: ContactMethods
   buzzwords?: BuzzwordGroup[]
   links?: Link[]
+  sameAs?: string[]
   currentWork?: Job[]
   workHistory?: Job[]
   education?: BookSmarts[]
