@@ -1,19 +1,39 @@
 <script lang="ts">
   import _ from "$lib/services/i18n.svelte"
   import { content } from "$lib/store.svelte"
+  import RobotAiTools from "$lib/components/RobotAiTools.svelte"
+  import RobotAgentPractices from "$lib/components/RobotAgentPractices.svelte"
 
   const data = content.get("robotData")
+
+  function slugify(title: string): string {
+    return title
+      .toLowerCase()
+      .replace(/&/g, "and")
+      .replace(/\//g, " ")
+      .replace(/[^a-z0-9 -]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/^-+|-+$/g, "")
+  }
+
+  function isYearColumn(dataKey: string): boolean {
+    return dataKey === "start" || dataKey === "end"
+  }
+
+  function isProficiencyColumn(dataKey: string): boolean {
+    return dataKey === "proficiency"
+  }
 </script>
 
 {#if data}
   <h2>{_("title.robotData", "For The Robots")}</h2>
   {#each data as section (section.title)}
-    <table>
+    <table id={slugify(section.title)}>
       <caption>{section.title}</caption>
       <thead>
         <tr>
           {#each section.headers as header (`header-${header.dataKey}`)}
-            <th>{header.title}</th>
+            <th class:year-col={isYearColumn(header.dataKey)} class:proficiency-col={isProficiencyColumn(header.dataKey)}>{header.title}</th>
           {/each}
         </tr>
       </thead>
@@ -21,13 +41,15 @@
       {#each section.items as item (item.title)}
         <tr>
           {#each section.headers as header (`row-${header.dataKey}`)}
-          <td>{item[header.dataKey]}</td>
+          <td class:year-col={isYearColumn(header.dataKey)} class:proficiency-col={isProficiencyColumn(header.dataKey)}>{item[header.dataKey]}</td>
           {/each}
         </tr>
       {/each}
       </tbody>
     </table>
   {/each}
+  <RobotAiTools />
+  <RobotAgentPractices />
 {/if}
 
 <style lang="scss">
@@ -86,6 +108,15 @@
       th:nth-child(4),
       td:nth-child(4) {
         width: 16ch;
+      }
+
+      .year-col {
+        max-width: 8ch;
+        text-align: right;
+      }
+
+      .proficiency-col {
+        max-width: 10ch;
       }
     }
   }

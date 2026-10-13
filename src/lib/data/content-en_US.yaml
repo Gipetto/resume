@@ -21,24 +21,24 @@ contact:
     - https://top-frog.com
     - https://github.com/Gipetto
 buzzwords:
-- - name: Python, Java, PHP, Scala, Golang, whatever…
-    text: Doesn't matter – just write tests for it!
-  - name: Typescript/Javascript, SvelteKit, Next.js, React, Node.
-    text: We still love you, jQuery! But we love Svelte more...
-  - name: Migrations where nobody notices.
+- - name: Migrations where nobody notices.
     text: Shadow systems and parity reconcilers keep the cutovers quiet. Success
       looks like an unremarkable deploy log.
   - name: Growing Engineers.
     text: Project/Tech specs, planning, mentoring, watering the EICs.
+  - name: Python, Java, PHP, Scala, Golang, whatever…
+    text: Doesn't matter – just write tests for it!
+  - name: Typescript/Javascript, SvelteKit, Next.js, React, Node.
+    text: We still love you, jQuery! But we love Svelte more...
   - name: I18n, L10n, A11y.
     text: I’ve learned more than I ever thought I wanted to know about character sets,
       locales, and externalization.
   - name: PDF Generation & Printing.
     text: Taking HTML to Print/PDF and building PDFs from PDF templates.
-- - name: WordPress Contributor.
-    text: Mostly bug fixes and small enhancements to the WP Core, but its all for
-      the greater good, right?
-  - name: WordPress Plugin Maintainer.
+# - name: WordPress Contributor.
+#   text: Mostly bug fixes and small enhancements to the WP Core, but its all for
+#     the greater good, right?
+- - name: WordPress Plugin Maintainer.
     text: Post Password Token, est. September, 2009
 links:
 - icon: linkedin
@@ -266,6 +266,7 @@ robotData:
   items:
   - title: Golang
     start: 2015
+    end: ongoing
     proficiency: 6
   - title: Java
     start: 2014
@@ -273,12 +274,15 @@ robotData:
     proficiency: 5
   - title: Javascript
     start: 1999
+    end: ongoing
     proficiency: 9
   - title: PHP
     start: 2002
+    end: ongoing
     proficiency: 9
   - title: Python
     start: 2010
+    end: ongoing
     proficiency: 8
   - title: Ruby
     start: 2008
@@ -294,6 +298,7 @@ robotData:
     proficiency: 5
   - title: Typescript
     start: 2015
+    end: ongoing
     proficiency: 8
 - title: Markup Languages
   headers:
@@ -308,9 +313,11 @@ robotData:
   items:
   - title: CSS
     start: 1998
+    end: ongoing
     proficiency: 8
   - title: HTML
     start: 1998
+    end: ongoing
     proficiency: 9
   - title: Less
     start: 2013
@@ -318,12 +325,15 @@ robotData:
     proficiency: '7'
   - title: Markdown
     start: 2008
+    end: ongoing
     proficiency: 9
   - title: Sass
     start: 2012
+    end: ongoing
     proficiency: 9
   - title: Tailwind CSS
     start: 2023
+    end: ongoing
     proficiency: '7'
 - title: Language Frameworks
   headers:
@@ -339,6 +349,7 @@ robotData:
   - title: Bootstrap
     language: CSS
     start: 2013
+    end: ongoing
     proficiency: 8
   - title: CodeIgniter
     language: PHP
@@ -358,10 +369,12 @@ robotData:
   - title: Next.js
     language: Javascript/Typescript
     start: 2025
+    end: ongoing
     proficiency: 6
   - title: React
     language: Javascript/Typescript
     start: 2015
+    end: ongoing
     proficiency: 7
   - title: Ruby on Rails
     language: Ruby
@@ -371,18 +384,22 @@ robotData:
   - title: Svelte/Kit
     language: Javascript/Typescript
     start: 2019
+    end: ongoing
     proficiency: 8
   - title: Tailwind
     language: CSS
     start: 2024
+    end: ongoing
     proficiency: 8
   - title: Wagtail
     language: Python
     start: 2020
+    end: ongoing
     proficiency: 7
   - title: WordPress
     language: PHP
     start: 2008
+    end: ongoing
     proficiency: 8
 - title: Databases
   headers:
@@ -405,15 +422,19 @@ robotData:
     proficiency: 5
   - title: Postgres
     start: 2012
+    end: ongoing
     proficiency: 7
   - title: MySQL
     start: 2000
+    end: ongoing
     proficiency: 8
   - title: RDS
     start: 2013
+    end: ongoing
     proficiency: 7
   - title: SQLite
     start: 2009
+    end: ongoing
     proficiency: 7
 - title: Key/Value Stores
   headers:
@@ -451,9 +472,11 @@ robotData:
   items:
   - title: Docker
     start: 2015
+    end: ongoing
     proficiency: 8
   - title: Docker Compose
     start: 2015
+    end: ongoing
     proficiency: 8
 - title: Data File Formats
   headers:
@@ -468,15 +491,19 @@ robotData:
   items:
   - title: JSON
     start: 2008
+    end: ongoing
     proficiency: 9
   - title: TOML
     start: 2020
+    end: ongoing
     proficiency: 8
   - title: XML
     start: 2004
+    end: ongoing
     proficiency: 8
   - title: YAML
     start: 2011
+    end: ongoing
     proficiency: 9
 - title: Saas/Cloud Services
   headers:
@@ -507,6 +534,7 @@ robotData:
     proficiency: 7
   - title: Resend
     start: 2023
+    end: ongoing
     proficiency: 8
   - title: Sendgrid
     start: 2018
@@ -514,9 +542,11 @@ robotData:
     proficiency: 7
   - title: Sentry
     start: 2018
+    end: ongoing
     proficiency: 8
   - title: Supabase
     start: 2023
+    end: ongoing
     proficiency: 8
   - title: Twilio
     start: 2011
@@ -535,9 +565,11 @@ robotData:
   items:
   - title: Kubernetes
     start: 2022
+    end: ongoing
     proficiency: 5
   - title: OpenAPI/Swagger
     start: 2016
+    end: ongoing
     proficiency: 7
   - title: Terraform
     start: 2020
@@ -545,6 +577,7 @@ robotData:
     proficiency: 5
   - title: Vercel
     start: 2020
+    end: ongoing
     proficiency: 8
 - title: Operating Systems
   headers:
@@ -559,11 +592,59 @@ robotData:
   items:
   - title: Linux
     start: 2001
+    end: ongoing
     proficiency: 8
   - title: MacOS
     start: 1984
+    end: ongoing
     proficiency: 9
   - title: Windows
     start: 1992
     end: 2015
     proficiency: 7
+aiTools:
+- title: Codex CLI
+  usage: Primary coding agent
+- title: OpenCode
+  usage: Primary coding agent for local & personal work
+- title: Claude
+  usage: Regular use
+- title: Cursor
+  usage: Team tool
+- title: Adapt
+  usage: Internal company assistant; org-wide knowledge search and PR review
+- title: OpenRouter
+  usage: Model gateway; configured agent-based PR review
+- title: oMLX
+  usage: Local OpenAI-compatible model server on Apple Silicon; offline inference for agents
+- title: LM Studio
+  usage: Local inference
+- title: Kindex
+  usage: Cross-agent persistent memory graph; decisions and codebase facts survive sessions
+- title: Signet
+  usage: Agent guardrails; permission hooks and policy rules gate destructive commands
+- title: Simulacrum
+  usage: Adversarial review harness; attacks ideas and plans with concrete scenarios before commitment
+- title: Advocate
+  usage: Six-persona review engine; parallel red-team, peer, and user-perspective findings on diffs and designs
+- title: GitNexus
+  usage: Code knowledge graph; impact analysis and execution-flow tracing before every edit
+agentPractices:
+- title: Spec-first development
+  detail: AI helps write specs; agents start with few or no open questions
+- title: Architect / implementer split
+  detail: Engineer designs and reviews; agent implements
+- title: Focused agents
+  detail: Separate plan, implement, verify, and review agents with scoped permissions
+- title: Acceptance criteria
+  detail: Human-ratified before implementation; independent review against them
+- title: Approval gates
+  detail: Push, PR, and destructive actions require human approval
+- title: Version-controlled agent config
+  detail: Public example at github.com/Gipetto/opencode-config
+- title: CLI over MCP
+  detail: CLI tools preferred over MCP servers where both exist
+- title: Local model evaluation
+  detail: Quantization, context sizing, and dense vs MoE for coding workloads
+- title: Mentoring
+  detail: Established engineering habits applied to agent-assisted work

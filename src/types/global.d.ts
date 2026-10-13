@@ -95,7 +95,7 @@ type Objective = Maybe<string[]>
 type RobotDataItem = {
   title: string
   start: number
-  end: number
+  end: number | "ongoing"
   proficiency: number
 }
 
@@ -110,6 +110,16 @@ type RobotData = {
   title: string
   headers: RobotDataHeader[]
   items: RobotDataItem[]
+}
+
+interface RobotAiTool {
+  title: string
+  usage: string
+}
+
+interface RobotAgentPractice {
+  title: string
+  detail: string
 }
 
 type SideProject = {
@@ -139,6 +149,8 @@ export type ResumeData = {
   workHistory?: Job[]
   education?: BookSmarts[]
   robotData?: RobotData[]
+  aiTools?: RobotAiTool[]
+  agentPractices?: RobotAgentPractice[]
   sideProject?: SideProject
   howIUseAgents?: HowIUseAgents
 }
