@@ -40,11 +40,8 @@
     {#each links as link (link.href)}
       <li>
         <span class="icon {link.icon}"><Icon name={link.icon} /></span>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          href={link.href}
-        >{link.text}</a>
+        <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+        <a href={link.href} rel="noopener noreferrer" target="_blank">{link.text}</a>
       </li>
     {/each}
   </ul>

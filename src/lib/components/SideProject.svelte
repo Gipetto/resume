@@ -11,6 +11,7 @@
   <h2>Featured Project</h2>
   <h3>{sideProject?.name}</h3>
   <p class="project-link">
+    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
     <a class="icon" href="{sideProject.url}" title="{sideProject.name}" target="_blank">
       <span>{sideProject.url}</span>
       <Icon name="link" title={sideProject.name} />

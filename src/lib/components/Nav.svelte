@@ -12,7 +12,7 @@
       _path = `/${company}${path}`
     }
 
-    return resolve(_path)
+    return _path
   }
 
   const links = [
@@ -26,7 +26,7 @@
     }
   ]
 
-  let active = $derived(links.reduce((acc, item) => { return item.href === page.url.pathname ? item.href : acc }, ""))
+  let active = $derived(links.reduce((acc, item) => { return resolve(item.href) === page.url.pathname ? item.href : acc }, ""))
 
   const logoEncoded = `data:image/svg+xml,${encodeURIComponent(logo)}`
 </script>
@@ -34,13 +34,13 @@
 <nav class="flex flex-row justify-content-center">
   <ul class="flex flex-row justify-content-center flex-wrap-wrap">
     <li>
-      <a class="logo" href={links[0].href}>
+      <a class="logo" href={resolve(links[0].href)}>
         <img src={logoEncoded} role="presentation" alt="" width={24} height={24} />
       </a>
     </li>
     {#each links as link (link.href)}
       <li class="flex-grow-1" class:active={active === link.href} >
-        <a href="{link.href}">{link.text}</a>
+        <a href={resolve(link.href)}>{link.text}</a>
       </li>
     {/each}
   </ul>

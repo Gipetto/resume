@@ -13,6 +13,7 @@ export default [
     ignores: [
       "dist/",
       "build/",
+      ".gitnexus/",
       "postcss.config.cjs",
       ".svelte-kit",
     ]

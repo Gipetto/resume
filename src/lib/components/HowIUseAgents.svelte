@@ -14,6 +14,7 @@
   {/each}
   {#if howIUseAgents.config}
     <p class="project-link">
+      <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
       <a class="icon" href="{howIUseAgents.config.url}" title="{howIUseAgents.config.text}" target="_blank">
         <span>{howIUseAgents.config.text}</span>
         <Icon name="link" title={howIUseAgents.config.text} />

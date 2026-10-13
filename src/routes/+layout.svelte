@@ -1,6 +1,6 @@
 <script lang="ts">
   import "../app.scss"
-  import { base } from "$app/paths"
+  import { asset } from "$app/paths"
   import type { LayoutProps } from "./$types"
   import Footer from "$lib/components/Footer.svelte"
   import Header from "$lib/components/Header.svelte"
@@ -22,11 +22,12 @@
 </script>
 
 <svelte:head>
-  <link rel="manifest" href="{base}/manifest.webmanifest">
-  <link rel="icon" href="{base}/favicon.ico" sizes="32x32">
-  <link rel="icon" href="{base}/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="{base}/icons/apple-touch-icon.png">
+  <link rel="manifest" href={asset("manifest.webmanifest")}>
+  <link rel="icon" href={asset("favicon.ico")} sizes="32x32">
+  <link rel="icon" href={asset("favicon.svg")} type="image/svg+xml">
+  <link rel="apple-touch-icon" href={asset("icons/apple-touch-icon.png")}>
   {#if ldJson}
+    <!-- eslint-disable-next-line no-useless-escape, svelte/no-at-html-tags -->
     {@html `<script type="application/ld+json">${ldJson}<\/script>`}
   {/if}
 </svelte:head>

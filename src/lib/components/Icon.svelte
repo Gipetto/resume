@@ -20,7 +20,7 @@
   } = $props()
 
   const typedIcons: IconData = icons
-  const icon = typedIcons[name]
+  const icon = $derived(typedIcons[name])
 </script>
 
 <svg

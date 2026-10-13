@@ -11,7 +11,7 @@
     position: Position
   } = $props()
 
-  let empty = position.description?.length < 1
+  const empty = $derived(position.description?.length < 1)
 </script>
 
 

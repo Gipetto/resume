@@ -1,8 +1,4 @@
-interface Strings {
-  [key: string]: string
-}
-
-// @ts-ignore yaml import
+import type { Strings } from "../types"
 import strings from "$lib/data/strings-en_US.yaml"
 const uiStrings: Strings = strings
 

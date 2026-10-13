@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { resolve } from "$app/paths"
   import { content } from "$lib/store.svelte"
 
   const name = content.get("name")
@@ -59,12 +58,8 @@
               <ul class="urls">
                 {#each contact.methods.urls as url (url)}
                   <li>
-                    <a
-                      class="url org"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href={url}
-                    >
+                    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+                    <a class="url org" rel="noopener noreferrer" target="_blank" href={url}>
                       {url}
                     </a>
                   </li>

@@ -1,12 +1,12 @@
 import { on } from "svelte/events"
 import type { ResumeData, Theme } from "../types/global"
-import { browser } from "$app/environment"
+import type { Company, Companies } from "./types"
+import { browser } from "$app/env"
 
 /**
  * Resume Data
  * @TODO - convert to Context
  */
-// @ts-ignore yaml import
 import resumeData from "$lib/data/content-en_US.yaml"
 class ResumeStore {
   data = $state<ResumeData>()
@@ -24,27 +24,12 @@ class ResumeStore {
   }
 }
 
-const content = new ResumeStore(resumeData as ResumeData)
+const content = new ResumeStore(resumeData)
 
 /**
  * Company Data for Cover Letter
  */
 
-type Company = {
-  name: string
-  hiringManager: string
-  address1: string
-  address2?: string
-  city: string
-  state: string
-  zipCode: string
-}
-
-type Companies = {
-  [k: string]: Company
-}
-
-// @ts-ignore yaml import
 import companiesData from "$lib/data/companies.yaml"
 class CompanyStore {
   data = $state<Companies>()
@@ -63,8 +48,10 @@ const companies = new CompanyStore(companiesData)
 /**
  * Color Theme
  */
-let startingTheme: Theme = "light"
-let browserThemePreference: MediaQueryList | null = null
+const storedTheme = browser ? localStorage.getItem("theme") : null
+const startingTheme: Theme = storedTheme === "light" || storedTheme === "dark"
+  ? storedTheme
+  : (browser ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : "light")
 
 const createThemeStore = (initialValue: "light" | "dark") => {
   let theme = $state(initialValue)
@@ -90,11 +77,7 @@ const createThemeStore = (initialValue: "light" | "dark") => {
 const theme = createThemeStore(startingTheme)
 
 if (browser) {
-  const storedTheme = localStorage.getItem("theme")
-  browserThemePreference = window.matchMedia("(prefers-color-scheme: dark)")
-  startingTheme = (storedTheme === "light" || storedTheme === "dark")
-    ? storedTheme
-    : (browserThemePreference.matches ? "dark" : "light")
+  const browserThemePreference = window.matchMedia("(prefers-color-scheme: dark)")
 
   on(browserThemePreference, "change", (e) => {
     /**
