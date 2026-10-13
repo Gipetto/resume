@@ -25,9 +25,10 @@ buzzwords:
     text: Shadow systems and parity reconcilers keep the cutovers quiet. Success
       looks like an unremarkable deploy log.
   - name: Growing Engineers.
-    text: Project/Tech specs, planning, mentoring, watering the EICs.
-  - name: Python, Java, PHP, Scala, Golang, whatever…
-    text: Doesn't matter – just write tests for it!
+    text: Project/tech specs, planning, mentoring — bringing early-career
+      engineers up to owning their systems.
+  - name: Python, Java, PHP, Scala, Golang.
+    text: The language is a detail; just write tests for it!
   - name: Typescript/Javascript, SvelteKit, Next.js, React, Node.
     text: We still love you, jQuery! But we love Svelte more...
   - name: I18n, L10n, A11y.
@@ -57,11 +58,11 @@ sideProject:
   name: QuizStreak
   url: https://www.quizstreak.com
   description:
-  - QuizStreak is a daily trivia game that is built from my brother-in-law's idea
-    and my development skills.
-  - Built on Sveltekit and Supabase, using only the bare minimum of NPM libraries,
-    and with artisinally crafted CSS. It is fun to work on and the subject matter
-    is interesting as well.
+  - "QuizStreak is a daily trivia game by a two-person team: my partner creates
+    the questions and runs the business, and I build and run everything technical
+    on SvelteKit and Supabase."
+  - Past day 900 of continuous daily play, with roughly 370 weekly-active players —
+    kept fast by a handful of NPM packages and hand-written CSS.
 howIUseAgents:
   items:
   - title: Done is defined first.
@@ -85,9 +86,8 @@ currentWork:
       year: 2023
     title: Lead Developer / Co-owner
     description:
-    - Build an engaging online trivia game using Svelte, Supabase, and custom CSS,
-      minimizing node modules to create a lightweight application that works well
-      on both desktop and mobile devices.
+    - Build a daily trivia game on SvelteKit, Supabase, and hand-written CSS, keeping
+      dependencies minimal so the app stays fast on any device.
     - Generate in-depth statistics suitable for user rankings, comparisons, and automated
       league categorization.
     - Conduct user behavior analysis and customer interviews to identify feature opportunities
@@ -100,11 +100,11 @@ currentWork:
   - from:
       month: 12
       year: 2025
-    title: Software Engineer IV
+    title: Team Lead / Software Engineer IV
     description:
     - "Lead extraction of the Property domain from the monolith into a dedicated system of record, deliberately keeping search and business logic out; serving teams including booking, payments, search, and front end."
     - "Run the migration with zero downtime: dual writes, a reconciler comparing both systems around the clock, and authoritative reads cut over field by field. Issues have been limited to data consistency, resolved without large-scale recovery."
-    - "Shipped a leaner listing API on the new system of record: payloads down ~80%, cached guest API median latency down 47%, uncached host-site p99 down 57% in benchmarks, with the migration's shadow-merge hop still in the request path."
+    - "Shipped a leaner listing API on the new system of record: payloads down ~80%, cached guest API median latency down 47%, uncached host-site p99 down 57% in benchmarks, with the migration’s shadow-merge hop still in the request path."
     - "Own production reliability during the parallel run: incident response, latency diagnosis, and repair of inconsistencies, including uncovering undocumented legacy behavior and encoding it as explicit contracts."
 workHistory:
 - company: Culture Foundry
@@ -119,26 +119,23 @@ workHistory:
       year: 2025
     title: Software Engineer, Contractor
     description:
-    - Engineered custom web applications and sites for a diverse client portfolio,
-      utilizing a modern technology stack including Next.js, Python, Django, Golang,
-      and WordPress.
-    - Built responsive, accessible, and user-friendly interfaces from design mockups,
-      leveraging CSS frameworks like Bootstrap and Tailwind CSS, and extending WordPress
-      with custom themes and plugins.
-    - Partnered directly with project managers and clients to translate business objectives
-      and complex requirements into actionable technical plans and scoped deliverables.
-    - Implemented and maintained automated CI/CD pipelines to streamline deployment
-      and testing processes across various hosting environments, including WPEngine
-      and client-managed infrastructure.
+    - Built custom web applications and sites for clients across industries, working in
+      Next.js, Python, Django, Golang, and WordPress.
+    - Built responsive, accessible interfaces from design mockups in Bootstrap and
+      Tailwind CSS, and extended WordPress with custom themes and plugins.
+    - Partnered with project managers and clients to turn requirements into scoped technical
+      plans and deliverables.
+    - Implemented CI/CD pipelines for deployment and testing across WPEngine and
+      client-managed hosting.
 - company: Career Break
   positions:
   - description:
-    - Launched a trivia game (quizstreak.com) with Svelte/SvelteKit & Supabase, diving
-      deep into modern web development, game design, and statistics.
-    - Got hands-on with Kubernetes by building local clusters from scratch, moving
-      beyond just using them to truly understanding how they work under the hood.
-    - Took a break after 11 years in the startup grind to recharge, retool, and return
-      to work with fresh energy and new perspectives.
+    - Launched a trivia game (quizstreak.com) on SvelteKit and Supabase, covering modern
+      web development, game design, and statistics.
+    - Learned Kubernetes by building local clusters from scratch — how they work, not
+      just how to use them.
+    - Stepped away after 11 years in startups to recharge and retool before returning
+      to full-time work.
 - company: RevOps
   location: Berkeley, CA
   remote: true
@@ -151,9 +148,8 @@ workHistory:
       year: 2023
     title: Lead Software Engineer
     description:
-    - Led a small, agile engineering team in developing product growth features, working
-      closely with Product, Sales, and Support to translate customer and business
-      needs into technical solutions.
+    - Led a small engineering team building product growth features, coordinating with
+      Product, Sales, and Support on what to build and why.
     - Architected and implemented a full-stack solution for complex, dynamic pricing
       models, building the backend logic in Python and the customer-facing configuration
       interface in React and TypeScript.
@@ -161,8 +157,8 @@ workHistory:
       consistent design patterns and enforcing high code quality standards across
       the front-end codebase.
     - Improved core web vitals and user experience by analyzing browser bundle composition
-      and optimizing dependencies, resulting an approximately 10% reduction in application
-      build size.
+      and optimizing dependencies, resulting in an approximately 10% reduction in
+      application build size.
 - company: Twilio
   location: San Francisco, CA
   positions:
@@ -174,9 +170,8 @@ workHistory:
       year: 2022
     title: Staff Software Engineer / Tech Lead, Growth Engineering
     description:
-    - Developed scalable, fault-tolerant systems that supported multiple teams in
-      onboarding new members and accelerating product adoption through innovative
-      application designs and effective cross-team collaboration.
+    - Designed fault-tolerant systems that supported multiple teams in onboarding new
+      members and accelerating product adoption.
     - Mentored engineers on project and task management, engineering best practices,
       problem-solving, and code quality.
     - Oversaw remote contractors and streamlined team productivity by clarifying expectations
@@ -189,20 +184,19 @@ workHistory:
       year: 2019
     title: Senior Software Engineer 1 & 2
     description:
-    - Contributed to various teams, including Growth Engineering, Experimentation
-      Platform, Phone Numbers, and Console.
-    - Enabled teams to make run-time decisions about their customers based on live
-      data and computed metrics through a custom built customer data platform integrated
-      in to the experimentation platform.
-    - Enabled company compliance with international phone number regulations though
-      a patented workflow system to provision phone numbers in compliance with worldwide,
-      country specific rules.
-    - Enabled individual teams to support their own development lifecycles, decrease
-      contention over core sections of the codebase, and to adopt and grow their back-end
-      services per their own needs by deconstructing a monolithic PHP code base.
-    - Drove a culture of testing as a normal part of the development lifecycle Increased
-      adoption of technologies and tooling to improve system observability and drive
-      down recovery time from errors.
+    - "Worked across four product teams: Growth Engineering, Experimentation Platform,
+      Phone Numbers, and Console."
+    - Built a custom-built customer data platform, integrated into the experimentation
+      platform, that let teams make run-time decisions about their customers based on
+      live data and computed metrics.
+    - Brought the company into compliance with international phone number regulations
+      via a patented workflow that provisions numbers against country-specific rules.
+    - Deconstructed a monolithic PHP codebase so individual teams could own their
+      development lifecycles, reduce contention over core sections, and grow their own
+      back-end services.
+    - Drove a culture of testing as a normal part of the development lifecycle.
+    - Increased adoption of technologies and tooling to improve system observability
+      and drive down recovery time from errors.
   patents:
   - type: U.S. Patent
     number: 11,153,390 B2
@@ -222,13 +216,11 @@ workHistory:
       year: 2011
     title: Senior Developer
     description:
-    - Developed custom solutions for building on and extending WordPress as a publishing
-      platform.
-    - Developed project requirements and plans for projects ranging from plugin development
-      to API integrations to large-scale deployments
-    - Developed systems built on top of CodeIgniter that take advantage of Amazon
-      cloud services to scale to meet the demands of high-volume, time-sensitive data
-      processing.
+    - Built custom solutions on and for WordPress as a publishing platform.
+    - Wrote requirements and plans for work ranging from plugin development to API
+      integrations to large-scale deployments.
+    - Engineered CodeIgniter-based systems on Amazon cloud services to scale high-volume,
+      time-sensitive data processing.
   hidden: true
 - company: Alternative Technology
   location: Englewood, CO
@@ -242,9 +234,10 @@ workHistory:
     title: Web Developer & Designer
     description:
     - Maintained the client-facing website and client portal for a hardware, software,
-      and technical services distributor. Built a custom framework for managing product
-      information, client portal access, and educational class schedules. Provided
-      the marketing team with tools to help efficiently develop client communications.
+      and technical services distributor.
+    - Built a custom framework for managing product information, client portal access,
+      and educational class schedules.
+    - Provided the marketing team with tools to help efficiently develop client communications.
   hidden: true
 education:
 - description: Bachelor’s Degree in Visual Arts
@@ -331,10 +324,6 @@ robotData:
     start: 2012
     end: ongoing
     proficiency: 9
-  - title: Tailwind CSS
-    start: 2023
-    end: ongoing
-    proficiency: '7'
 - title: Language Frameworks
   headers:
   - title: Framework
