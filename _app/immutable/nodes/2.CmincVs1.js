@@ -1,0 +1,2 @@
+import{C as e,I as t,J as n,Y as r,g as i,x as a}from"../chunks/Bb_qmY0f.js";var o=e(`<div class="grid-single"><!></div>`);function s(e,s){var c=o(),l=t(c);i(l,()=>s.children??r),n(c),a(e,c)}export{s as component};
+//# sourceMappingURL=2.CmincVs1.js.map

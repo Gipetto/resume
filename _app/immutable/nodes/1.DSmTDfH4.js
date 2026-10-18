@@ -1,0 +1,2 @@
+import{C as e,G as t,L as n,N as r,R as i,W as a,x as o,y as s,z as c}from"../chunks/Bb_qmY0f.js";import{t as l}from"../chunks/BeEVU_TC.js";import"../chunks/AWFEx87n.js";var u=e(`<h1> </h1> <p> </p>`,1);function d(e,d){t(d,!0);var f=u(),p=n(f),m=i(p,!0),h=c(p,2),g=i(h,!0);r(()=>{s(m,l.status),s(g,l.error?.message)}),o(e,f),a()}export{d as component};
+//# sourceMappingURL=1.DSmTDfH4.js.map
