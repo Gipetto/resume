@@ -29,7 +29,7 @@ buzzwords:
       engineers up to owning their systems.
   - name: Python, Java, PHP, Scala, Golang.
     text: The language is a detail; just write tests for it!
-  - name: Typescript/Javascript, SvelteKit, Next.js, React, Node.
+  - name: TypeScript/JavaScript, SvelteKit, Next.js, React, Node.
     text: We still love you, jQuery! But we love Svelte more...
   - name: I18n, L10n, A11y.
     text: I’ve learned more than I ever thought I wanted to know about character sets,
@@ -258,54 +258,75 @@ education:
     month: 12
     year: 1996
   institution: University of Northern Colorado, Greeley, Colorado
+everydayTools:
+  title: Everyday Tools
+  items:
+    - JSON
+    - YAML
+    - TOML
+    - XML
+    - Bash
+    - Zsh
+    - Git
+    - grep
+    - Nix
+    - NixOS
+    - ripgrep
+    - SQL
+    - SSH
+    - cron
+    - regular expressions
+    - jq
+    - tmux
+    - Vim
+    - Linux
+    - macOS
+    - Docker
+    - Docker Compose
+    - OpenAPI
 robotData:
-- title: Programming Languages
+- title: Languages and Runtimes
   headers:
-  - title: Language
+  - title: Language/Runtime
     dataKey: title
   - title: Start Year
     dataKey: start
   - title: End Year
     dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
   items:
-  - title: Golang
+  - title: Deno
+    start: 2019
+    end: present
+  - title: Golang (Go)
     start: 2015
-    end: ongoing
-    proficiency: 6
+    end: present
   - title: Java
     start: 2014
     end: 2018
-    proficiency: 5
-  - title: Javascript
+  - title: JavaScript
     start: 1999
-    end: ongoing
-    proficiency: 9
+    end: present
+  - title: NPM
+    start: 2014
+    end: present
   - title: PHP
     start: 2002
-    end: ongoing
-    proficiency: 9
+    end: present
+  - title: PHP-FPM
+    start: 2013
+    end: 2021
   - title: Python
     start: 2010
-    end: ongoing
-    proficiency: 8
-  - title: Ruby
-    start: 2008
-    end: 2013
-    proficiency: 7
+    end: present
   - title: Rust
     start: 2020
     end: 2023
-    proficiency: 5
   - title: Scala
     start: 2015
     end: 2020
-    proficiency: 5
-  - title: Typescript
+  - title: TypeScript
     start: 2015
-    end: ongoing
-    proficiency: 8
+    end: present
 - title: Markup Languages
   headers:
   - title: Language
@@ -314,29 +335,22 @@ robotData:
     dataKey: start
   - title: End Year
     dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
   items:
   - title: CSS
     start: 1998
-    end: ongoing
-    proficiency: 8
+    end: present
   - title: HTML
     start: 1998
-    end: ongoing
-    proficiency: 9
+    end: present
   - title: Less
     start: 2013
     end: 2016
-    proficiency: '7'
   - title: Markdown
     start: 2008
-    end: ongoing
-    proficiency: 9
+    end: present
   - title: Sass
     start: 2012
-    end: ongoing
-    proficiency: 9
+    end: present
 - title: Language Frameworks
   headers:
   - title: Framework
@@ -345,64 +359,51 @@ robotData:
     dataKey: start
   - title: End Year
     dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
   items:
   - title: Bootstrap
     language: CSS
     start: 2013
-    end: ongoing
-    proficiency: 8
+    end: present
   - title: CodeIgniter
     language: PHP
     start: 2008
     end: 2010
-    proficiency: 7
   - title: Django
     language: python
     start: 2015
     end: 2020
-    proficiency: 7
   - title: Laravel
     language: PHP
     start: 2014
     end: 2018
-    proficiency: 8
   - title: Next.js
-    language: Javascript/Typescript
+    language: JavaScript/TypeScript
     start: 2025
-    end: ongoing
-    proficiency: 6
+    end: present
   - title: React
-    language: Javascript/Typescript
+    language: JavaScript/TypeScript
     start: 2015
-    end: ongoing
-    proficiency: 7
-  - title: Ruby on Rails
-    language: Ruby
-    start: 2012
-    end: 2013
-    proficiency: 5
-  - title: Svelte/Kit
-    language: Javascript/Typescript
+    end: present
+  - title: Svelte
+    language: JavaScript/TypeScript
     start: 2019
-    end: ongoing
-    proficiency: 8
+    end: present
+  - title: SvelteKit
+    language: JavaScript/TypeScript
+    start: 2019
+    end: present
   - title: Tailwind
     language: CSS
     start: 2024
-    end: ongoing
-    proficiency: 8
+    end: present
   - title: Wagtail
     language: Python
     start: 2020
-    end: ongoing
-    proficiency: 7
+    end: 2025
   - title: WordPress
     language: PHP
     start: 2008
-    end: ongoing
-    proficiency: 8
+    end: present
 - title: Databases
   headers:
   - title: Name
@@ -411,33 +412,25 @@ robotData:
     dataKey: start
   - title: End Year
     dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
   items:
-  - title: ElasticSearch
+  - title: Elasticsearch
     start: 2016
     end: 2022
-    proficiency: 7
   - title: Firestore
     start: 2022
     end: 2023
-    proficiency: 5
-  - title: Postgres
+  - title: PostgreSQL
     start: 2012
-    end: ongoing
-    proficiency: 7
+    end: present
   - title: MySQL
     start: 2000
-    end: ongoing
-    proficiency: 8
+    end: present
   - title: RDS
     start: 2013
-    end: ongoing
-    proficiency: 7
+    end: 2022
   - title: SQLite
     start: 2009
-    end: ongoing
-    proficiency: 7
+    end: present
 - title: Key/Value Stores
   headers:
   - title: Name
@@ -446,68 +439,17 @@ robotData:
     dataKey: start
   - title: End Year
     dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
   items:
-  - title: Elasticache
+  - title: ElastiCache
     start: 2013
     end: 2019
-    proficiency: 6
   - title: Memcached
     start: 2008
     end: 2014
-    proficiency: 6
   - title: Redis
     start: 2017
     end: 2022
-    proficiency: 6
-- title: Virtualization/Containerization
-  headers:
-  - title: System
-    dataKey: title
-  - title: Start Year
-    dataKey: start
-  - title: End Year
-    dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
-  items:
-  - title: Docker
-    start: 2015
-    end: ongoing
-    proficiency: 8
-  - title: Docker Compose
-    start: 2015
-    end: ongoing
-    proficiency: 8
-- title: Data File Formats
-  headers:
-  - title: Format
-    dataKey: title
-  - title: Start Year
-    dataKey: start
-  - title: End Year
-    dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
-  items:
-  - title: JSON
-    start: 2008
-    end: ongoing
-    proficiency: 9
-  - title: TOML
-    start: 2020
-    end: ongoing
-    proficiency: 8
-  - title: XML
-    start: 2004
-    end: ongoing
-    proficiency: 8
-  - title: YAML
-    start: 2011
-    end: ongoing
-    proficiency: 9
-- title: Saas/Cloud Services
+- title: SaaS/Cloud Services
   headers:
   - title: Service
     dataKey: title
@@ -515,46 +457,35 @@ robotData:
     dataKey: start
   - title: End Year
     dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
   items:
   - title: AWS
     start: 2009
     end: 2022
-    proficiency: 7
-  - title: BugSnag
+  - title: Bugsnag
     start: 2022
     end: 2023
-    proficiency: 6
   - title: Datadog
     start: 2013
     end: 2022
-    proficiency: 7
   - title: Google Cloud
     start: 2022
     end: 2023
-    proficiency: 7
   - title: Resend
     start: 2023
-    end: ongoing
-    proficiency: 8
-  - title: Sendgrid
+    end: present
+  - title: SendGrid
     start: 2018
     end: 2022
-    proficiency: 7
   - title: Sentry
     start: 2018
-    end: ongoing
-    proficiency: 8
+    end: present
   - title: Supabase
     start: 2023
-    end: ongoing
-    proficiency: 8
+    end: present
   - title: Twilio
     start: 2011
     end: 2022
-    proficiency: 9
-- title: Cloud Deployment
+- title: Infrastructure / Deployment
   headers:
   - title: System
     dataKey: title
@@ -562,53 +493,33 @@ robotData:
     dataKey: start
   - title: End Year
     dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
   items:
+  - title: Apache
+    start: 2002
+    end: present
+  - title: Fly.io
+    start: 2026
+    end: present
+  - title: HAProxy
+    start: 2011
+    end: present
   - title: Kubernetes
     start: 2022
-    end: ongoing
-    proficiency: 5
-  - title: OpenAPI/Swagger
-    start: 2016
-    end: ongoing
-    proficiency: 7
+    end: present
+  - title: Nginx
+    start: 2012
+    end: present
   - title: Terraform
     start: 2020
     end: 2022
-    proficiency: 5
   - title: Vercel
     start: 2020
-    end: ongoing
-    proficiency: 8
-- title: Operating Systems
-  headers:
-  - title: OS
-    dataKey: title
-  - title: Start Year
-    dataKey: start
-  - title: End Year
-    dataKey: end
-  - title: Proficiency
-    dataKey: proficiency
-  items:
-  - title: Linux
-    start: 2001
-    end: ongoing
-    proficiency: 8
-  - title: MacOS
-    start: 1984
-    end: ongoing
-    proficiency: 9
-  - title: Windows
-    start: 1992
-    end: 2015
-    proficiency: 7
+    end: present
 aiTools:
 - title: Codex CLI
-  usage: Primary coding agent
+  usage: Primary coding agent & harness
 - title: OpenCode
-  usage: Primary coding agent for local & personal work
+  usage: Primary coding agent harness for local & personal work
 - title: Claude
   usage: Regular use
 - title: Cursor

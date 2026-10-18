@@ -5,6 +5,7 @@
   import RobotAgentPractices from "$lib/components/RobotAgentPractices.svelte"
 
   const data = content.get("robotData")
+  const everydayTools = content.get("everydayTools")
 
   function slugify(title: string): string {
     return title
@@ -16,17 +17,30 @@
       .replace(/^-+|-+$/g, "")
   }
 
-  function isYearColumn(dataKey: string): boolean {
+  function isYearColumn(dataKey: string) {
     return dataKey === "start" || dataKey === "end"
   }
 
-  function isProficiencyColumn(dataKey: string): boolean {
+  function isProficiencyColumn(dataKey: string) {
     return dataKey === "proficiency"
+  }
+  function natSort(a: string, b: string) {
+    return a.localeCompare(b, undefined, { numeric: true })
   }
 </script>
 
 {#if data}
   <h2>{_("title.robotData", "For The Robots")}</h2>
+  {#if everydayTools}
+    <table id={slugify(everydayTools.title)}>
+      <caption>{everydayTools.title}</caption>
+      <tbody>
+        <tr>
+          <td>{everydayTools.items.sort(natSort).join(", ")}</td>
+        </tr>
+      </tbody>
+    </table>
+  {/if}
   {#each data as section (section.title)}
     <table id={slugify(section.title)}>
       <caption>{section.title}</caption>

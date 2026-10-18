@@ -139,6 +139,11 @@ type HowIUseAgents = {
   config: { text: string; url: string }
 }
 
+type EverydayTools = {
+  title: string
+  items: string[]
+}
+
 export type ResumeData = {
   config: Config
   name: Name
@@ -155,4 +160,5 @@ export type ResumeData = {
   agentPractices?: RobotAgentPractice[]
   sideProject?: SideProject
   howIUseAgents?: HowIUseAgents
+  everydayTools?: EverydayTools
 }
